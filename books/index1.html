@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<!--bootstarp css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<title>Фиксированный шаблон с двумя колонками</title>
+</head>
+<body>
+	<div id="wrap">
+		<!--Header-->
+		<header>
+			<div class="container">
+				<div class="row align-items-center">
+				
+					<div class="col-lg-2">
+						<div class="logo"><a href="#"><img src="img/logo.png" alt=""/></a></div>
+					</div>
+						<div class="col-lg-5 ">
+						<div class="search co-lg-12">
+					
+						<form>
+							<div class="col-lg-9 ">
+							<input type="text"/></div>			
+							<div class="col-"><button >Search</button></div>
+						</form>
+							
+					</div>
+
+					</div>
+						<div class="col-lg-3">
+						<p><div class="cart">
+							<!--<img src="img/curt.png" alt=""/>-->
+							<span>Your cart<span class="number">(2 items)</span></span>
+							<div class="under">
+								<span class="amount"><b>$125.0</b></span>
+								<div class="button"><button>Checkout</button></div>
+							</div>
+						</div></p>
+					</div>
+						<div class="col-lg2">
+						<div class="wish-list">
+							<div class="star"><img src="img/star.png" alt=""/><span>20</span></div>
+							<div class="desc"><span>Wish list</span></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+			
+		</header>
+
+		<!--Content-->
+				<div class="main-menu">
+						<div class="content">			
+							<ul >
+								<li><a href="#">Computers</a></li>
+								<li><a href="#">Cooking</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Fiction</a></li>
+								<li><a href="#">Health</a></li>
+								<li><a href="#">Mathematics</a></li>
+								<li><a href="#">Medical</a></li>
+								<li><a href="#">Reference</a></li>
+								<li><a href="#">Science</a></li>					
+							</ul>
+						
+								<div class="banner">
+									<div class="banner1">					
+										<img src="img/banner.jpg" alt=""/>	
+										<a href="#"><img class="left" src="img/left.png" alt=""/></a>	
+										<a href="#"><img class="right" src="img/right.png" alt=""/></a>
+															
+									</div>
+									<div class="banner2">
+										<img src="img/banner_right.jpg" alt=""/>
+										<button>Buy now</button>
+									</div>
+								</div>
+						</div>
+				</div>
+
+		
+			<!--Vertical menu-->
+			<div id="content">
+				<div class="v-menu">
+			
+						<ul>
+							<li class="disable">Categories</li>
+							<li class="title"><a href="#">ALL</a></li>
+							<li class="title"><a href="#">Fiction & Literature</a></li>
+							<li><a href="#">Children</a></li>
+							<hr/>
+							<li><a href="#">Science Fiction</a></li>
+							<hr/>
+							<li><a href="#">Fantasy</a></li>
+							<hr/>
+							<li><a href="#">Mystery</a></li>
+							<hr/>
+							<li><a href="#">Romance</a></li>
+							<hr/>
+							<li><a href="#">Horror</a></li>
+							<hr/>
+							<li><a href="#">Poetry</a></li>
+							<hr/>
+							<li><a href="#">Literature</a></li>
+							<hr/>
+							<li><a href="#">Crime</a></li>
+							<hr/>
+							<li class="title"><a href="#">Non - Fiction</a></li>
+							<li><a href="#">Comic</a></li>
+							<hr/>
+							<li><a href="#">Cook</a></li>
+							<hr/>
+							<li><a href="#">Psychology</a></li>
+							<hr/>
+							<li><a href="#">Medical</a></li>
+							<hr/>
+							<li><a href="#">Photography</a></li>
+							<hr/>
+							<li><a href="#">Law</a></li>
+							<hr/>
+							<li><a href="#">History</a></li>
+							<hr/>
+							<li><a href="#">Business</a></li>
+							<hr/>
+							<li><a href="#">Computer</a></li>
+							<hr/>
+							<li class="title"><a href="#">Other</a></li>
+							<li><a href="#">Baby</a></li>
+							<hr/>
+							<li><a href="#">Sex</a></li>
+							<hr/>
+							<li><a href="#">Travel</a></li>
+							<hr/>
+							<li><a href="#">Science</a></li>
+							<hr/>
+							<li><a href="#">Sports</a></li>
+						</ul>
+					
+				</div>
+				
+			<!--Catalog-->
+			<!--<div class="catalog">
+				<ul>
+					<li><a href="#">Best sellers</a></li>
+					<li><a href="#">New Arrivals</a></li>
+					<li><a href="#">Used Books</a></li>
+					<li><a href="#">Special Offers</a></li>
+				</ul>
+				<div class ="tab"> 
+					
+						<div class="item">
+							<a href="#"><img src="img/photo.jpg" alt=""></a>
+							<span>The Hare With <br>Amber Eyes</span>
+							<span class="price">$200</span>
+							
+						</div>
+					
+				</div>
+			</div>	-->
+			
+			<div class="catalog">
+				<div class="catalog1">
+					<input type="radio" name="radio" id="n1" checked="checked"/>
+					<label for="n1" >Best sellers</label>
+					<input type="radio" name="radio" id="New Arrivals"/>
+					<label for="New Arrivals" >New Arrivals</label>
+					<input type="radio" name="radio" id="Used Books"/>
+					<label for="Used Books">Used Books</label>
+					<input type="radio" name="radio" id="Special Offers"/>
+					<label for="Special Offers">Special Offers</label>
+				</div>
+					<div class="tab">
+							<div class="item">
+								
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a>
+								<div class="sale"><div><span>30%</span><p>Off</p></div></div>
+								</div>						
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$50</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$60</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a>
+								<div class="sale"><div><span>30%</span><p>Off</p></div></div>
+								</div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$25</p>
+							 </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$80</p>
+						    </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+						    </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+						    </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+						    </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+						    </div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+							<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+								<div class="item">
+								<div class="photo"><a href="#"><img src="img/photo1.jpg" alt=""></a></div>
+								<p>The Hare With <br>Amber Eyes</p>
+								<p>$200</p>
+							</div>
+						
+						<div class="pagination">
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+		
+		
+		<!--Footer-->
+		<footer>
+			<div class="menu-bottom">
+					<div class="content">
+						<div class="col">
+							<p>Biography & True Stories</p>
+							<ul>
+								<li><a href="#">General</a></li>
+								<hr/>
+								<li><a href="#">Diaries, Letters & Journals</a></li>
+								<hr/>
+								<li><a href="#">Memoirs</a></li>
+								<hr/>
+								<li><a href="#">True Stories</a></li>
+								<hr/>
+								<li><a href="#">Generic Exams</a></li>
+								<hr/>
+								<li><a href="#">GK Titles</a></li>
+								<hr/>
+								<li><a href="#">Medical Entrance</a></li>
+								<hr/>
+								<li><a href="#">Other Entrance Exams</a></li>
+								<hr/>
+								<li><a href="#">PG Entrance Examinations</a></li>
+								<hr/>
+								<li><a href="#">Self-help Titles</a></li>
+								<hr/>
+								<li><a href="#">Sociology</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<p>Professional & Reference</p>
+							<ul>
+								<li><a href="#">Academic and Reference</a></li>
+								<hr/>
+								<li><a href="#">Business Trade</a></li>
+								<hr/>
+								<li><a href="#">Engineering and Computer Science</a></li>
+								<hr/>
+								<li><a href="#">Humanities, Social Sciences and Languages</a></li>
+								<hr/>
+								<li><a href="#">Introduction to Computers</a></li>
+								<hr/>
+								<li><a href="#">Science and Maths</a></li>
+								<hr/>
+								<li><a href="#">Trade Business</a></li>
+								<hr/>
+								<li><a href="#">English Language & Literature</a></li>
+								<hr/>
+								<li><a href="#">English Language Teaching</a></li>
+								<hr/>
+								<li><a href="#">Environment Awareness</a></li>
+								<hr/>
+								<li><a href="#">Environment Protection </a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<p>Earth Sciences</p>
+							<ul>
+								<li><a href="#">Earth Sciences</a></li>
+								<hr/>
+								<li><a href="#">Geography</a></li>
+								<hr/>
+								<li><a href="#">The Environment</a></li>
+								<hr/>
+								<li><a href="#">Regional & Area Planning</a></li>
+								<hr/>
+								<li><a href="#">Fantasy</a></li>
+								<hr/>
+								<li><a href="#">Gay</a></li>
+								<hr/>
+								<li><a href="#">Humorous</a></li>
+								<hr/>
+								<li><a href="#">Interactive</a></li>
+								<hr/>
+								<li><a href="#">Legal</a></li>
+								<hr/>
+								<li><a href="#">Lesbian</a></li>
+								<hr/>
+								<li><a href="#">Men'S Adventure</a></li>
+								<hr/>
+								<li><a href="#">Movie Or Television Tie-In</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<p>Mathematics</p>
+							<ul>
+								<li><a href="#">Algebra</a></li>
+								<hr/>
+								<li><a href="#">Differential Equations</a></li>
+								<hr/>
+								<li><a href="#">Discrete Mathematics</a></li>
+								<hr/>
+								<li><a href="#">Fourier Analysis</a></li>
+								<hr/>
+								<li><a href="#">Numerical Analysis</a></li>
+								<hr/>
+								<li><a href="#">Probability</a></li>
+								<hr/>
+								<li><a href="#">Statistical Methods/data Analysis</a></li>
+								<hr/>
+								<li><a href="#">Stochastic And Random Processes</a></li>
+								<hr/>
+								<li><a href="#">Topology</a></li>
+								<hr/>
+								<li><a href="#">Statistics</a></li>
+								<hr/>
+								<li><a href="#">Mathematics</a></li>
+							</ul>				
+						</div>
+			
+					</div>
+			</div>
+			<div class="footer">
+					<div class="content">
+						<p> We accept all major Credit Card/Debit Card/Internet Banking </p>
+						<div class="cards">
+							<a href="#"><img src="img/mc.jpg" alt=""></a>
+							<a href="#"><img src="img/ae.jpg" alt=""></a>
+							<a href="#"><img src="img/visa.jpg" alt=""></a>
+						</div>
+					</div>
+			</div>
+			<div class="footer-bottom">
+					<div class="content">
+						<p>  Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates  </p>
+					
+					</div>
+			</div>
+	
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
