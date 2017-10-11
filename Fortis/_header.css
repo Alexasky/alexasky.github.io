@@ -1,15 +1,12 @@
 body {
 	font-family: sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	min-width: 320px;
 	position: relative;
+	line-height: 1.6;
 	font-family: "OpenSansRegular", sans-serif;
 	overflow-x: hidden;
 }
-button, input, optgroup, select, textarea {
-   font-family: "OpenSansRegular", sans-serif;
-   font-size: 13px;
- }
 .hidden {
 	display: none;
 }
@@ -31,11 +28,8 @@ button, input, optgroup, select, textarea {
 .main-head .navbar{
 	margin-bottom: 0;
 }
-.carousel .item .container {
-    position: relative;
-}
+
 .carousel-inner .overlay{
-	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -63,20 +57,3 @@ button, input, optgroup, select, textarea {
 	line-height: 1.5;
 	margin-top: 0;
 }
-.carousel .item {
-    min-height: 420px;
-}
-.carousel-caption {
-	width: 100%
-   
-    left: 15%;
-    right: 15%;
-    
-}
-.inner .navbar{
-	overflow: hidden;
-}
-.inner .navbar-brand img{
-	width: 80px;
-	margin-right: 20px;
-	}
