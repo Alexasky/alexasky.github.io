@@ -447,6 +447,9 @@ padding-left: 15px;
 			line-height: 0.7;
 			margin-top: -5px;
 		}
+		footer .col_footer:nth-last-child(odd) .col{
+		padding-left: 0 !important;
+		}
 		footer .menu-bottom .col hr{
 		width: 110px;
 		}
