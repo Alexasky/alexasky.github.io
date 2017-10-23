@@ -314,10 +314,12 @@ nav .navbar-toggler-icon{
 }
 .overlay{
 	position: absolute;
+	top: calc(50%-17px);
+	right: calc(50%-17px);
 	padding: 5px;
   background-color: rgba(0,0,0,.8);
-	width: 65%;
-	height: 13%;
+	width: 35px;
+	height: 35px;
 	background-size: 100% 100%;
     border-radius: 50% ;
      -moz-border-radius: 50% ;
@@ -327,15 +329,14 @@ nav .navbar-toggler-icon{
 }
  .slider .carousel-control-next-icon{
 	 position: absolute;
-	 top: 25%;
-	 right:17%;
-	 background-size: cover;
+	 top: 20%;
+	 right: 10%;
+	 
 }
 .slider .carousel-control-prev-icon{
 	position: absolute;
-	top: 25%;
-	left:28%;
-  background-size: cover;
+	top: 20%;
+	right: 15%;
 }
 .slider .carousel-control-next,
 .slider .carousel-control-prev{

@@ -142,14 +142,7 @@
 	font-size: 1em;
 	line-height: 0.7;
 	}
-	.slider .carousel-control-next-icon{
-	top: 12%;
-	right:0%;
-	}
-	.slider .carousel-control-prev-icon{
-	top: 12%;
-	left:20%;
-	}
+
 	nav .nav-link:first-child{
 	margin-left:0;
 	}
@@ -415,8 +408,9 @@ padding-left: 15px;
 		.wish-list{
 		margin: 30px 0px 0px -5px;
 		}
-		footer .col-md-3:first-child .col:first-child {
-    padding-left: 15px;
+		.overlay{
+		width: 25px;
+		height: 25px;
 		}
 		.slider .carousel-control-next-icon{
 			width: 12px;
@@ -427,12 +421,12 @@ padding-left: 15px;
 			height: 12px;
 		}
 		.slider .carousel-control-next-icon{
-		top: 22%;
-		right:7%;
+		top: 25%;
+		right:10%;
 		}
 		.slider .carousel-control-prev-icon{
-		top: 22%;
-		left:27%;
+		top: 25%;
+		left: 30%;
 		}
 		.tab .item .sale{
 			font-size: 1.8em;
@@ -451,7 +445,7 @@ padding-left: 15px;
 		padding-left: 0 !important;
 		}
 		footer .menu-bottom .col hr{
-		width: 110px;
+		width: 120px;
 		}
 
 }
