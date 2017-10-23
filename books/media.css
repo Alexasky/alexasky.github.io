@@ -411,6 +411,8 @@ padding-left: 15px;
 		.overlay{
 		width: 25px;
 		height: 25px;
+		top: calc(50% - 12px);
+		right: calc(50% - 12px);
 		}
 		.slider .carousel-control-next-icon{
 			width: 12px;
