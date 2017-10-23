@@ -33,8 +33,9 @@ b{font-family: 'Segoebold', sans-serif; }
 
 html,
 body {
-	min-width: 320px;
 	position: relative;
+	width: 100%;
+
 }
 
 body {
@@ -44,6 +45,7 @@ body {
 }
 
 #wrap {
+	min-width: 320px;
 	background-color: white;
 	position: relative;
 }
@@ -55,7 +57,6 @@ body {
 	margin: 0 auto;
 	padding: 0 12px;
 }
-
 
 ul{
 	list-style-type: none;
@@ -78,7 +79,6 @@ button{
 /*Header*/
 header {
 	height: 100%;
-	max-width: 100%;
 	background-color: rgba(0,0,0,0.08);
 	background-image: linear-gradient(to bottom,rgba(255,255,255,0.08),rgba(0,0,0,0.08));
 	background-image: -moz-linear-gradient(top,rgba(255,255,255,0.08),rgba(0,0,0,0.08));
@@ -142,6 +142,9 @@ input[type = "text"]:focus{
 	background-image: url('img/search.png');
 	background-position-y: 10px;
 	background-repeat: no-repeat;
+}
+.second_block{
+	overflow: hidden;
 }
 .cart{
 	display: block;
@@ -217,7 +220,7 @@ input[type = "text"]:focus{
 	display: block;
 	float: left;
 	height: 70px;
-	margin: 35px 0px 0px 10px;
+	margin: 35px 0px 0px -20px;
 }
 .wish-list .star{
 	display: block;
@@ -387,7 +390,7 @@ margin-right: 0;
 }
 
 
-.v-menu .disable{
+.v-menu ul .disable{
 	font-size: 24px;
 	line-height: 24px;
 	color: #5b5b5b;
@@ -451,14 +454,7 @@ margin-right: 0;
 
 
 }
-.catalog_full .catalog1{
-	display: block;
-	border-left: 1px solid #ccc;
-	border-bottom-color: #fff;
-	float: left;
-	position: absolute;
-	z-index: 3;
-}
+
  .catalog_full .catalog .catalog1 input{
 	display: none;
 	float: left;
@@ -637,11 +633,18 @@ margin-right: 0;
 }
 */
 .catalog{
-
+	position: relative;
 	float: left;
 	margin: 15px 0 0 8px;
 
-
+}
+.container_catalog{
+	width: inherit;
+	position:absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
 }
 .catalog1{
 	display: block;
@@ -649,7 +652,9 @@ margin-right: 0;
 	border-bottom-color: #fff;
 	float: left;
 	position: absolute;
-	z-index: 3;
+	overflow: hidden;
+	
+	
 }
  .catalog .catalog1 input{
 	display: none;
@@ -677,6 +682,7 @@ margin-right: 0;
 	color: #6b6969;
 	padding: 13px 22px 10px 22px;
 	text-shadow: 2px 1px 0 #fff;
+	
 }
 .catalog .catalog1 label:hover{
 	font-family: HelveticaLTStd Roman;
@@ -690,7 +696,7 @@ margin-right: 0;
 	background: white;
 	color: #464646;
 	border-bottom-color: #fff;
-}
+	}
 
 .tab .item{
 	width: 107px;
