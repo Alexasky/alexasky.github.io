@@ -314,8 +314,8 @@ nav .navbar-toggler-icon{
 }
 .overlay{
 	position: absolute;
-	top: calc(50%-17px);
-	right: calc(50%-17px);
+	top: calc(50% - 17px);
+	right: calc(50% - 17px);
 	padding: 5px;
   background-color: rgba(0,0,0,.8);
 	width: 35px;
