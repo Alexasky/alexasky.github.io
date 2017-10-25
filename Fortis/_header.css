@@ -1,16 +1,19 @@
 body {
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.6;
 	font-family: "OpenSansRegular", sans-serif;
 	overflow-x: hidden;
 }
+button, input, optgroup, select, textarea {
+   font-family: "OpenSansRegular", sans-serif;
+   font-size: 13px;
+ }
 .hidden {
 	display: none;
 }
-.navbar-brand{
+.navbar-header .navbar-brand{
 	position: relative;
 	padding: 0;
 	z-index: 3;
@@ -28,8 +31,11 @@ body {
 .main-head .navbar{
 	margin-bottom: 0;
 }
-
+.carousel .item .container {
+    position: relative;
+}
 .carousel-inner .overlay{
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -56,4 +62,21 @@ body {
 	font-family: "OpenSansBold",sans-serif;
 	line-height: 1.5;
 	margin-top: 0;
+}
+.carousel .item {
+    min-height: 420px;
+}
+.carousel-caption {
+	width: 100%
+
+    left: 15%;
+    right: 15%;
+
+}
+.inner .navbar{
+	overflow: hidden;
+}
+.inner .navbar-brand img{
+	width: 80px;
+	margin-right: 20px;
 }
