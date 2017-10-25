@@ -25,7 +25,7 @@ ul {
 #header {
 	height: 80px;
 	margin: auto;
-	background: url(img/ne.jpg) top right no-repeat; 
+	background: url(img/ne.jpg) top right no-repeat;
 	position: relative;
 }
 #footer {
@@ -33,7 +33,7 @@ ul {
 	margin: auto;
 	height: 153px;
 	position: relative;
-	background: url(img/se.jpg) bottom right no-repeat; 
+	background: url(img/se.jpg) bottom right no-repeat;
 }
 #container {
 	width: 910px;
@@ -200,7 +200,7 @@ ul {
 	padding-left: 40px;
 }
 .main_menu ul {
-	
+
 	display: block;
 	height: 29px;
 	width: 808px !important;
@@ -391,8 +391,8 @@ h1 {
 	padding-right: 40px
 }
 .info p , #bottom p{
-	margin-bottom: 10px;
-	font-size: 0.91em; 
+	padding-bottom: 10px;
+	font-size: 0.91em;
 	/* font-size: 11px; */
 }
 .buts {
@@ -480,8 +480,8 @@ h1 {
 	overflow: hidden;
 	padding-bottom: 7px;
 	background: url(img/rarr.gif) 0 5px no-repeat;
-	
-	padding-left: 25px 
+
+	padding-left: 25px
 }
 .submenu li  a {
 	color: #4a8f34 !important;
@@ -518,7 +518,7 @@ h1 {
 }
 /* en of Vert-menu */
 
-/* News-page */ 
+/* News-page */
 .page-title {
 	margin: 0 0 0 25px;
 	width: 586px;
@@ -551,7 +551,7 @@ h1 {
 .border-right {
 	background: url(img/r-bord-right.gif) top right no-repeat;
 	width: 586px;
-	
+
 }
 .news {
 	padding: 20px 0 20px 0;
