@@ -2,33 +2,31 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style1.css">
-	<link rel="stylesheet" href="media.css">
 	<meta name="description" content="Создание адаптивного сайта" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png" />
 	<!--bootstarp css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-	<title>Фиксированный шаблон с двумя колонками</title>
+	<!-- css-->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="media.css">
+	<title>Books Store</title>
 </head>
 <body>
 	<div id="wrap">
 		<!--Header-->
 		<header>
-			
+
 				<div class="container">
 				<div class="row align-items-center head">
 
-					<div class="col-md-2 col-sm-3 col-xs-5">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
 						<div class="logo"><a href="#"><img src="img/logo.png" alt=""/></a></div>
 					</div>
 
-					<div class="col-md-5 col-sm-7 col-xs-6 ">
+					<div class="col-md-4 col-sm-7 col-xs-6 ">
 						<div class="search">
 
 							<div class="form">
@@ -39,7 +37,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-12 col-xs-12 block">
-						
+
 							<div class="col-md-8 col-sm-7 col-xs-7">
 								<div class="cart">
 									<!--<img src="img/curt.png" alt=""/>-->
@@ -56,11 +54,13 @@
 									<div class="desc">Wish list<div class="num">20</div></div>
 								</div>
 							</div>
-						
+
 					</div>
 
 				</div>
 				</div>
+
+				<!--Horizontal menu-->
 					<div class="menu">
 								<nav class="navbar navbar-expand-lg navbar-light container ">
 								  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,11 +101,15 @@
 										</div>
 								</nav>
 					</div>
-			
+
 		</header>
+<!-- End Horizontal menu-->
+<!-- End Header-->
 
 
-		<!--Content-->
+
+	<!--Content Block-->
+	<!--Banners-->
 		<div class="container container_slider">
 			<div class="row slider">
 				<div class="col-md-8 col-sm-12 banner1">
@@ -147,14 +151,12 @@
 			</div>
 		</div>
 
+<!--End Banners-->
 
-
-
-
-			<!--Vertical menu-->
+<!--Catalog-->
 			<div class="container">
 					<div class="row ">
-						<div class=" col-lg-9 col-lg-push-2 col-md-9 col-md-push-2 col-sm-9 col-sm-push-3 col-xs- catalog_full">
+						<div class=" col-lg-9 col-lg-push-2 col-md-9 col-md-push-2 col-sm-12 catalog_full">
 							<div class="catalog">
 								<div class="container_catalog">
 									<div class="catalog1">
@@ -366,10 +368,11 @@
 									</div>
 								</div>
 							</div>
+<!--End Catalog-->
 
+<!--Vertical menu-->
 
-
-						<div class="col-lg-2 col-lg-pull-9 col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-9 col-xs-12 align-self-start v-menu">
+						<div class="col-lg-2 col-lg-pull-9 col-md-2 col-md-pull-9 col-sm-12 align-self-start v-menu">
 							<ul>
 								<div class="disable">Categories</div>
 								<li><a class="title" href="#">ALL</a></li>
@@ -427,26 +430,10 @@
 					</div>
 
 			</div>
-						<!--Catalog-->
-			<!--<div class="catalog">
-				<ul>
-					<li><a href="#">Best sellers</a></li>
-					<li><a href="#">New Arrivals</a></li>
-					<li><a href="#">Used Books</a></li>
-					<li><a href="#">Special Offers</a></li>
-				</ul>
-				<div class ="tab">
+<!-- End Vertical menu-->
+<!--End Content Block-->
 
-						<div class="item">
-							<a href="#"><img src="img/photo.jpg" alt=""></a>
-							<span>The Hare With <br>Amber Eyes</span>
-							<span class="price">$200</span>
-
-						</div>
-
-				</div>
-			</div>	-->
-
+<!--Footer-->
 <footer>
 	<div class="menu-bottom">
 		<div class="container">
@@ -479,7 +466,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6 col_footer">
+				<div class="col-md-3 col-sm-5 col-xs-5 col_footer">
 					<div class="col">
 						<p>Professional & Reference</p>
 						<ul>
@@ -537,7 +524,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6 col_footer">
+				<div class="col-md-2 col-sm-5 col-xs-5 col_footer">
 					<div class="col">
 						<p>Mathematics</p>
 						<ul>
@@ -568,6 +555,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="footer">
 		<div class="container">
 			<div class="row">
@@ -592,12 +580,26 @@
 		</div>
 	</div>
 </footer>
-
-
-		<!--Footer-->
+<!-- End Footer-->
 
 
 	</div>
+	
+	<!--JS-->
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<!--bootstarp js-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<!--jquery css-->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<!--common js-->
+	<script src="common.js"></script>
 
 </body>
 </html>
