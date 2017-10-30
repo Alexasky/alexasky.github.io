@@ -1,7 +1,7 @@
 
 $(function() {
   function windowSize(){
-    if (($(window).width() < '992') && ($(window).width() > '767'))
+    if (($(window).width() < '992') && ($(window).width() > '752'))
     {
       $('.catalog_full').detach().insertAfter('.v-menu');
     }

@@ -65,6 +65,9 @@
 	 top: 20%;
 	 left:25%;
  }
+ .catalog_full{
+	 margin-left: -80px;
+ }
  .v-menu ul li a{
   	padding: 8px 5px 8px 5px;
   }
@@ -187,6 +190,9 @@
 	}
 	nav .nav-link:first-child{
 	margin-left:0;
+	}
+	.catalog_full{
+		margin-left: 0px;
 	}
 	.catalog_full .catalog .catalog1 label{
 	padding: 13px 10px 10px 10px;
@@ -472,6 +478,7 @@
 		right: 10px;
 	}
 	h1{
+		font-size: 2.5em;
 		padding-right: 70px;
 	}
 	.card .img_small img{
@@ -602,7 +609,7 @@
 	width: 120px;
 	}
 	h1{
-		font-size: 2.5em;
+		font-size: 2.3em;
 		padding-right: 50px;
 		margin-top: 10px;
 	}
