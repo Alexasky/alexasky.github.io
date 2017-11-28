@@ -7,29 +7,31 @@
 	<meta charset="UTF-8">
 	<title>Fortis</title>
 	<meta name="description" content="Fortis" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.png" />
-	<!--bootstarp css-->
+	<!-- Load CSS-->
+	<!--Bootstrap css-->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-	<!-- Load CSSS-->
-	<!-- Fonts CSS min-->
-	<!--link rel="stylesheet" href="fonts.css"-->
-	<style >
-		@font-face{font-family:RobotoRegular;src:url(fonts/RobotoRegular/RobotoRegular.eot);src:url(fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(fonts/RobotoRegular/RobotoRegular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoBold;src:url(fonts/RobotoBold/RobotoBold.eot);src:url(fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"),url(fonts/RobotoBold/RobotoBold.woff) format("woff"),url(fonts/RobotoBold/RobotoBold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansBold;src:url(fonts/OpenSansBold/OpenSansBold.eot);src:url(fonts/OpenSansBold/OpenSansBold.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSansBold/OpenSansBold.woff) format("woff"),url(fonts/OpenSansBold/OpenSansBold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:OpenSansRegular;src:url(fonts/OpenSansRegular/OpenSansRegular.eot);src:url(fonts/OpenSansRegular/OpenSansRegular.eot?#iefix) format("embedded-opentype"),url(fonts/OpenSansRegular/OpenSansRegular.woff) format("woff"),url(fonts/OpenSansRegular/OpenSansRegular.ttf) format("truetype");font-style:normal;font-weight:400}
+	<!-- Bootstrap skin CSS min-->
+	<style>
+	body{color:#242424;font-size:13px}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{text-transform:uppercase}h1,.h1{font-size:25px}h2,.h2{font-size:20px}h3,.h3{font-size:18px}h4,.h4{font-size:15px}h5,.h5{font-size:12px}h6,.h6{font-size:10px}.lead{font-size:19px}a,a:hover,a:focus{color:#f27937}.carousel .item{min-height:500px;background-color:#777}.navbar-inverse{background-color:#242424}.navbar-inverse,.navbar-default{border:none}.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus{background-image:-moz-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:-o-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:-webkit-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:linear-gradient(to top,#F4893B 0%,#EF5F31 100%)}.navbar{border-radius:0;font-size:14px}.navbar-inverse .navbar-nav > li > a{color:#fff}.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus{color:#f27837;background-color:transparent}.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{background-color:#F17135;background-image:-moz-linear-gradient(bottom,#F4853A 0%,#EF6232 100%);background-image:-o-linear-gradient(bottom,#F4853A 0%,#EF6232 100%);background-image:-webkit-linear-gradient(bottom,#F4853A 0%,#EF6232 100%);background-image:linear-gradient(to top,#F4853A 0%,#EF6232 100%);color:#fff}.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:focus{color:#f27837}.dropdown-menu .divider{margin:2px 0}.nav > li > a{padding:15px 18px}.carousel-indicators .active{background-color:#F27937;border-color:#F27937}.carousel-control{width:45px}.carousel-control.left,.carousel-control.right{background-image:none;background-color:rgba(0,0,0,.52)}.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{font-size:14px}.carousel-caption{text-align:left;text-shadow:none;left:15%;right:15%;top:60px}.carousel-inner .h1{font-size:38px;margin-bottom:22px;text-transform:none}.carousel-inner p{font-size:16px;margin-bottom:22px;max-width:450px}.carousel-inner small{color:#fff;display:block;font-size:26px}.carousel-inner .btn{background-color:transparent;border-color:#fff}.carousel-inner .btn:focus{background-color:transparent;border-color:#fff}.panel{-webkit-box-shadow:none;box-shadow:none}.panel-default > .panel-heading{background-color:#FF910C;-webkit-box-shadow:#ff910c 0 0 0 1px;box-shadow:#ff910c 0 0 0 1px;border:none}.btn-warning{background-color:#FFCC51;border-color:#C97713;color:#242424}.input-group-addon{background-color:#FF910C;color:#995C11;border:none}.form-control:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#FF910C}.input-group-btn > .btn-default{background-color:#EDEDED}.input-group-btn > .btn{color:#9d9d9d}.panel-title > a,.panel-title > small,.panel-title > .small,.panel-title > small > a,.panel-title > .small > a{color:#70420a;font-size:12px}.panel-collapse .panel-body{background-color:#F1E9E0}.panel-group .panel + .panel{border-bottom:8px solid #e77901;margin-top:-6px;position:relative;z-index:1}.panel-group .panel:last-child{border-bottom:none}.list-group-item{background-color:#F1E9E0}.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus{background-color:#f5f5f5;color:#242424;border:none;border-bottom:#DDD 1px solid}.panel > .list-group .list-group-item,.panel > .panel-collapse > .list-group .list-group-item{text-transform:uppercase;font-size:12px}.panel > .list-group .list-group-item span,.panel > .panel-collapse > .list-group .list-group-item span{border-bottom:dashed 1px #242424}.panel > .list-group .list-group-item:hover span,.panel > .panel-collapse > .list-group .list-group-item:hover span{border-bottom:dashed 1px transparent}.panel-group .panel-title{position:relative}.panel-title a .btn{background-color:transparent;border:medium none;border-radius:0;padding:9px 12px;position:absolute;right:-16px;top:-11px;border-left:#E3810B 1px solid}.panel-title a .btn:focus,.panel-title a .btn:active{background-color:transparent;border-color:#E3810B}.well{-webkit-box-shadow:none;box-shadow:none;background-color:#F1E9E0;border-color:#D5CDC3}.breadcrumb{background-color:transparent;padding:0}.breadcrumb a{color:#9a9a9a;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb > li + li::before{content:">";color:#9a9a9a}
 	</style>
-	<link rel="stylesheet" href="bootstrap_skin.css">
 	<!-- Header CSS min-->
-	<!--link rel="stylesheet" href="header.css"-->
 	<style>
 		body,button,input,optgroup,select,textarea{font-family:OpenSansRegular,sans-serif;font-size:13px}.carousel .item .container,.phone-top,body{position:relative}body{min-width:320px;overflow-x:hidden}.carousel-inner .h1,.main-head .lead{font-family:OpenSansBold,sans-serif}.hidden{display:none}.navbar-header .navbar-brand{position:relative;padding:0;z-index:3;top:5px}.main-head .lead{color:#fff}.phone-top{top:12px;text-align:center}.main-head .navbar{margin-bottom:0}.carousel-inner .overlay,.slider1{position:absolute;top:0;left:0;width:100%;height:100%}.carousel-inner .overlay{content:"";background-color:rgba(36,36,36,.67);z-index:2}.slider1{background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}.carousel-control{z-index:11}.carousel-inner .h1{line-height:1.5;margin-top:0}.carousel .item{min-height:420px}.carousel-caption{width:100% left: 15%;right:15%}.inner .navbar{overflow:hidden}.inner .navbar-brand img{width:80px;margin-right:20px}
 	</style>
-	<!-- Compiled CSS (main and media) min -->
-	<!--link rel="stylesheet" href="main.css"-->
-	<!--link rel="stylesheet" href="media.css"-->
-	<style >
-		.form-group:last-child,h1{margin-bottom:0}.form-group:last-child,p{font-family:OpenSansRegular,sans-serif}.till-item img,.till_content,.tt{width:100%}.bens,.mapcontainer,.modal-footer,.till-item .tc,.till_content{text-align:center}::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}img{max-width:100%}.h1.lead,.h2.lead,.h3.lead,.h4.lead,.h5.lead,.h6.lead,h1.lead,h2.lead,h3.lead,h4.lead,h5.lead,h6.lead{font-family:OpenSansRegular,sans-serif;text-transform:none}h1{margin-top:30px}.s_main{margin-top:20px}#carousel_aside h4,.box_request .btn,.box_request h4,.list-group-item,.panel-heading,.panel-title{font-family:OpenSansBold,sans-serif}.search .panel-heading{border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;padding:10px}.box_request h4{display:inline-block;font-size:13px;margin-bottom:10px}.box_request .btn{float:right;font-size:11px;text-transform:none;padding:6px 4px;margin-left:5px;margin-top:3px}.box_article .panel-body{padding:12px}.list-group-item:last-child{padding-bottom:16px}.panel-title{padding:5px 17px 5px 12px}.box_menu .panel-heading{border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px}.slider-aside .carousel-indicators{position:relative;bottom:0}#carousel_aside .item{min-height:initial;background-color:transparent}#carousel_aside .carousel-indicators li{border:1px solid #999}#carousel_aside .carousel-indicators li.active{border:1px solid transparent}.slider-aside .arrows-control{position:relative;width:100%;bottom:17px}.slider-aside .carousel-control{color:#999;text-shadow:none}.carousel-inner{margin:0}#carousel_aside h4{margin-bottom:20px}#carousel_aside h4.lead{font-family:OpenSansRegular,sans-serif;text-transform:none}.ben_item,.till_text{font-family:OpenSansBold,sans-serif}#carousel_aside .carusel_caption p{font-size:13px;margin-bottom:10px;line-height:1.4}#carousel_aside .carusel_caption p+p{margin-bottom:5px}#carousel_aside .carusel_caption a{display:block;font-size:13px}.carusel_caption{margin-bottom:20px}.slider-aside .lead{line-height:1.2}.carousel-fade .carousel-inner .item{-webkit-transition-property:opacity;transition-property:opacity}.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right,.carousel-fade .carousel-inner .item{opacity:0}.carousel-fade .carousel-inner .active,.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right{opacity:1}.well h4{margin-top:0}.well p{font-size:13px;line-height:1.4}.well p:last-child{margin-bottom:0}.content{border-bottom:1px solid #EFEFEF;padding-bottom:16px}.tt{display:table}.tr{display:table-row}.tc{display:table-cell}.till-item{padding:0 10px}.till-item a{display:block;position:relative;margin:20px 0 0}.till-item a:hover .till_content{background-color:rgba(255,194,20,.55)}.till_content{position:absolute;top:0;left:0;height:100%;background-color:rgba(244,134,58,.75);transition:all .5s ease;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease}.till-item .tc{vertical-align:middle}.till_text{color:#fff;display:inline-block;font-size:16px;margin:0 50px;text-shadow:0 1px 5px rgba(0,0,0,.75);text-transform:uppercase}.bens{margin-top:20px;position:relative;margin-bottom:60px}.ben_item{background-image:-webkit-linear-gradient(#fff,#f6f6f6);background-image:-moz-linear-gradient(#fff,#f6f6f6);background-image:-o-linear-gradient(#fff,#f6f6f6);background-image:linear-gradient(#fff,#f6f6f6);padding:30px 0}.ben_item h4{font-size:26px;text-transform:none;color:#787878;margin-bottom:0;line-height:22px}.ben_item h4 span{color:#242424;font-size:16px}.ben_item img{height:70px}.ben_item small{font-size:12px;font-family:OpenSansRegular,sans-serif}.ben_item::before{content:"";width:1px;position:absolute;height:100%;right:0;top:0;background-image:-webkit-linear-gradient(#f3f3f3,#dedede);background-image:-moz-linear-gradient(#f3f3f3,#dedede);background-image:-o-linear-gradient(#f3f3f3,#dedede);background-image:linear-gradient(#f3f3f3,#dedede)}.ben_item:last-child::before{display:none}article{margin-bottom:20px}article a{text-decoration:underline}.callback:hover,article a:hover{text-decoration:none}article ul li{list-style-type:circle}.mapcontainer article img{max-width:100%;margin:20px}article img{margin:20px 0}.widget_news ul{list-style-type:none;margin:0;padding:0}.widget_news h4{margin-bottom:20px}.widget_news .more{display:inline-block}.news_item .panel{max-width:240px}.news_item:nth-child(2) .panel{margin-left:auto;margin-right:auto}.news_item:last-child .panel{float:right}.main_footer{background-color:#242424;padding:30px 0 10px;color:#fff;font-size:16px;font-family:RobotoRegular,sans-serif;margin-top:20px}.development,.footer-phone{font-family:RobotoBold,sans-serif}.logo_wrap{overflow:hidden;height:65px;margin-top:-15px}.main_footer strong{display:block;position:relative;line-height:1.3}.development,.development small,.modal-title{display:inline-block}.main_footer strong::before{width:2px;content:"";height:80%;left:-15px;top:6px;background-color:#fff;position:absolute}.footer-phone{font-size:24px;font-weight:700;line-height:.8;margin-top:2px}.callback{font-size:12px;font-weight:400;border-bottom:1px dotted #fff;color:#fff}.callback:hover{border-bottom:1px dotted #f27937}.development{color:#4e4e4e;font-size:15px;margin-top:-10px;width:118px}.development small{margin-bottom:2px}.development:active,.development:hover{color:#4e4e4e;text-decoration:none}.modal-dialog{z-index:10000;max-width:360px}@media only screen and (max-width :1200px){.main-head ul.navbar-nav{margin-top:25px;position:relative;z-index:4}.main-head .navbar-collapse{position:relative}.phone-top{position:absolute;right:0}.box_request .btn{clear:both;float:left;margin-left:0}}@media only screen and (max-width :992px){.nav>li>a{padding:15px 11px;font-size:12px}.carousel-inner .h1{line-height:1.1}.carousel-inner small{margin-top:10px}.widget_news .news_item .panel{max-width:initial}.main_footer .col-sm-6{margin-bottom:20px;min-height:75px}}@media only screen and (max-width :768px){.animated{-o-transition-property:none!important;-moz-transition-property:none!important;-ms-transition-property:none!important;-webkit-transition-property:none!important;transition-property:none!important;-o-transform:none!important;-moz-transform:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.phone-top{position:relative;margin-bottom:50px}.nav>li>a{font-size:15px}.s_slider .carousel .item{min-height:550px}.carousel-inner .h1{line-height:1.1}.carousel-inner small{margin-top:10px}.box_request .btn{float:right}.tills .tc{width:100%}}@media only screen and (max-width :480px){.carousel-inner .h1{font-size:1.7em;line-height:1.1}.carousel-inner small{font-size:.8em;margin-top:10px}.main_footer{padding-top:60px}.main_footer .col-sm-6{float:none;text-align:center;width:100%}}
-	</style>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+
+	<!-- Load CSS Compilled without JS (main and media) min-->
+	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
 </head>
 <body data-gr-c-s-loaded="true">
 	<header class="main-head">
@@ -502,7 +504,7 @@
 		</div>
 	</footer>
 
-	<!-- Здесь пишем код -->
+	<!-- Modal form -->
 
 	<div class="modals">
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -538,9 +540,31 @@
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 
-<!-- Load Js -->
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/common.js""></script>
+<!-- Load CSS -->
+<script>
+	function loadCSS(hf) {
+		var ms=document.createElement("link");ms.rel="stylesheet";
+		ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+	}
+	loadCSS("fonts.css");               //User Styles: Fonts
+</script>
+
+<!-- Load CSS compiled without Bootstrap & Header styles -->
+<script>var ms=document.createElement("link");ms.rel="stylesheet";
+	 ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+</script>
+
+<!-- Load Scripts -->
+<script>var scr = {"scripts":[
+	{"src" : "libs/modernizr/modernizr.js", "async" : false},
+	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+	{"src" : "libs/bootstrap/js/bootstrap.min.js", "async" : false},
+	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+	{"src" : "js/common.js", "async" : false}
+	]};
+	!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+
+
 </body>
 </html>
