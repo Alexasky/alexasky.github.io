@@ -566,7 +566,7 @@
 
 .black {
 	    font-size: 10.077em;
-	    margin-top: 20px;
+	    margin-top: 15px;
 	    margin-left: -12px;
 	}
 .one {
@@ -623,7 +623,7 @@
 }
 .flip-clock-divider .flip-clock-label {
     bottom: -8.0em;
-    right: -76px;
+    right: 227px;
     color: #8d6c35;
     font-size: 29.5px;
 }
