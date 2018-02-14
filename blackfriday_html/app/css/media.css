@@ -1,27 +1,27 @@
-@media only screen and (max-width : 1280px) {
+@media only screen and ( max-width : 1280px) {
 	body {
     background: url(../img/baloons_left.png) -6% 16% no-repeat, url(../img/baloons_right.png) 104% 65% no-repeat, url(../img/bg_header.jpg) 71% 0 no-repeat, url(../img/header_left.jpg) 0% 0 no-repeat, url(../img/header_right.jpg) 100% 0 no-repeat, url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
 }
-	section .catalog .catalog-item .item .baloon {
+	.section .catalog .catalog-item .item .baloon {
 	    top: -59px;
 	    left: -72px;
 	    width: 67%;
 	    background-size: cover;
 	}
 
-	section .catalog .catalog-item .item .baloon .skew-text .txt-ballon {
+	.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon {
 	    top: -7px;
 	    left: 26px;
 	}
 
-	section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
+	.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
 	    font-size: 4.5em;
 	}
-	section .catalog .catalog-item .item .baloon .skew-text .skew-percent {
+	.section .catalog .catalog-item .item .baloon .skew-text .skew-percent {
 	    top: 45px;
 	    left: 94px;
 	}
-	section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
+	.section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
 	    font-size: 4.5em;
 	}
 }
@@ -35,7 +35,7 @@
 		margin-left: -7px;
 }
 	.form-block-wrapper{
-		 margin: -21px 0 0 44px;
+		 margin: -8px 0 0 44px;
 }
 	.form-block .form-title {
     font-size: 2.5em;
@@ -48,7 +48,7 @@
 		letter-spacing: 2.0px;
 }
 .email-form {
-    width: 100%;
+    width: 106%;
 }
 .one {
     font-size: 3.769em;
@@ -68,11 +68,13 @@
 .countdown-block .countdown {
     width: 35%;
 }
-.countdown-block span {
+.countdown-block .txt-first-part {
     font-size: 4.354em;
+		margin-top: 25px;
 }
 .countdown-block .txt-second-part {
     font-size: 3.3em;
+		margin-top: 12px;
 }
 
 .countdown-block-wrapper{
@@ -80,101 +82,224 @@
     width: 90%;
     margin: 0 auto;
 }
-section .catalog .catalog-item .item {
+.section {
+    margin-top: 133px;
+}
+.section .catalog .catalog-item .item {
     width: 230px;
     height: 230px;
 }
-section .catalog .catalog-item .item .item-frame::after {
+.section .catalog .catalog-item .item .item-frame::after {
     width: 230px;
     height: 230px;
     top: -294px;
     left: -110px;
 }
-section .catalog .catalog-item .item .baloon {
+.section .catalog .catalog-item .item .baloon {
     top: -59px;
     left: -72px;
     width: 67%;
     background-size: cover;
 }
 
-section .catalog .catalog-item .item .baloon .skew-text .txt-ballon {
+.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon {
     top: -23px;
     left: 8px;
 }
 
-section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
+.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
     font-size: 4.0em;
 }
-section .catalog .catalog-item .item .baloon .skew-text .skew-percent {
+.section .catalog .catalog-item .item .baloon .skew-text .skew-percent {
     top: 25px;
     left: 70px;
 }
-section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
+.section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
     font-size: 4.0em;
 }
-section .catalog .catalog-item .item .item-image img {
+.section .catalog .catalog-item .item .item-image img {
     background-size: cover;
-    width: 35%;
+    width: 100%;
 }
-section .catalog .catalog-item .item .old-price {
+.section .catalog .catalog-item .item .old-price {
     font-size: 2.385em;
 		bottom: 29px;
 }
-section .catalog .catalog-item .item .new-price .price {
+.section .catalog .catalog-item .item .new-price .price {
     bottom: 6px;
     right: 11px;
     font-size: 3.9em;
     width: 131px;
 }
-section .catalog .catalog-item .item .new-price .price span {
+.section .catalog .catalog-item .item .new-price .price span {
     font-size: 18px;
 }
-section .catalog .catalog-item:nth-of-type(3n+1) .item {
+.section .catalog .catalog-item:nth-of-type(3n+1) .item {
     margin-left: 70px;
 }
-section .catalog .catalog-item:nth-of-type(3n+2) .item {
+.section .catalog .catalog-item:nth-of-type(3n+2) .item {
     margin-left: 70px;
 }
-section .catalog .catalog-item:nth-of-type(3n+3) .item {
+.section .catalog .catalog-item:nth-of-type(3n+3) .item {
     margin-left: 70px;
 }
-section .catalog .catalog-item .item .line-shape {
+.section .catalog .catalog-item .item .line-shape {
     top: 182px;
     left: 160px;
     width: 59px;
     height: 2px;
     z-index: 1;
 }
-footer .title-ft::after {
+.ft .title-ft::after {
     width: 77%;
     height: 4px;
     left: 110px;
 }
-footer .text-ft .first-part {
+.ft .text-ft .first-part {
     margin-left: 80px;
 }
-footer .text-ft .third-part {
+.ft .text-ft .third-part {
     margin-top: -32px;
     margin-left: 558px;
 }
-footer .text-ft .second-part {
+.ft .text-ft .second-part {
     margin-top: -37px;
     margin-left: 194px;
 }
-footer .email-form {
+.ft .email-form {
     margin: 42px auto 0;
 }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.form-block-wrapper {
-	    margin: -8px 0 0 44px;
+	body {
+    background: url(../img/baloons_left.png) -11% 8% no-repeat, url(../img/baloons_right.png) 107% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
 	}
-	.countdown-block .txt-second-part {
-    margin-top: 7px;
+	.form-block {
+	    margin-top: -131px;
+	    text-align: center;
+	}
+	.form-title p{
+		display: inline-block;
+	}
+	.form-block .form-title span {
+    margin-left: 14px;
 }
-.countdown-block span {
-    margin-top: 22px;
+	.form-block .form-title .second-text {
+    margin-left: 14px;
+}
+.email-form {
+    width: 72%;
+    margin-top: 7px;
+    margin-left: 92px;
+}
+.countdown-block {
+    margin-top: 59px;
+}
+.countdown-block .txt-first-part {
+    display: block;
+    text-align: left;
+    width: 100%;
+		margin-top: 22px;
+		font-size: 4.354em;
+		margin-left: 60px;
+		margin-bottom: 19px;
+}
+.countdown-block-wrapper {
+    width: 57%;
+}
+.countdown-block .txt-second-part {
+    margin-top: 44px;
+    display: block;
+		font-size: 5em;
+		margin-left: -44px;
+		text-align: right;
+		width: 100%;
+}
+    width: 100%;
+}
+.section .catalog {
+    margin-top: 100px;
+}
+.section .catalog .catalog-item .item .item-image {
+    width: 80%;
+    height: 80%;
+}
+.section .catalog .catalog-item .item .item-frame::after {
+    width: 170px;
+    height: 170px;
+    top: -225px;
+    left: -93px;
+}
+.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
+    font-size: 3.5em;
+		left: 2px;
+}
+.section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
+    font-size: 3.5em;
+}
+.section .catalog .catalog-item .item .old-price {
+    font-size: 2.0em;
+    bottom: 76px;
+		right: 46px;
+}
+.section .catalog .catalog-item .item .old-price span {
+    font-size: 9px;
+}
+.section .catalog .catalog-item .item .line-shape {
+    top: 136px;
+    left: 127px;
+    width: 51px;
+}
+.section .catalog .catalog-item .item .new-price .price {
+    bottom: 59px;
+    right: 60px;
+    font-size: 2.9em;
+    width: 106px;
+}
+.section .catalog .catalog-item .item .new-price {
+    position: absolute;
+    bottom: -19px;
+    right: -28px;
+    z-index: 1;
+}
+.section .catalog .catalog-item .item .new-price .price span {
+    font-size: 13px;
+		left: -2px;
+}
+.section .catalog .catalog-item {
+    margin: 20px 0 0 -10px;
+}
+.add-items-block {
+    margin-top: 60px;
+}
+.ft {
+    margin-top: 60px;
+}
+.ft .title-ft::after {
+    left: 79px;
+}
+.ft .email-form {
+    width: 86%;
+}
+.ft .text-ft .first-part {
+    margin-left: -35px;
+}
+.ft .text-ft .second-part {
+    margin-top: -37px;
+    margin-left: 34px;
+	  font-size: 151px;
+}
+.ft .text-ft .third-part {
+    margin-left: 351px;
+}
+.ft .title-ft::after {
+    left: 145px;
+	  width: 60%;
+}
+.section .catalog .catalog-item .item .item-image img {
+    background-size: cover;
+    width: 90%;
 }
 
 }
