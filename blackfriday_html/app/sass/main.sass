@@ -5,6 +5,7 @@ body
   color: #fff
   -webkit-font-smoothing: antialiased
   margin: 0
+  overflow: hidden
 
 section,
 .main_head
@@ -18,9 +19,12 @@ button:focus
   &::after,
   &::before
     content: none
+.cleaner
+  clear: both
 
 .main_head
   position: relative
+  text-align: center
 .one
   position: relative
   float: left

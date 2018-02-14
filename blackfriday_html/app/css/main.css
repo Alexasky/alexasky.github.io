@@ -4,7 +4,8 @@ body {
   background: url("../img/baloons_left.png") 0% 20% no-repeat, url("../img/baloons_right.png") 100% 50% no-repeat, url("../img/bg_header.jpg") 57% 0 no-repeat, url("../img/header_left.jpg") 0% 0 no-repeat, url("../img/header_right.jpg") 100% 0 no-repeat, url("../img/bg_percentage.jpg") 50% 49% no-repeat #000;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 section,
 .main_head {
@@ -19,8 +20,12 @@ button:focus {
 .row::after, .row::before {
   content: none; }
 
+.cleaner {
+  clear: both; }
+
 .main_head {
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .one {
   position: relative;
