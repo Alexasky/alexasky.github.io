@@ -560,5 +560,165 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
+	body {
+	    background: url(../img/baloons_left.png) -82% 14% no-repeat, url(../img/baloons_right.png) 107% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
+	}
 
+.black {
+	    font-size: 10.077em;
+	    margin-top: 20px;
+	    margin-left: -12px;
+	}
+.one {
+    font-size: 1.9em;
+    margin: 54px 0 0 -121px;
+}
+.friday {
+    font-size: 5.769em;
+    margin: -50px 0 0 75px;
+}
+.slogan {
+    font-size: 1.6em;
+    margin: -7px 0 0 77px;
+    letter-spacing: -1.2px;
+}
+.form-block .form-title {
+    font-size: 3.9em;
+}
+.email-form {
+    width: 90%;
+}
+.flip-clock-wrapper ul{
+	margin: 5px -3px 0 7px;
+	width: 36px;
+	height: 76px;
+}
+.flip-clock-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 1em;
+}
+.flip-clock-divider{
+	width: 12px;
+}
+.flip-clock-dot {
+    width: 5px;
+    height: 7px;
+    left: 8px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -88px;
+		bottom: -0.55em;
+}
+.flip-clock-divider .flip-clock-label {
+    bottom: -0.55em;
+    right: -86px;
+    color: #8d6c35;
+    font-size: 31.7px;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -91px;
+		bottom: -0.55em;
+}
+.flip-clock-divider .flip-clock-label {
+    bottom: -8.0em;
+    right: -76px;
+    color: #8d6c35;
+    font-size: 29.5px;
+}
+.countdown-block-wrapper {
+    width: 100%;
+}
+.section .section-title span {
+    font-size: 3.188em;
+}
+.section .catalog .catalog-item .item {
+    width: 250px;
+    height: 250px;
+}
+.section .catalog .catalog-item .item .item-frame::after {
+    width: 230px;
+    height: 230px;
+    top: -310px;
+    left: -96px;
+}
+.section .catalog .catalog-item .item .baloon {
+    top: -51px;
+    left: -51px;
+    width: 63%;
+}
+.section .catalog .catalog-item .item .baloon .skew-text .txt-ballon .price {
+    font-size: 4em;
+    left: 4px;
+    bottom: -3px;
+}
+.section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
+    font-size: 4em;
+}
+.section .catalog .catalog-item .item .baloon .skew-text .skew-percent {
+    top: 29px;
+    left: 77px;
+}
+.section .catalog .catalog-item .item .old-price {
+    font-size: 2.7em;
+    bottom: 45px;
+    right: 0;
+}
+.section .catalog .catalog-item .item .new-price .price {
+    bottom: -2px;
+    right: 12px;
+    font-size: 4.5em;
+    width: 150px;
+}
+.section .catalog .catalog-item .item .new-price .price span {
+    font-size: 18px;
+}
+.section .catalog .catalog-item .item .old-price {
+    font-size: 2.7em;
+    bottom: 32px;
+    right: 3px;
+}
+.section .catalog .catalog-item .item .old-price span {
+    font-size: 13px;
+}
+.section .catalog .catalog-item .item .line-shape {
+    top: 196px;
+    left: 167px;
+    width: 76px;
+    height: 3px;
+}
+.section .section-title {
+    margin: -79px auto;
+}
+.section .catalog {
+    margin-top: 234px;
+}
+.section .catalog .catalog-item {
+    margin: 150px 0 0 -10px;
+}
+.ft {
+    margin-top: 150px;
+}
+.ft .title-ft {
+    font-size: 53px;
+}
+.ft .title-ft::after {
+    left: 55px;
+}
+.ft .text-ft .third-part {
+    margin-left: 91px;
+    margin-top: -31px;
+}
+.ft .text-ft .second-part {
+    margin-top: -54px;
+    margin-left: 47px;
+    font-size: 96px;
+}
+.ft .email-form {
+    width: 100%;
+}
+.ft .email-form input {
+    width: 63%;
+}
 }
