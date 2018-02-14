@@ -5,6 +5,7 @@ body
   color: #fff
   -webkit-font-smoothing: antialiased
   margin: 0
+  overflow: hidden
 
 
 section,
@@ -63,6 +64,7 @@ button:focus
   letter-spacing: -0.5px
 .form-block
   padding: 0
+  margin-left: -18px
   .form-title
     position: relative
     font-family: "BebasNeueBook",sans-serif
@@ -84,7 +86,7 @@ button:focus
   width: 99%
   height: 50px
   margin-top: -7px
-  margin-left: -33px
+  margin-left: -15px
   border: 3px solid #ffffff
   border-radius: 12px
   overflow: hidden
@@ -154,10 +156,12 @@ button:focus
     opacity: 0
     transition: opacity 0.3s ease
   button
+    position: absolute
     font-family: "BebasNeueBook",sans-serif
     text-transform: uppercase
     line-height: 1
-    float: right
+    top: 0
+    right: 0
     font-size: 72px
     background: transparent
     border: transparent
@@ -233,7 +237,6 @@ button:focus
           img
             display: block
             margin: 0 auto
-            padding-top: 8px
         .item-frame
           position: relative
           top: -12px

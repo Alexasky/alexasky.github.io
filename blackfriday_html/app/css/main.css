@@ -4,7 +4,8 @@ body {
   background: url("../img/baloons_left.png") 0% 20% no-repeat, url("../img/baloons_right.png") 100% 50% no-repeat, url("../img/bg_header.jpg") 57% 0 no-repeat, url("../img/header_left.jpg") 0% 0 no-repeat, url("../img/header_right.jpg") 100% 0 no-repeat, url("../img/bg_percentage.jpg") 50% 49% no-repeat #000;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 section,
 .main_head {
@@ -177,10 +178,12 @@ button:focus {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
   .email-form button {
+    position: absolute;
     font-family: "BebasNeueBook",sans-serif;
     text-transform: uppercase;
     line-height: 1;
-    float: right;
+    top: 0;
+    right: 0;
     font-size: 72px;
     background: transparent;
     border: transparent;
