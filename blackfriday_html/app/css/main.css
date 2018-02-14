@@ -67,7 +67,8 @@ button:focus {
   letter-spacing: -0.5px; }
 
 .form-block {
-  padding: 0; }
+  padding: 0;
+  margin-left: -18px; }
   .form-block .form-title {
     position: relative;
     font-family: "BebasNeueBook",sans-serif;
@@ -90,7 +91,7 @@ button:focus {
   width: 99%;
   height: 50px;
   margin-top: -7px;
-  margin-left: -33px;
+  margin-left: -15px;
   border: 3px solid #ffffff;
   -webkit-border-radius: 12px;
           border-radius: 12px;
@@ -256,8 +257,7 @@ button:focus {
         z-index: 1; }
         .section .catalog .catalog-item .item .item-image img {
           display: block;
-          margin: 0 auto;
-          padding-top: 8px; }
+          margin: 0 auto; }
       .section .catalog .catalog-item .item .item-frame {
         position: relative;
         top: -12px;
