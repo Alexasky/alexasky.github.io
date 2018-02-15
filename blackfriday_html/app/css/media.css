@@ -176,7 +176,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	body {
-    background: url(../img/baloons_left.png) -11% 11% no-repeat, url(../img/baloons_right.png) 107% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
+    background: url(../img/baloons_left.png) -11% 11% no-repeat, url(../img/baloons_right.png) 127% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
 	}
 	.top_wrapper {
     margin-left: -7px;
@@ -501,6 +501,9 @@
 .ft .email-form input {
     padding: 0 8px 0 33px;
 }
+.section .catalog .catalog-item {
+    margin: 147px 0 0 93px;
+}
 
 
 }
@@ -634,8 +637,54 @@
 .ft .email-form input {
     width: 50%;
 }
-
-
+.top_wrapper {
+    margin-left: 43px;
+}
+.form-block .form-title {
+    font-size: 2.6em;
+}
+.form-block-wrapper {
+    margin: 350px 0 0 49px;
+}
+.countdown-block-wrapper {
+    position: absolute;
+    width: 90%;
+    top: calc(50% - 47px);
+    left: calc(50% - 193px);
+    margin: 0 auto;
+}
+.countdown-block-wrapper {
+    width: 108%;
+}
+.countdown-block {
+    margin: 55px 0 0 37px;
+}
+.countdown-block .txt-first-part {
+    font-size: 5.354em;
+}
+.countdown-block .txt-second-part {
+    font-size: 3em;
+}
+.section .section-title span {
+    font-size: 3.188em;
+    margin: 0 0 0 28px;
+}
+.ft .title-ft {
+    margin-left: 30px;
+}
+.ft .title-ft::after {
+    left: 58px;
+}
+.ft .email-form {
+    width: 100%;
+    margin-left: 17px;
+}
+.section .catalog .catalog-item {
+    margin: 148px 0 0 64px;
+}
+.ft .email-form input {
+    width: 43%;
+}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
@@ -864,5 +913,39 @@ width: 12px;
     top: 10px;
     left: calc(50% - 135px);
 }
-
+.top_wrapper {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 169px);
+}
+.form-block .form-title {
+    font-size: 3.9em;
+    margin: 50px 0 0 28px;
+}
+.email-form {
+    width: 83%;
+    margin: 23px 0 0 40px;
+}
+.countdown-block .txt-second-part {
+    font-size: 4em;
+    margin-top: 126px;
+		margin-left: -18px;
+}
+.countdown-block-wrapper {
+    top: calc(50% - 94px);
+    left: calc(50% - 179px);
+}
+.countdown-block .txt-first-part {
+	margin-left: -21px;
+}
+.ft .title-ft {
+    margin-left: 11px;
+}
+.ft .email-form {
+    width: 100%;
+    margin-left: 2px;
+}
+.ft .email-form input {
+    width: 43%;
+}
 }
