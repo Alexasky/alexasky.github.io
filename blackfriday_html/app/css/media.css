@@ -722,6 +722,53 @@
     padding: 0px 30px 10px;
     width: 82%;
 }
+.flip-clock-wrapper ul{
+margin: 5px -3px 0 7px;
+width: 36px;
+height: 76px;
+}
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}
+.flip-clock-divider{
+width: 12px;
+}
+.flip-clock-dot {
+  width: 5px;
+  height: 7px;
+  left: 8px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px;
+  bottom: -0.55em;
+}
+.flip-clock-divider .flip-clock-label {
+  bottom: -0.55em;
+  right: -86px;
+  color: #8d6c35;
+  font-size: 31.7px;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px;
+  bottom: -0.55em;
+}
+.flip-clock-divider .flip-clock-label {
+  bottom: -8.0em;
+  right: 227px;
+  color: #8d6c35;
+  font-size: 29.5px;
+}
+.flip-clock-divider .flip-clock-label {
+    bottom: -16px;
+    right: -76px;
+}
+.countdown-block-wrapper {
+    top: calc(50% - 47px);
+    left: calc(50% - 166px);
+}
 
 }
 /* Custom, iPhone Retina */
@@ -986,7 +1033,7 @@ width: 12px;
 .ft .email-form input {
     width: 78%;
 }
-    
+
 .section .section-title span {
     margin: -1px 0 0 0px;
 }
