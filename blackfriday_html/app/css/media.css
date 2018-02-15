@@ -1,4 +1,7 @@
 @media only screen and ( max-width : 1280px) {
+	body {
+    background: url(../img/baloons_left.png) -6% 16% no-repeat, url(../img/baloons_right.png) 104% 65% no-repeat, url(../img/bg_header.jpg) 71% 0 no-repeat, url(../img/header_left.jpg) 0% 0 no-repeat, url(../img/header_right.jpg) 100% 0 no-repeat, url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
+}
 	.section .catalog .catalog-item .item .baloon {
 	    top: -59px;
 	    left: -72px;
@@ -25,6 +28,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	body{
+		background: url("../img/baloons_left.png") -11% 9% no-repeat, url("../img/baloons_right.png") 111% 58% no-repeat, url("../img/bg_header.jpg") 91% 0 no-repeat,url("../img/bg_percentage.jpg") 50% 49% no-repeat #000;
+}
 	.top_wrapper{
 		margin-left: -7px;
 }
@@ -122,10 +128,10 @@
 		bottom: 29px;
 }
 .section .catalog .catalog-item .item .new-price .price {
-    bottom: 6px;
-    right: 11px;
-    font-size: 3.9em;
-    width: 131px;
+	bottom: 2px;
+	right: -31px;
+	font-size: 3.9em;
+	width: 155px;
 }
 .section .catalog .catalog-item .item .new-price .price span {
     font-size: 18px;
@@ -169,7 +175,9 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	body {
+    background: url(../img/baloons_left.png) -11% 11% no-repeat, url(../img/baloons_right.png) 107% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
+	}
 	.top_wrapper {
     margin-left: -7px;
     margin-top: 15px;
@@ -253,15 +261,15 @@
     width: 51px;
 }
 .section .catalog .catalog-item .item .new-price .price {
-    bottom: 59px;
-    right: 60px;
-    font-size: 2.9em;
-    width: 106px;
+		bottom: 60px;
+		right: 30px;
+		font-size: 2.9em;
+		width: 106px;
 }
 .section .catalog .catalog-item .item .new-price {
     position: absolute;
-    bottom: -19px;
-    right: -28px;
+    bottom: 0;
+    right: 0;
     z-index: 1;
 }
 .section .catalog .catalog-item .item .new-price .price span {
@@ -429,7 +437,7 @@
   height: 3px;
 }
 .section .catalog .catalog-item .item .new-price .price {
-  bottom: 12px;
+	bottom: 12px;
   right: 2px;
   font-size: 5.5em;
   width: 200px;
@@ -464,10 +472,10 @@
   height: 3px;
 }
 .section .catalog .catalog-item .item .new-price .price {
-  bottom: 56px;
-  right: 21px;
-  font-size: 5.5em;
-  width: 200px;
+	bottom: 56px;
+	right: 21px;
+	font-size: 5.5em;
+	width: 200px;
 }
 .section .catalog .catalog-item {
   margin: 147px 0 0 42px;
@@ -481,6 +489,19 @@
     margin-top: 29px;
 
 }
+.section {
+    margin-top: 52px;
+}
+.section .catalog .catalog-item {
+    margin: 147px 0 0 67px;
+}
+.section .catalog .catalog-item .item .new-price .price {
+    bottom: 37px;
+}
+.ft .email-form input {
+    padding: 0 8px 0 33px;
+}
+
 
 }
 
@@ -592,6 +613,26 @@
 .ft .title-ft::after {
     left: 81px;
     width: 60%;
+}
+.ft .text-ft .third-part {
+    margin-left: 22px;
+    margin-top: -17px;
+}
+.ft .email-form input {
+    width: 61%;
+}
+.ft .email-form {
+    width: 100%;
+}
+.countdown-block-wrapper {
+    width: 96%;
+}
+.ft .text-ft .third-part {
+    margin-left: 155px;
+    margin-top: -27px;
+}
+.ft .email-form input {
+    width: 50%;
 }
 
 
@@ -711,7 +752,7 @@ width: 12px;
   right: 0;
 }
 .section .catalog .catalog-item .item .new-price .price {
-  bottom: -2px;
+	bottom: -2px;
   right: 12px;
   font-size: 4.5em;
   width: 150px;
@@ -734,7 +775,7 @@ width: 12px;
   height: 3px;
 }
 .section .section-title {
-  margin: -79px auto;
+    margin: 0px auto;
 }
 .section .catalog {
   margin-top: 234px;
@@ -760,10 +801,10 @@ width: 12px;
     height: 3px;
 }
 .section .catalog .catalog-item .item .new-price .price {
-    bottom: 56px;
-    right: 63px;
-    font-size: 3.5em;
-    width: 129px;
+		bottom: 56px;
+		right: 63px;
+		font-size: 3.5em;
+		width: 129px;
 }
 .section .catalog .catalog-item {
     margin: 50px 0 0 -10px;
@@ -793,7 +834,7 @@ width: 12px;
     font-size: 29.5px;
 }
 .ft .email-form input {
-    width: 65%;
+    width: 60%;
 }
 .section .catalog .catalog-item:nth-of-type(3n+1) .item {
     margin: 0 0 0 71px;
@@ -808,7 +849,20 @@ width: 12px;
     top: calc(50% - 108px);
     left: calc(50% - 160px);
   }
-	.add-items-block {
-	    margin-top: 127px;
+	.section .catalog .catalog-item .item .new-price .price {
+	    bottom: 38px;
+	    right: 28px;
+	    font-size: 3.5em;
+	    width: 129px;
 	}
+
+.section .catalog {
+    margin-top: 124px;
+}
+.top_wrapper {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 135px);
+}
+
 }

@@ -372,14 +372,14 @@ button:focus {
       .section .catalog .catalog-item .item .new-price {
         position: absolute;
         bottom: -19px;
-        right: -28px;
+        right: 0;
         z-index: 1; }
         .section .catalog .catalog-item .item .new-price .price {
           position: absolute;
           display: block;
           text-align: center;
           bottom: 0;
-          right: 0;
+          right: -29px;
           font-family: "BebasNeueBold",sans-serif;
           text-transform: uppercase;
           line-height: 0.8;
