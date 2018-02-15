@@ -7,7 +7,7 @@ $(document).ready(function(){
     language : "bg",
 
   });
-  var dt = "February 28 2018 20:22:48";
+  var dt = "February 18 2018 20:22:48";
   var first = new Date(dt);
   var last = Date.now();
   var remaining = first - last;
