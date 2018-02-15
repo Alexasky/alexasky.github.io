@@ -5,9 +5,9 @@ $(document).ready(function(){
     clockFace : "HourlyCounter",
     autoStart : true,
     language : "bg",
-    
+
   });
-  var dt = "February 15 2018 20:22:48";
+  var dt = "February 28 2018 20:22:48";
   var first = new Date(dt);
   var last = Date.now();
   var remaining = first - last;
