@@ -650,7 +650,7 @@
     position: absolute;
     width: 90%;
     top: calc(50% - 47px);
-    left: calc(50% - 193px);
+    left: calc(50% - 208px);
     margin: 0 auto;
 }
 .countdown-block-wrapper {
@@ -683,8 +683,46 @@
     margin: 148px 0 0 64px;
 }
 .ft .email-form input {
-    width: 43%;
+    width: 50%;
 }
+.email-form input::-webkit-input-placeholder{
+	font-size: 30px;
+}
+.email-form input::-webkit-input-placeholder{
+	font-size: 30px;
+}
+.email-form input::-moz-placeholder{
+	font-size: 30px;
+}
+.email-form input:-moz-placeholder{
+	font-size: 30px;
+}
+.email-form input:-ms-input-placeholder{
+	font-size: 30px;
+}
+.email-form input {
+    padding: 0px 13px 5px;
+}
+.ft .email-form input:-ms-input-placeholder{
+	font-size: 30px;
+}
+.ft .email-form input::-webkit-input-placeholder{
+	font-size: 30px;
+}
+.ft .email-form input::-moz-placeholder{
+	font-size: 30px;
+}
+.ft .email-form input:-moz-placeholder{
+	font-size: 30px;
+}
+.ft .email-form input {
+    padding: 0px 13px 5px;
+}
+.ft .email-form input {
+    padding: 0px 30px 10px;
+    width: 82%;
+}
+
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
@@ -946,6 +984,9 @@ width: 12px;
     margin-left: 2px;
 }
 .ft .email-form input {
-    width: 43%;
+    width: 78%;
 }
+    
+.section .section-title span {
+    margin: -1px 0 0 0px;
 }
