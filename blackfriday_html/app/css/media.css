@@ -1,7 +1,4 @@
 @media only screen and ( max-width : 1280px) {
-	body {
-    background: url(../img/baloons_left.png) -6% 16% no-repeat, url(../img/baloons_right.png) 104% 65% no-repeat, url(../img/bg_header.jpg) 71% 0 no-repeat, url(../img/header_left.jpg) 0% 0 no-repeat, url(../img/header_right.jpg) 100% 0 no-repeat, url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
-}
 	.section .catalog .catalog-item .item .baloon {
 	    top: -59px;
 	    left: -72px;
@@ -28,9 +25,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	body{
-		background: url("../img/baloons_left.png") -11% 9% no-repeat, url("../img/baloons_right.png") 111% 58% no-repeat, url("../img/bg_header.jpg") 91% 0 no-repeat,url("../img/bg_percentage.jpg") 50% 49% no-repeat #000;
-}
 	.top_wrapper{
 		margin-left: -7px;
 }
@@ -175,9 +169,7 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	body {
-    background: url(../img/baloons_left.png) -11% 8% no-repeat, url(../img/baloons_right.png) 107% 23% no-repeat, url(../img/bg_header.jpg) 91% 0 no-repeat,url(../img/bg_percentage.jpg) 50% 49% no-repeat #000;
-	}
+
 	.top_wrapper {
     margin-left: -7px;
     margin-top: 15px;
