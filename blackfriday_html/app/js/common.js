@@ -1,18 +1,35 @@
 
-$(document).ready(function(){
-  var clock;
-  clock = $(".clock").FlipClock({
-    clockFace : "HourlyCounter",
-    autoStart : true,
-    language : "bg",
+var clock;
+var dt = "February 21 2018 13:43:00";
+var first = new Date(dt);
+var last = Date.now();
+var remaining = first - last;
+remaining/=1000;
+if(remaining>0){
+  $(document).ready(function() {
+    clock = $('.clock').FlipClock(remaining, {
+          clockFace: 'HourlyCounter',
+          countdown: true,
+          callbacks: {
+            stop: function() {
 
+            }
+          }
+      });
   });
-  var dt = "February 18 2018 20:22:48";
-  var first = new Date(dt);
-  var last = Date.now();
-  var remaining = first - last;
-  remaining/=1000;
-  clock.setTime(remaining);
-  clock.setCountdown(true);
-  clock.start();
-});
+}else{
+
+  $(document).ready(function() {
+    clock = $('.clock').FlipClock(0, {
+          clockFace: 'HourlyCounter',
+          countdown: true,
+          callbacks: {
+            stop: function() {
+
+            }
+          }
+      });
+  });
+$('.message').html('');
+
+}
