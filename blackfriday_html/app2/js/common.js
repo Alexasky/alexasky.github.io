@@ -1,6 +1,6 @@
 
 var clock;
-var dt = "February 19 2018 13:43:00";
+var dt = "February 21 2018 13:43:00";
 var first = new Date(dt);
 var last = Date.now();
 var remaining = first - last;
