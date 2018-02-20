@@ -24,10 +24,16 @@
 	.section .catalog .catalog-item .item .baloon .skew-text .skew-percent .percent {
 	    font-size: 4.5em;
 	}
+	.countdown-block {
+    padding-bottom: 24px;
+}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	main,header,footer{
+		overflow: hidden;
+	}
 	body{
 		background: url("../img/baloons_left.png") -11% 9% no-repeat, url("../img/baloons_right.png") 111% 58% no-repeat, url("../img/bg_header.jpg") 91% 0 no-repeat,url("../img/bg_percentage.jpg") 50% 49% no-repeat #000;
 }
@@ -790,6 +796,45 @@ padding-left: 0;
 .ft .email-form .form-block-inner .input-block .input-block-email {
     padding: 17px 13px 0;
 }
+}
+@media only screen and (max-width : 375px) {
+	.top_wrapper {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 152px);
+}
+
+
+	.black {
+	    font-size: 10.077em;
+	    margin-top: 15px;
+	    margin-left: -12px;
+	}
+	.one {
+	    font-size: 1.9em;
+	    margin: 47px 0 0 -121px;
+	}
+	.friday {
+	  font-size: 5.769em;
+	  margin: -50px 0 0 75px;
+	}
+	.slogan {
+	  font-size: 1.6em;
+	  margin: -7px 0 0 77px;
+	  letter-spacing: -1.2px;
+	}
+	.section .catalog .catalog-item .item .item-frame::after {
+    width: 247px;
+    height: 264px;
+    top: -66px;
+    left: -103px;
+}
+.section .catalog .catalog-item .item .new-price .price {
+    bottom: 32px;
+    right: 46px;
+    font-size: 5.5em;
+    width: 183px;
+}
 
 }
 /* Custom, iPhone Retina */
@@ -976,7 +1021,7 @@ padding-left: 0;
 .top_wrapper {
     position: absolute;
     top: 10px;
-    left: calc(50% - 169px);
+    left: calc(50% - 142px);
 }
 .form-block .form-title {
     font-size: 3.9em;
