@@ -1,0 +1,171 @@
+.content-main {
+  margin-top: 45px;
+  padding-bottom: 190px; }
+  .content-main p {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 18px;
+    width: 545px; }
+    .content-main p:nth-child(2) {
+      text-align: justify; }
+      .content-main p:nth-child(2) span {
+        display: block;
+        text-align: center; }
+  .content-main .velo {
+    background: url("../img/velo_8_full.png") 0 0 no-repeat;
+    margin: 37px auto 0;
+    width: 976px;
+    height: 550px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+.main-footer {
+  position: relative;
+  width: 100%;
+  height: 486px;
+  background: url("../img/footer_bg.jpg") 0 0 repeat-x;
+  border-top: 4px solid rgba(134, 136, 136, 0.5); }
+  .main-footer .map {
+    width: 400px;
+    height: 319px;
+    margin: 55px 0 0 70px;
+    background: url("../img/map.jpg") 0 0 no-repeat; }
+  .main-footer .footer-contact {
+    width: 620px;
+    font-size: 18px;
+    color: #e6e8e9;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(28, 73, 39, 0.6), -1px -1px 0 rgba(28, 73, 39, 0.6), -1px 1px 0 rgba(28, 73, 39, 0.6), 1px -1px 0 rgba(28, 73, 39, 0.6);
+    margin: 57px 0 0 0;
+    line-height: 1.3; }
+    .main-footer .footer-contact span {
+      border-bottom: 1px solid rgba(230, 232, 233, 0.3); }
+  .main-footer .overlay {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    height: 375px;
+    width: 100%; }
+
+.workshop-wrap {
+  width: 1122px;
+  margin: 28px 0 0 52px; }
+  .workshop-wrap .first-row {
+    background: #fff;
+    padding-bottom: 15px; }
+    .workshop-wrap .first-row .head-line {
+      border-bottom: 2px solid #d9d9d9; }
+      .workshop-wrap .first-row .head-line h1 {
+        font-size: 36px;
+        color: #990066;
+        text-transform: uppercase;
+        margin: 8px; }
+    .workshop-wrap .first-row .banner {
+      text-align: center;
+      border-bottom: 2px solid #d9d9d9;
+      border-top: 2px solid #d9d9d9;
+      margin: 4px 0;
+      letter-spacing: 1.0px;
+      line-height: 1.3;
+      padding: 6px 0 9px 0; }
+  .workshop-wrap .wrapper-schema {
+    background: #fff;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d9d9d9; }
+    .workshop-wrap .wrapper-schema .call-master h3,
+    .workshop-wrap .wrapper-schema .workshop-repair h3 {
+      font-family: "Pribambas", sans-serif;
+      font-size: 18px;
+      color: #333333;
+      text-decoration: underline;
+      margin: -1px 0 0 15px; }
+    .workshop-wrap .wrapper-schema .call-master img {
+      margin: 0 0 0 53px; }
+    .workshop-wrap .wrapper-schema .workshop-repair img {
+      margin: 5px 0 0 59px; }
+  .workshop-wrap .border-block {
+    height: 4px;
+    border-bottom: 2px solid #d9d9d9; }
+  .workshop-wrap .content-wrapper {
+    margin-top: 13px;
+    padding-bottom: 245px; }
+    .workshop-wrap .content-wrapper .vertical-menu {
+      padding: 0;
+      width: 23%; }
+      .workshop-wrap .content-wrapper .vertical-menu ul {
+        background: #fff;
+        padding-left: 0;
+        margin: 0; }
+        .workshop-wrap .content-wrapper .vertical-menu ul li {
+          border-bottom: 1px solid #dcdcdc;
+          list-style-type: none; }
+          .workshop-wrap .content-wrapper .vertical-menu ul li:last-child {
+            border-bottom: none; }
+          .workshop-wrap .content-wrapper .vertical-menu ul li a {
+            position: relative;
+            display: block;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #990066;
+            padding: 10px 28px 10px 34px;
+            text-decoration: none;
+            line-height: 1.1; }
+            .workshop-wrap .content-wrapper .vertical-menu ul li a:hover, .workshop-wrap .content-wrapper .vertical-menu ul li a:active {
+              font-size: 23.482px;
+              color: white;
+              text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332;
+              background: -webkit-gradient(linear, left top, left bottom, from(#3cc605), to(#018a23));
+              background: -webkit-linear-gradient(#3cc605 0%, #018a23 100%);
+              background: -o-linear-gradient(#3cc605 0%, #018a23 100%);
+              background: linear-gradient(#3cc605 0%, #018a23 100%);
+              -webkit-transition: 0.9s ease, color 0.5s lianer;
+              -o-transition: 0.9s ease, color 0.5s lianer;
+              transition: 0.9s ease, color 0.5s lianer; }
+            .workshop-wrap .content-wrapper .vertical-menu ul li a::before {
+              content: "";
+              background: #45af29;
+              width: 4px;
+              height: 5px;
+              position: absolute;
+              top: 23%;
+              left: 6%;
+              padding: 5px 0 0 4px;
+              -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.21);
+                      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.21); }
+    .workshop-wrap .content-wrapper .catalog-block {
+      width: 77%;
+      padding-right: 0;
+      padding-left: 20px; }
+      .workshop-wrap .content-wrapper .catalog-block h2 {
+        width: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#3cc605), to(#018a23));
+        background: -webkit-linear-gradient(#3cc605 0%, #018a23 100%);
+        background: -o-linear-gradient(#3cc605 0%, #018a23 100%);
+        background: linear-gradient(#3cc605 0%, #018a23 100%);
+        font-size: 24px;
+        color: #fefefe;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 0;
+        margin: 0;
+        line-height: 1;
+        text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332; }
+      .workshop-wrap .content-wrapper .catalog-block .item-catalog {
+        padding: 0 0 0 12px;
+        margin: 0; }
+        .workshop-wrap .content-wrapper .catalog-block .item-catalog:nth-child(2n+2) {
+          padding: 0 12px 0 0; }
+        .workshop-wrap .content-wrapper .catalog-block .item-catalog .item-catalog-block {
+          background: #f3f4f4;
+          border: 1px solid #a0a1a1;
+          margin-top: 23px;
+          text-align: center; }
+          .workshop-wrap .content-wrapper .catalog-block .item-catalog .item-catalog-block img {
+            padding: 13px 0 0;
+            width: 360px; }
+          .workshop-wrap .content-wrapper .catalog-block .item-catalog .item-catalog-block h3 {
+            font-size: 18px;
+            color: #5a5a5a;
+            line-height: 1.0;
+            padding-bottom: 16px; }
