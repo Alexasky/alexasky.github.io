@@ -82,15 +82,18 @@
         font-size: 18px
         color: #333333
         text-decoration: underline
-        margin: -1px 0 0 15px
     .call-master
+      h3
+        margin: 7px 0 0 -6px
       img
-        margin: 0 0 0 53px
+        margin: -8px 0 0 53px
     .workshop-repair
+      h3
+        margin: 6px 0 0 9px
       img
-        margin: 5px 0 0 59px
+        margin: 0 0 0 59px
   .border-block
-    height: 4px
+    height: 6px
     border-bottom: 2px solid #d9d9d9
   .content-wrapper
     margin-top: 13px
@@ -118,7 +121,7 @@
             line-height: 1.1
             &:hover,
             &:active
-              font-size: 23.482px
+              font-size: 24px
               color: rgb(255, 255, 255)
               text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
               background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
@@ -159,11 +162,159 @@
           margin-top: 23px
           text-align: center
           img
-            padding: 13px 0 0
+            margin: 13px 0 0
             width: 360px
-
+            border: 1px solid #a0a1a1
           h3
             font-size: 18px
             color: #5a5a5a
             line-height: 1.0
             padding-bottom: 16px
+
+//End Workshop page
+
+//Catalog page
+.catalog
+  .workshop-wrap
+    .first-row
+      padding-bottom: 35px
+      .head-line
+        h1
+          font-size: 50px
+          color: #990066
+          margin: -6px 0 1px 8px
+      .border-block
+        height: 7px
+      .banner
+        text-align: left
+        padding: 2px 0 0 13px
+        margin: 4px 0 0 0
+        line-height: 1.75
+        letter-spacing: 0.67px
+  .content-wrapper
+    margin-top: 17px
+    .vertical-menu
+      ul
+        li
+          a
+            &::before
+              top: 40%
+            &::after
+              content: ""
+              width: 40px
+              height: 40px
+              background: url("../img/icon_mnu_zapchasty.png") 0 0 no-repeat
+              position: absolute
+              top: 2px
+              right: 9px
+        li
+          &:nth-child(2)
+            a
+              &::after
+                content: ""
+                width: 25px
+                height: 38px
+                background: url("../img/icon_mnu_computer.png") 0 0 no-repeat
+                position: absolute
+                top: 4px
+                right: 16px
+        li
+          &:nth-child(3)
+            a
+              &::after
+                content: ""
+                width: 35px
+                height: 37px
+                background: url("../img/icon_mnu_jacket.png") 0 0 no-repeat
+                position: absolute
+                top: 4px
+                right: 11px
+        li
+          &:nth-child(4)
+            a
+              &::after
+                content: ""
+                width: 52px
+                height: 24px
+                background: url("../img/icon_mnu_services.png") 0 0 no-repeat
+                position: absolute
+                top: 7px
+                right: 4px
+        li
+          &:nth-child(5)
+            a
+              &::after
+                content: ""
+                width: 47px
+                height: 35px
+                background: url("../img/icon_mnu_velo.png") 0 0 no-repeat
+                position: absolute
+                top: 15px
+                right: 8px
+    .catalog-block
+      h2
+        padding: 13px 0
+      .item-catalog-menu
+        padding: 0 7px
+
+        &:nth-child(2n+2)
+          padding: 0 7px
+        &:nth-child(3n+2)
+          margin: 0 0 0 -7px
+          padding-bottom: 10px
+        &:nth-child(3n+1)
+          margin: 0 0 0 3px
+          padding: 0 0 10px 7px
+        &:nth-child(3n+3)
+          margin: 0 0 0 3px
+          padding-bottom: 10px
+
+        .item-catalog-block
+          margin-top: 8px
+          img
+            width: 236px
+            height: 181px
+          .description
+            margin-top: 33px
+            p
+              font-size: 18px
+              color: #5a5a5a
+              line-height: 0.2
+            .price
+              color: #548e45
+              line-height: 2.3
+
+//End Catalog page
+
+// Catalog Accessory page
+.catalog
+  .workshop-wrap
+    .first-row
+      .head-line
+        .breadcrumbs
+          .breadcrumbs-item
+            display: inline-block
+            a
+              font-size: 36px
+              color: #6b6b6b
+              text-transform: uppercase
+              padding: 0 0 0 9px
+              line-height: 2.3
+              text-decoration: none
+            a+a
+              &::before
+                display: inline-block
+                padding-right: .5rem
+                padding-left: .5rem
+                color: #6c757d
+                content: "/"
+                position: absolute
+                top: 0
+                left: 0
+                height: 1px
+                width: 1px
+
+
+
+
+// End Catalog Accessory page
