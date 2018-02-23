@@ -110,7 +110,7 @@
           list-style-type: none
           &:last-child
             border-bottom: none
-          a
+          .menu-link
             position: relative
             display: block
             font-size: 24px
@@ -120,7 +120,7 @@
             text-decoration: none
             line-height: 1.1
             &:hover,
-            &:active
+            &:active,
               font-size: 24px
               color: rgb(255, 255, 255)
               text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
@@ -136,6 +136,12 @@
               left: 6%
               padding: 5px 0 0 4px
               box-shadow: 1px 1px 3px 1px rgba(0,0,0,.21)
+          .active
+            font-size: 24px
+            color: rgb(255, 255, 255)
+            text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
+            background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
+            transition: 0.9s ease, color 0.5s lianer
     .catalog-block
       width: 77%
       padding-right: 0
@@ -196,7 +202,7 @@
     .vertical-menu
       ul
         li
-          a
+          .menu-link
             &::before
               top: 40%
             &::after
@@ -209,7 +215,7 @@
               right: 9px
         li
           &:nth-child(2)
-            a
+            .menu-link
               &::after
                 content: ""
                 width: 25px
@@ -220,7 +226,7 @@
                 right: 16px
         li
           &:nth-child(3)
-            a
+            .menu-link
               &::after
                 content: ""
                 width: 35px
@@ -231,7 +237,7 @@
                 right: 11px
         li
           &:nth-child(4)
-            a
+            .menu-link
               &::after
                 content: ""
                 width: 52px
@@ -242,7 +248,7 @@
                 right: 4px
         li
           &:nth-child(5)
-            a
+            .menu-link
               &::after
                 content: ""
                 width: 47px
@@ -292,27 +298,52 @@
     .first-row
       .head-line
         .breadcrumbs
+          margin: 21px 0 -4px 0px
           .breadcrumbs-item
             display: inline-block
+            position: relative
+            margin: -4px 0 0 26px
+            &:first-child
+              margin: -53px 0 -1px -40px
+              a
+                font-size: 36px
+                color: #6b6b6b
+                &::before
+                  content: none
             a
-              font-size: 36px
-              color: #6b6b6b
+              font-size: 24px
+              color: #a25287
               text-transform: uppercase
               padding: 0 0 0 9px
               line-height: 2.3
               text-decoration: none
-            a+a
+
               &::before
                 display: inline-block
-                padding-right: .5rem
-                padding-left: .5rem
                 color: #6c757d
                 content: "/"
                 position: absolute
                 top: 0
-                left: 0
-                height: 1px
-                width: 1px
+                left: -11px
+  .content-wrapper
+    .vertical-menu
+      ul
+        li
+          .menu-link
+            cursor: pointer
+          .accordion-item
+            padding-bottom: 28px
+            a
+              text-decoration: none
+              span
+                display: block
+                font-size: 18px
+                color: #585858
+                padding: 24px 0 0 33px
+                line-height: 0.7
+                text-transform: uppercase
+
+
 
 
 
