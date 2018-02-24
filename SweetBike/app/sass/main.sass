@@ -106,7 +106,6 @@
         padding-left: 0
         margin: 0
         li
-          border-bottom: 1px solid #dcdcdc
           list-style-type: none
           &:last-child
             border-bottom: none
@@ -119,6 +118,7 @@
             padding: 10px 28px 10px 34px
             text-decoration: none
             line-height: 1.1
+            border-bottom: 1px solid #dcdcdc
             &:hover,
             &:active,
               font-size: 24px
@@ -126,6 +126,7 @@
               text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
               background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
               transition: 0.9s ease, color 0.5s lianer
+              border-bottom: 1px solid rgb(60,198,5)
             &::before
               content: ""
               background: #45af29
@@ -136,12 +137,12 @@
               left: 6%
               padding: 5px 0 0 4px
               box-shadow: 1px 1px 3px 1px rgba(0,0,0,.21)
-          .active
-            font-size: 24px
-            color: rgb(255, 255, 255)
-            text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
-            background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
-            transition: 0.9s ease, color 0.5s lianer
+            &.active
+              font-size: 24px
+              color: rgb(255, 255, 255)
+              text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
+              background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
+              transition: 0.9s ease, color 0.5s lianer
     .catalog-block
       width: 77%
       padding-right: 0
@@ -203,6 +204,12 @@
       ul
         li
           .menu-link
+            &:hover,
+            &:active,
+            &.active
+              &::after
+                background: url("../img/icon_mnu_zapchasty_hover.png") 0 0 no-repeat
+
             &::before
               top: 40%
             &::after
@@ -216,6 +223,11 @@
         li
           &:nth-child(2)
             .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_mnu_computer_hover.png") 0 0 no-repeat
               &::after
                 content: ""
                 width: 25px
@@ -227,6 +239,11 @@
         li
           &:nth-child(3)
             .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_mnu_jacket_hover.png") 0 0 no-repeat
               &::after
                 content: ""
                 width: 35px
@@ -238,6 +255,11 @@
         li
           &:nth-child(4)
             .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_mnu_services_hover.png") 0 0 no-repeat
               &::after
                 content: ""
                 width: 52px
@@ -249,6 +271,11 @@
         li
           &:nth-child(5)
             .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_mnu_velo_hover.png") 0 0 no-repeat
               &::after
                 content: ""
                 width: 47px
@@ -260,20 +287,20 @@
     .catalog-block
       h2
         padding: 13px 0
-      .item-catalog-menu
-        padding: 0 7px
-
-        &:nth-child(2n+2)
+      .catalog-wrapper
+        .item-catalog-menu
           padding: 0 7px
-        &:nth-child(3n+2)
-          margin: 0 0 0 -7px
-          padding-bottom: 10px
-        &:nth-child(3n+1)
-          margin: 0 0 0 3px
-          padding: 0 0 10px 7px
-        &:nth-child(3n+3)
-          margin: 0 0 0 3px
-          padding-bottom: 10px
+          &:nth-child(2n+2)
+            padding: 0 7px
+          &:nth-child(3n+2)
+            margin: 0 0 0 3px
+            padding-bottom: 10px
+          &:nth-child(3n+1)
+            margin: 0 0 0 -7px
+            padding-bottom: 10px
+          &:nth-child(3n+3)
+            margin: 0 0 0 3px
+            padding: 0 0 10px 7px
 
         .item-catalog-block
           margin-top: 8px
@@ -330,18 +357,39 @@
       ul
         li
           .menu-link
-            cursor: pointer
           .accordion-item
             padding-bottom: 28px
-            a
+            .accordion-link
+              position: relative
               text-decoration: none
-              span
-                display: block
+              display: block
+              font-size: 18px
+              color: #585858
+              padding: 24px 0 0 33px
+              line-height: 0.7
+              text-transform: uppercase
+              &.active,
+              &:hover,
+              &:active
+                &::before
+                  content: ""
+                  position: absolute
+                  bottom: -17px
+                  left: 6px
+                  width: 191px
+                  height: 17px
+                  background: url("../img/accordion_menu_hover.png") 0 0 no-repeat
+    .catalog-block
+      .catalog-wrapper
+        margin-top: 16px
+        .item-catalog-menu
+          .item-catalog-block
+            .description
+              .title-item
                 font-size: 18px
-                color: #585858
-                padding: 24px 0 0 33px
-                line-height: 0.7
-                text-transform: uppercase
+                color: #5a5a5a
+                padding: 40px 6px 59px 0px
+
 
 
 
