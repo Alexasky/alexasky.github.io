@@ -107,8 +107,9 @@
         margin: 0
         li
           list-style-type: none
-          &:last-child
-            border-bottom: none
+          &:first-child
+            a
+              border-top: 1px solid transparent
           .menu-link
             position: relative
             display: block
@@ -118,15 +119,16 @@
             padding: 10px 28px 10px 34px
             text-decoration: none
             line-height: 1.1
-            border-bottom: 1px solid #dcdcdc
+            border-top: 1px solid #dcdcdc
             &:hover,
             &:active,
+            &.active
               font-size: 24px
               color: rgb(255, 255, 255)
               text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332
               background: linear-gradient( rgb(60,198,5) 0%, rgb(1,138,35) 100%)
               transition: 0.9s ease, color 0.5s lianer
-              border-bottom: 1px solid rgb(60,198,5)
+              border-top: 1px solid rgb(60,198,5)
             &::before
               content: ""
               background: #45af29

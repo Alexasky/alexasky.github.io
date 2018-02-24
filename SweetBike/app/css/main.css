@@ -102,8 +102,8 @@
         margin: 0; }
         .workshop-wrap .content-wrapper .vertical-menu ul li {
           list-style-type: none; }
-          .workshop-wrap .content-wrapper .vertical-menu ul li:last-child {
-            border-bottom: none; }
+          .workshop-wrap .content-wrapper .vertical-menu ul li:first-child a {
+            border-top: 1px solid transparent; }
           .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link {
             position: relative;
             display: block;
@@ -113,8 +113,8 @@
             padding: 10px 28px 10px 34px;
             text-decoration: none;
             line-height: 1.1;
-            border-bottom: 1px solid #dcdcdc; }
-            .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link:hover, .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link:active {
+            border-top: 1px solid #dcdcdc; }
+            .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link:hover, .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link:active, .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link.active {
               font-size: 24px;
               color: white;
               text-shadow: 1px 1px 0px #077332, -1px -1px 0 #077332, -1px 1px 0 #077332, 1px -1px 0 #077332;
@@ -125,7 +125,7 @@
               -webkit-transition: 0.9s ease, color 0.5s lianer;
               -o-transition: 0.9s ease, color 0.5s lianer;
               transition: 0.9s ease, color 0.5s lianer;
-              border-bottom: 1px solid #3cc605; }
+              border-top: 1px solid #3cc605; }
             .workshop-wrap .content-wrapper .vertical-menu ul li .menu-link::before {
               content: "";
               background: #45af29;
