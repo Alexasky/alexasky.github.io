@@ -75,7 +75,11 @@ ul {
           width: 100%;
           line-height: 1.25; }
           .menu ul li .submenu li:hover a {
-            text-decoration: underline; }
+            text-decoration: underline;
+            text-shadow: 1px 1px 0px rgba(51, 153, 51, 0.6), -1px -1px 0 rgba(51, 153, 51, 0.6), -1px 1px 0 rgba(51, 153, 51, 0.6), 1px -1px 0 rgba(51, 153, 51, 0.6), 2px 2px 0.32px rgba(255, 255, 255, 0.61), -2px -2px 0.32px rgba(255, 255, 255, 0.61), -2px 2px 0.32px rgba(255, 255, 255, 0.61), 2px -2px 0.32px rgba(255, 255, 255, 0.61); }
+            .menu ul li .submenu li:hover a::before {
+              -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.41);
+                      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.41); }
           .menu ul li .submenu li a {
             color: #fff;
             line-height: 0.1;

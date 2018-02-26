@@ -26,22 +26,24 @@
     display: inline-block
     position: relative
     margin: -4px 0 0 26px
+
     &:first-child
-      margin: -53px 0 -1px -40px
+      margin: -53px 0 -1px -32px
       a
         font-size: 36px
         color: #6b6b6b
         text-decoration: none
+        text-transform: uppercase
         &::before
           content: none
     &+.breadcrumbs-item
       a
         font-size: 24px
-        color: #a25287
         text-transform: uppercase
         padding: 0 0 0 9px
         line-height: 2.3
         text-decoration: none
+        color: #6b6b6b
 
         &::before
           display: inline-block
@@ -50,6 +52,38 @@
           position: absolute
           top: 0
           left: -11px
+    &:last-child
+      a
+        color: #a25287
+
+.vertical-menu
+  ul
+    li
+      .accordion-item
+        padding-bottom: 28px
+        .accordion-link
+          position: relative
+          text-decoration: none
+          display: block
+          font-size: 18px
+          color: #585858
+          padding: 24px 0 0 33px
+          line-height: 0.7
+          text-transform: uppercase
+          &.active,
+          &:hover,
+          &:active
+            &::before
+              content: ""
+              position: absolute
+              bottom: -17px
+              left: 6px
+              width: 191px
+              height: 17px
+              background: url("../img/accordion_menu_hover.png") 0 0 no-repeat
+
+
+
 
 
 
@@ -192,7 +226,7 @@
               width: 4px
               height: 5px
               position: absolute
-              top: 23%
+              top: 30%
               left: 6%
               padding: 5px 0 0 4px
               box-shadow: 1px 1px 3px 1px rgba(0,0,0,.21)
@@ -239,6 +273,95 @@
 
 //End Workshop page
 
+//WorkshopInner page
+.workshop-inner
+  .workshop-wrap
+    .first-row
+      .head-line
+      .border-block
+      .banner
+        position: relative
+        text-transform: uppercase
+        margin: 6px 0
+        letter-spacing: 1.0px
+        line-height: 1.5
+        padding: 6px 0 0px 0
+        &::before
+          content: ""
+          position: absolute
+          top: 43px
+          left: 40px
+          background: url("../img/icon_banner_procent.png") 0 0 no-repeat
+          width: 60px
+          height: 52px
+        &::after
+          content: ""
+          position: absolute
+          top: 38px
+          left: 124px
+          background: url("../img/icon_banner_search.png") 0 0 no-repeat
+          width: 82px
+          height: 57px
+      .border-block
+        height: 0
+        position: relative
+        &::before
+          content: ""
+          position: absolute
+          top: -91px
+          right: 133px
+          background: url("../img/icon_banner_track.png") 0 0 no-repeat
+          width: 110px
+          height: 49px
+        &::after
+          content: ""
+          position: absolute
+          top: -89px
+          right: 42px
+          background: url("../img/icon_banner_velo.png") 0 0 no-repeat
+          width: 67px
+          height: 46px
+  .content-wrapper
+    .vertical-menu
+    .catalog-block
+      .workshop-column-wrapper
+        background: #fff
+        margin: 0
+        padding-bottom: 25px
+        margin-bottom: 65px
+        .first-workshop-column
+          .item-catalog-block
+            padding: 0 0 0 16px
+        .second-workshop-column
+          .item-catalog-block
+            padding: 0 16px 0 0
+        h3
+          font-size: 18px
+          color: #993366
+          text-transform: uppercase
+          text-align: center
+          line-height: 0.5
+          padding-top: 7px
+        .workshop-content
+          border: 1px solid #dcdcdc
+          font-size: 20px
+          color: #747474
+          padding: 0px 0 0 24px
+          line-height: 1.2
+          letter-spacing: -0.7px
+          h4
+            text-transform: uppercase
+            line-height: 0.2
+            text-decoration: underline
+
+
+
+
+
+
+//End WorkshopInner page
+
+
 //Catalog page
 .catalog
   .workshop-wrap
@@ -257,6 +380,7 @@
   .content-wrapper
     margin-top: 17px
     .vertical-menu
+      @extend .vertical-menu
       ul
         li
           .menu-link
@@ -340,6 +464,7 @@
                 position: absolute
                 top: 15px
                 right: 8px
+
     .catalog-block
       h2
         padding: 13px 0
@@ -384,31 +509,6 @@
           @extend .breadcrumbs
   .content-wrapper
     .vertical-menu
-      ul
-        li
-          .menu-link
-          .accordion-item
-            padding-bottom: 28px
-            .accordion-link
-              position: relative
-              text-decoration: none
-              display: block
-              font-size: 18px
-              color: #585858
-              padding: 24px 0 0 33px
-              line-height: 0.7
-              text-transform: uppercase
-              &.active,
-              &:hover,
-              &:active
-                &::before
-                  content: ""
-                  position: absolute
-                  bottom: -17px
-                  left: 6px
-                  width: 191px
-                  height: 17px
-                  background: url("../img/accordion_menu_hover.png") 0 0 no-repeat
     .catalog-block
       .catalog-wrapper
         margin-top: 16px
@@ -476,10 +576,148 @@
                 line-height: 1.2
                 padding: 4px 0 0 0
 
-
-
-
-
-
-
 // End Report page
+
+// Rent page
+.rent
+  .workshop-wrap
+    .first-row
+      .head-line
+        padding-bottom: 7px
+      .banner
+        &.rent
+          text-align: left
+          letter-spacing: 0.6px
+          line-height: 1.6
+          padding: 6px 0 9px 13px
+      .border-block
+        height: 0
+  .content-wrapper
+    .vertical-menu
+      @extend .vertical-menu
+      ul
+        li
+          .menu-link
+            padding: 10px 44px 10px 34px
+            &::before
+              top: 45%
+          &:nth-child(1)
+            .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_rent_velo_hover.png") 0 0 no-repeat
+              &::after
+                content: ""
+                width: 48px
+                height: 33px
+                background: url("../img/icon_rent_velo.png") 0 0 no-repeat
+                position: absolute
+                top: 4px
+                right: 11px
+        li
+          &:nth-child(2)
+            .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_mnu_velo_hover.png") 0 0 no-repeat
+              &::after
+                content: ""
+                width: 47px
+                height: 35px
+                background: url("../img/icon_mnu_velo.png") 0 0 no-repeat
+                position: absolute
+                top: 18px
+                right: 11px
+        li
+          &:nth-child(3)
+            .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_rent_velo_hover.png") 0 0 no-repeat
+              &::after
+                content: ""
+                width: 51px
+                height: 37px
+                background: url("../img/icon_rent_velo_flex.png") 0 0 no-repeat
+                position: absolute
+                top: 15px
+                right: 11px
+        li
+          &:nth-child(4)
+            .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_rent_velo_hover.png") 0 0 no-repeat
+              &::after
+                content: ""
+                width: 59px
+                height: 35px
+                background: url("../img/icon_rent_velo_accessory.png") 0 0 no-repeat
+                position: absolute
+                top: 4px
+                right: 11px
+        li
+          &:nth-child(5)
+            .menu-link
+              &:hover,
+              &:active,
+              &.active
+                &::after
+                  background: url("../img/icon_rent_repair_hover.png") 0 0 no-repeat
+              &::after
+                content: ""
+                width: 49px
+                height: 43px
+                background: url("../img/icon_rent_repair.png") 0 0 no-repeat
+                position: absolute
+                top: 1px
+                right: 11px
+
+    .catalog-block
+      margin: 0
+      .catalog-wrapper
+        margin-top: 16px
+        .catalog-description-row
+          margin: 0
+          .catalog-description
+            position: relative
+            background: #fff
+            font-size: 23px
+            color: #747474
+            padding: 0 0 0 18px
+            line-height: 1.2
+            h3
+              font-size: 23px
+              text-transform: uppercase
+              line-height: 0.5
+        .catalog-column-wrapper
+          margin-top: 16px
+          position: relative
+          .catalog-column
+            padding: 0 24px 0 12px
+            img
+              width: 100%
+            &.first-catalog-column
+
+            &.second-catalog-column
+              padding: 0 12px 0 0
+            .item-catalog-block
+              background: #fff
+              .description
+                text-align: center
+                .title-item
+                  font-size: 18px
+                  color: #747474
+                  padding: 28px 0
+                  border-top: 2px solid #e5e5e5
+
+
+// End Rent page
