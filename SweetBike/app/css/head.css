@@ -96,7 +96,8 @@ ul {
                       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.21); }
       .menu ul li:hover .submenu {
         display: block;
-        position: absolute; }
+        position: absolute;
+        padding-bottom: 1px; }
         .menu ul li:hover .submenu:hover {
           display: block; }
       .menu ul li:hover .header_font {
