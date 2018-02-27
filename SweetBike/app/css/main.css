@@ -338,6 +338,12 @@
     margin: 4px 0 0 0;
     line-height: 1.75;
     letter-spacing: 0.67px; }
+    .catalog .workshop-wrap .first-row .banner.banner-inner {
+      font-size: 30px;
+      padding: 2px 0 33px 9px;
+      margin: 4px 0 0 0;
+      line-height: 2.0;
+      letter-spacing: 0.67px; }
 
 .catalog .content-wrapper {
   margin-top: 17px; }
@@ -429,6 +435,18 @@
     font-size: 18px;
     color: #5a5a5a;
     padding: 40px 6px 59px 0px; }
+    .catalog .content-wrapper .catalog-block .catalog-wrapper .item-catalog-menu .item-catalog-block .description .title-item.title-item-inner {
+      padding: 3px 6px 0 0;
+      line-height: 1.2;
+      margin: 0 0 24px 0; }
+  .catalog .content-wrapper .catalog-block .catalog-wrapper .item-catalog-menu .item-catalog-block .description .catalog-price {
+    display: inline-block;
+    font-size: 18px;
+    color: #548e45;
+    border: 2px solid #018a23;
+    line-height: 1.2;
+    padding: 2px 8px;
+    margin-bottom: 19px; }
 
 .report .workshop-wrap .first-row .banner {
   text-align: left;
@@ -591,21 +609,50 @@
 
 .review .workshop-wrap .first-row {
   padding-bottom: 20px; }
-  .review .workshop-wrap .first-row .banner {
-    position: relative;
-    text-align: left;
-    padding: 15px 0 9px 11px;
-    letter-spacing: 0.5px; }
-    .review .workshop-wrap .first-row .banner::before {
-      content: "";
+  .review .workshop-wrap .first-row .banner-wrapper {
+    position: relative; }
+    .review .workshop-wrap .first-row .banner-wrapper .social-review {
       position: absolute;
-      top: 5px;
-      right: 139px;
-      background: url("../img/vk_review.png") 0 0 no-repeat;
-      width: 40px;
-      height: 40px; }
-      .review .workshop-wrap .first-row .banner::before:hover {
-        background: url("../img/vk_review_hover.png") 0 0 no-repeat; }
+      top: -15px;
+      right: 14px; }
+      .review .workshop-wrap .first-row .banner-wrapper .social-review ul li {
+        display: inline-block;
+        padding-left: 10px; }
+        .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(1) a {
+          position: relative;
+          display: block;
+          width: 46px;
+          height: 46px;
+          background: url("../img/vk_review_hover.png") 0 0 no-repeat; }
+          .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(1) a:hover {
+            background: url("../img/vk_review.png") 0 0 no-repeat;
+            width: 46px;
+            height: 46px; }
+        .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(2) a {
+          position: relative;
+          display: block;
+          width: 46px;
+          height: 46px;
+          background: url("../img/google_review_hover.png") 0 0 no-repeat; }
+          .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(2) a:hover {
+            background: url("../img/google_review.png") 0 0 no-repeat;
+            width: 46px;
+            height: 46px; }
+        .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(3) a {
+          position: relative;
+          display: block;
+          width: 46px;
+          height: 46px;
+          background: url("../img/yandex_review_hover.png") 0 0 no-repeat; }
+          .review .workshop-wrap .first-row .banner-wrapper .social-review ul li:nth-child(3) a:hover {
+            background: url("../img/yandex_review.png") 0 0 no-repeat;
+            width: 46px;
+            height: 46px; }
+    .review .workshop-wrap .first-row .banner-wrapper .banner {
+      position: relative;
+      text-align: left;
+      padding: 15px 0 9px 11px;
+      letter-spacing: 0.5px; }
   .review .workshop-wrap .first-row .border-block {
     height: 0; }
 
@@ -639,3 +686,124 @@
         color: #5a5a5a;
         line-height: 1.2;
         letter-spacing: -0.1px; }
+
+.contact .workshop-wrap {
+  width: 1200px;
+  padding: 0 15px 16px;
+  margin-bottom: 100px;
+  background: #fff; }
+  .contact .workshop-wrap .first-row .border-block {
+    height: 6px; }
+  .contact .workshop-wrap img {
+    margin-left: 43px;
+    width: 1083px;
+    border: 1px solid #b8b8b8; }
+  .contact .workshop-wrap .block-contact {
+    margin: -23px 0 0 0;
+    padding: 0 0 9px 44px;
+    line-height: 1.2; }
+    .contact .workshop-wrap .block-contact .title-block-contact {
+      display: inline-block;
+      text-transform: uppercase;
+      border-bottom: 1px solid #d1d1d1;
+      line-height: 1;
+      margin-top: 55px; }
+      .contact .workshop-wrap .block-contact .title-block-contact.worktime {
+        margin-top: 31px; }
+      .contact .workshop-wrap .block-contact .title-block-contact.second-block {
+        margin-left: 40px; }
+    .contact .workshop-wrap .block-contact p {
+      margin: 0;
+      padding: 0 24px 0 0;
+      letter-spacing: 0.5px;
+      text-align: justify; }
+    .contact .workshop-wrap .block-contact .contact-item-wrapper {
+      margin: 16px 0 0 0; }
+      .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item {
+        margin: 10px 0 0 -30px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item span {
+          letter-spacing: -0.5px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item a {
+          background: url("../img/phone-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 46px;
+          height: 46px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item a:hover {
+            background: url("../img/phone-contact_hover.png") 0 0 no-repeat;
+            width: 46px;
+            height: 46px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(2) a {
+          background: url("../img/whatsapp-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 47px;
+          height: 47px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(2) a:hover {
+            background: url("../img/whatsapp-contact_hover.png") 0 0 no-repeat;
+            width: 47px;
+            height: 47px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(3) a {
+          background: url("../img/telegram-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 44px;
+          height: 44px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(3) a:hover {
+            background: url("../img/telegram-contact_hover.png") 0 0 no-repeat;
+            width: 44px;
+            height: 44px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(4) a {
+          background: url("../img/email-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 43px;
+          height: 43px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(4) a:hover {
+            background: url("../img/email-contact_hover.png") 0 0 no-repeat;
+            width: 43px;
+            height: 43px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(5) a {
+          background: url("../img/vk-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 44px;
+          height: 44px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(5) a:hover {
+            background: url("../img/vk-contact_hover.png") 0 0 no-repeat;
+            width: 44px;
+            height: 44px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(6) a {
+          background: url("../img/instagram-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 43px;
+          height: 43px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(6) a:hover {
+            background: url("../img/instagram-contact_hover.png") 0 0 no-repeat;
+            width: 43px;
+            height: 43px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(7) a {
+          background: url("../img/icon-contact.png") 0 0 no-repeat;
+          display: inline-block;
+          width: 43px;
+          height: 43px;
+          position: relative;
+          vertical-align: bottom; }
+          .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item:nth-child(7) a:hover {
+            background: url("../img/icon-contact_hover.png") 0 0 no-repeat;
+            width: 43px;
+            height: 43px; }
+        .contact .workshop-wrap .block-contact .contact-item-wrapper .contact-item span {
+          display: inline-block;
+          vertical-align: top;
+          margin: 6px 0 0 18px; }
+
+.contact .main-footer {
+  height: 154px; }
