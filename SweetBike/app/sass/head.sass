@@ -55,6 +55,11 @@ ul
     li
       display: inline-block
       position: relative
+      a
+        color: rgb(230, 232, 233)
+        text-transform: uppercase
+        text-shadow: 1px 1px 0px rgba(0,0,0,.6), -1px -1px 0 rgba(0,0,0,.6), -1px 1px 0 rgba(0,0,0,.6), 1px -1px 0 rgba(0,0,0,.6)
+
       .submenu
         display: none
         position: absolute
@@ -68,6 +73,13 @@ ul
           display: block
           width: 100%
           line-height: 1.25
+          text-align: left
+          a
+            display: inline-block
+            width: 100%
+            white-space: nowrap
+            &::after
+              content: none
           &:hover
             a
               text-decoration: underline
@@ -98,10 +110,9 @@ ul
           display: block
           position: absolute
           padding-bottom: 1px
-          &:hover
-            display: block
 
-        .header_font
+
+        a
           position: relative
           color: rgb(230, 232, 233)
           text-shadow: 1px 1px 0px rgba(0,0,0,.6), -1px -1px 0 rgba(0,0,0,.6), -1px 1px 0 rgba(0,0,0,.6), 1px -1px 0 rgba(0,0,0,.6), 2px 2px 0.32px rgba(255, 255, 255, 0.61), -2px -2px 0.32px rgba(255, 255, 255, 0.61), -2px 2px 0.32px rgba(255, 255, 255, 0.61), 2px -2px 0.32px rgba(255, 255, 255, 0.61)
@@ -115,9 +126,9 @@ ul
             left: -17px
 
       &:nth-child(6)
-        .header_font
+        a
           margin-left: 152px
-      .header_font
+      a
         text-decoration: none
         line-height: 4.4
         padding: 0 14px

@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* По умолчанию мобильный макет */
-    background-image: url( "img/catalog_inner.jpg" );
+    background-image: url( "img/old/catalog_inner.jpg" );
   }
 
 
@@ -27,6 +27,8 @@
 </style>
 <link rel="stylesheet" href="libs/pixel-glass/styles.css">
 <script src="libs/pixel-glass/script.js"></script>
+
+
 </head>
 <body class="catalog">
   <header class="header_bg">
@@ -57,6 +59,7 @@
           </div>
           <a class="logo" href="#"></a>
         </div>
+        <div class="cleaner"></div>
       </div>
       <div class="row">
         <div class="col-lg-12  header_font ">
@@ -72,12 +75,29 @@
             </ul>
           </div>
         </div>
+        <div class="cleaner"></div>
       </div>
     </div>
   </header>
   <main>
     <div class="container">
-      <div class="row">
+      <div class="row wrapper">
+        <select name="" id="input0" required="required" style="background-image:url(images/lng_ru.png);">
+    <option  style="background-image:url(images/lng_ru.png);" value="rus">rus</option>
+    <option  style="background-image:url(images/lng_eng.png);" value="eng">eng</option>
+</select>
+
+<script>
+$('#input0').click(function() {
+ if($("select#input0 :selected").val() == "rus") {
+    $("select#input0").attr('style', 'background-image:url(images/lng_ru.png);');
+ }
+ if($("select#input0 :selected").val() == "eng") {
+    $("select#input0").attr('style', 'background-image:url(images/lng_eng.png);');
+ }
+    console.log('select color: '+$("select#input0 :selected").val());
+});
+</script>
         <div class="col-lg-12 workshop-wrap">
           <div class="row">
             <div class="col-lg-12 first-row">
@@ -86,6 +106,7 @@
                   <li class="breadcrumbs-item"><a href="">Каталог</a></li>
                   <li class="breadcrumbs-item"><a href="">аксессуары</a></li>
                   <li class="breadcrumbs-item"><a href="">аксессуары</a></li>
+
                 </ul>
               </div>
               <p class="banner banner-inner">Замена седла - 100 руб.</p>
@@ -95,51 +116,37 @@
             <div class="cleaner"></div>
           </div>
           <div class="row content-wrapper">
-            <div class="col-lg-3 vertical-menu accordion">
-              <ul>
-                <li><a href="#" class="menu-link">ЗАПЧАСТИ</a>
-                  <div class="accordion-item">
-                    <a class="accordion-link" href="#">Багажники</a>
-                    <a class="accordion-link" href="#">Держатели</a>
-                    <a class="accordion-link" href="#">Замки</a>
-                    <a class="accordion-link" href="#">Защита</a>
-                    <a class="accordion-link" href="#">Звонки, клаксоны</a>
-                    <a class="accordion-link" href="#">Компьютеры</a>
-                    <a class="accordion-link" href="#">Корзины</a>
-                    <a class="accordion-link" href="#">Крылья</a>
-                    <a class="accordion-link" href="#">Подножки</a>
-                    <a class="accordion-link" href="#">Рога,Лежаки</a>
-                    <a class="accordion-link" href="#">Свет</a>
-                    <a class="accordion-link" href="#">Светоотрадатели</a>
-                    <a class="accordion-link" href="#">Сумки, чехлы</a>
-                    <a class="accordion-link" href="#">Фляги</a>
-                    <a class="accordion-link" href="#">Флягодержатели</a>
-                    <a class="accordion-link" href="#">Шлемы</a>
-                  </div>
-                </li>
-                <li><a href="#" class="menu-link">АКСЕССУАРЫ</a>
-                  <div class="accordion-item">
-                    <a class="accordion-link" href="#">Багажники</a>
-                    <a class="accordion-link" href="#">Держатели</a>
-                    <a class="accordion-link" href="#">Замки</a>
-                    <a class="accordion-link" href="#">Защита</a>
-                    <a class="accordion-link" href="#">Звонки, клаксоны</a>
-                    <a class="accordion-link" href="#">Компьютеры</a>
-                    <a class="accordion-link" href="#">Корзины</a>
-                    <a class="accordion-link" href="#">Крылья</a>
-                    <a class="accordion-link" href="#">Подножки</a>
-                    <a class="accordion-link" href="#">Рога,Лежаки</a>
-                    <a class="accordion-link" href="#">Свет</a>
-                    <a class="accordion-link" href="#">Светоотрадатели</a>
-                    <a class="accordion-link" href="#">Сумки, чехлы</a>
-                    <a class="accordion-link" href="#">Фляги</a>
-                    <a class="accordion-link" href="#">Флягодержатели</a>
-                    <a class="accordion-link" href="#">Шлемы</a>
-                  </div>
-                </li>
-                <li><a href="" class="menu-link">ОДЕЖДА</a></li>
-                <li><a href="" class="menu-link">ОБСЛУЖИВАНИЕ</a></li>
-                <li><a href="" class="menu-link">ПЕРЕВОЗКА ВЕЛОСИПЕДА</a></li>
+            <div class="col-lg-3 vertical-menu">
+              <ul class="accordion">
+
+                <div class="accordion-link-header"><li><a href="?cat=1" class="menu-link">ЗАПЧАСТИ</a></li></div>
+                  <ul class="accordion-item">
+                    <li><a class="accordion-link" href="#">Багажники</a></li>
+                    <li><a class="accordion-link" href="#">Держатели</a></li>
+                    <li><a class="accordion-link" href="#">Замки</a></li>
+                  </ul>
+                <div class="accordion-link-header"><li><a href="#" class="menu-link">АКСЕССУАРЫ</a></li></div>
+                  <ul class="accordion-item">
+                    <li><a class="accordion-link" href="#">Багажники</a></li>
+                    <li><a class="accordion-link" href="#">Держатели</a></li>
+                    <li><a class="accordion-link" href="#">Замки</a></li>
+                    <li><a class="accordion-link" href="#">Защита</a></li>
+                    <li><a class="accordion-link" href="#">Звонки, клаксоны</a></li>
+                    <li><a class="accordion-link" href="#">Компьютеры</a></li>
+                    <li><a class="accordion-link" href="#">Корзины</a></li>
+                    <li><a class="accordion-link" href="#">Крылья</a></li>
+                    <li><a class="accordion-link" href="#">Подножки</a></li>
+                    <li><a class="accordion-link" href="#">Рога,Лежаки</a></li>
+                    <li><a class="accordion-link" href="#">Свет</a></li>
+                    <li><a class="accordion-link" href="#">Светоотрадатели</a></li>
+                    <li><a class="accordion-link" href="#">Сумки, чехлы</a></li>
+                    <li><a class="accordion-link" href="#">Фляги</a></li>
+                    <li><a class="accordion-link" href="#">Флягодержатели</a></li>
+                    <li><a class="accordion-link" href="#">Шлемы</a></li>
+                  </ul>
+                <li class="cat-item"><a href="" class="menu-link">ОДЕЖДА</a></li>
+                <li class="cat-item"><a href="" class="menu-link">ОБСЛУЖИВАНИЕ</a></li>
+                <li class="cat-item"><a href="" class="menu-link">ПЕРЕВОЗКА ВЕЛОСИПЕДА</a></li>
               </ul>
             </div>
             <div class="col-lg-9 catalog-block">
@@ -258,6 +265,7 @@
             <div class="cleaner"></div>
           </div>
         </div>
+        <div class="cleaner"></div>
       </div>
     </div>
   </main>

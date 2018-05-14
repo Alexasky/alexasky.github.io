@@ -37,7 +37,11 @@ gulp.task('scripts', function() {
 		'app/libs/respond/dest/respond.matchmedia.addListener.min.js',
 		'app/libs/respond/dest/respond.matchmedia.addListener.src.js',
 		'app/libs/respond/dest/respond.src.js',
-		'app/libs/smoothscroll/SmoothScroll.min.js'
+		'app/libs/smoothscroll/SmoothScroll.min.js',
+		'app/libs/pixel-glass/jquery_accordion.js',
+		'app/libs/pixel-glass/jquery.cookie.js',
+		'app/libs/jquery.appear/jquery.appear.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

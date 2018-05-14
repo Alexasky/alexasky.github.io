@@ -60,6 +60,10 @@ ul {
     .menu ul li {
       display: inline-block;
       position: relative; }
+      .menu ul li a {
+        color: #e6e8e9;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6), -1px -1px 0 rgba(0, 0, 0, 0.6), -1px 1px 0 rgba(0, 0, 0, 0.6), 1px -1px 0 rgba(0, 0, 0, 0.6); }
       .menu ul li .submenu {
         display: none;
         position: absolute;
@@ -73,7 +77,14 @@ ul {
         .menu ul li .submenu li {
           display: block;
           width: 100%;
-          line-height: 1.25; }
+          line-height: 1.25;
+          text-align: left; }
+          .menu ul li .submenu li a {
+            display: inline-block;
+            width: 100%;
+            white-space: nowrap; }
+            .menu ul li .submenu li a::after {
+              content: none; }
           .menu ul li .submenu li:hover a {
             text-decoration: underline;
             text-shadow: 1px 1px 0px rgba(51, 153, 51, 0.6), -1px -1px 0 rgba(51, 153, 51, 0.6), -1px 1px 0 rgba(51, 153, 51, 0.6), 1px -1px 0 rgba(51, 153, 51, 0.6), 2px 2px 0.32px rgba(255, 255, 255, 0.61), -2px -2px 0.32px rgba(255, 255, 255, 0.61), -2px 2px 0.32px rgba(255, 255, 255, 0.61), 2px -2px 0.32px rgba(255, 255, 255, 0.61); }
@@ -102,13 +113,11 @@ ul {
         display: block;
         position: absolute;
         padding-bottom: 1px; }
-        .menu ul li:hover .submenu:hover {
-          display: block; }
-      .menu ul li:hover .header_font {
+      .menu ul li:hover a {
         position: relative;
         color: #e6e8e9;
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6), -1px -1px 0 rgba(0, 0, 0, 0.6), -1px 1px 0 rgba(0, 0, 0, 0.6), 1px -1px 0 rgba(0, 0, 0, 0.6), 2px 2px 0.32px rgba(255, 255, 255, 0.61), -2px -2px 0.32px rgba(255, 255, 255, 0.61), -2px 2px 0.32px rgba(255, 255, 255, 0.61), 2px -2px 0.32px rgba(255, 255, 255, 0.61); }
-        .menu ul li:hover .header_font::after {
+        .menu ul li:hover a::after {
           content: "";
           width: 180px;
           height: 15px;
@@ -116,9 +125,9 @@ ul {
           position: absolute;
           bottom: -17px;
           left: -17px; }
-      .menu ul li:nth-child(6) .header_font {
+      .menu ul li:nth-child(6) a {
         margin-left: 152px; }
-      .menu ul li .header_font {
+      .menu ul li a {
         text-decoration: none;
         line-height: 4.4;
         padding: 0 14px; }
