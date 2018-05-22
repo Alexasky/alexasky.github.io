@@ -15,8 +15,6 @@ body
 	color: $content_txt
 	min-height: 100%
 	min-width: 320px
-	margin: 0
-	padding: 0
 	padding-bottom: 180px
 	box-sizing: border-box
 	-webkit-font-smoothing: antialiased
@@ -50,23 +48,21 @@ a
 	outline: none
 	&:hover
 		text-decoration: none
-.container
-	position: relative
-	width: 100%
-	max-width: 1160px
-	margin: 0 auto
-.row
-	position: relative
-	display: flex
-	justify-content: space-between
-	align-items: flex-start
-	flex-wrap: wrap
+.clearfix
+	clear: both
+	&::after
+		content: ""
+		clear: both
+		display: table
+.container-content
+  width: 1160px
+  margin: 0 auto
 .header-bg
 	position: relative
 	width: 100%
 	height: 100%
 	background: url("../img/header_bg.jpg") 0 0 no-repeat #2e5652
-	padding: 0 0 270px 0
+	padding: 0 0 29px 0
 	background-size: cover
 
 .header-bg_overlay
@@ -76,55 +72,37 @@ a
   width: 100%
   height: 100%
   background: rgba(0,0,0,.5)
-.menu-wrap_list
-	text-align: left
+
+.menu-wrap
+	margin: 0 0 0 -73px
 .menu-wrap_list_item
 	display: inline-block
-	margin: 0 18px
+	padding: 29px 0
+	margin: 0 0 0 35px
 	border-top: 5px solid transparent
 	&:hover,
 	&.active
 		border-top: 5px solid $red
 	a
-		display: block
-		padding: 30px 0
 		color: $white_txt
 		letter-spacing: 0.4px
-.phone-wrap
-	padding-top: 36px
+
+.phone-wrap_content
+	display: inline-block
 	font-family: $bold
 	color: $white_txt
-.description-block
-	position: relative
+	padding: 33px 0
+	margin-left: -60px
+.description-block,
+.arrow-block
 	text-align: center
-	flex: auto
-	&::before
-		content: ""
-		position: absolute
-		bottom: -230px
-		left: calc(50% - 4px)
-		width: 8px
-		height: 8px
-		border-left: 2px solid $red
-		border-bottom: 2px solid $red
-		transform: rotate(-45deg)
-		z-index: 1
-	&::after
-		content: ""
-		position: absolute
-		bottom: -230px
-		left: 50%
-		width: 8px
-		height: 17px
-		border-left: 2px solid $red
 .description-block_big-txt
 	color: $white_txt
 	position: relative
-	margin: 65px 0 0 13px
+	margin: 107px 0 0 13px
 	font-size: 4.3em
 	font-family: $bold
 	letter-spacing: 0.6px
-	line-height: 2.5
 	&::after
 		content: ""
 		display: block
@@ -134,22 +112,14 @@ a
 		bottom: 0
 		left: calc(50% - 61px)
 		background: $red
+		margin: 0 0 -35px 0
 
 .description-block_small-txt
 	color: $white_txt
 	font-size: 1.4em
 	line-height: 1.75
-	margin: 40px 0 0 11px
+	margin: 75px 0 0 11px
 	letter-spacing: -0.2px
-	&::after
-		content: ""
-		position: absolute
-		bottom: -243px
-		left: calc(50% - 20px)
-		width: 42px
-		height: 42px
-		border-radius: 50%
-		background: $white_txt
 
 .btn-red
 	font-family: $regular
@@ -158,7 +128,7 @@ a
 	background: $red
 	border: none
 	border-radius: 5px
-	padding: 15px 46px
+	padding: 12px 47px
 	outline: none
 	margin: 82px 0 0 0
 	&.desc
@@ -173,18 +143,34 @@ a
 		margin: 49px 59px 0 0
 		padding: 14px 45px
 
-.bg-light
+
+.arrow-block
+	margin: 208px 0 0 0
+
+.arrow-block_btn
+	font-size: 1.5em
+	background: $white_txt
+	border-radius: 50%
+	padding: 10px 0px 6px
+	SVG
+		height: 20px
+		width: 42px
+
+.s-block
+	position: relative
+	width: 100%
+	&.bg-light
 		background: $grey-light
-.red-line
-	&::after
-		content: ""
-		display: block
-		width: 209px
-		height: 10px
-		position: absolute
-		top: 17%
-		left: calc(50% - 159px)
-		background: $red
+	&.first
+		&::after
+			content: ""
+			display: block
+			width: 209px
+			height: 10px
+			position: absolute
+			top: 27%
+			left: calc(50% - 159px)
+			background: $red
 
 .s-title
 	position: relative
@@ -198,14 +184,28 @@ a
 	margin: 0
 	box-shadow:  0 2px 5px 0px rgba(0, 0, 0, 0.2)
 	z-index: 1
-.s-first,
-.s-second
+
+.s-block_photo
 	position: relative
-	flex: 50%
-	height: 600px
-.s-first
+	display: block
+	float: left
+	width: 50%
 	background: url("../img/photo1.jpg") 0 0 no-repeat
 	background-size: cover
+	&.first
+		height: 600px
+	&.last
+		background: url("../img/map.jpg") 0 0 no-repeat
+		height: 460px
+	&.block-dev
+		float: right
+		background: $grey-dark
+		padding: 100px 57px 80px 57px
+	&.odd
+		float: right
+		background: url("../img/photo2.jpg") 0 0 no-repeat
+		height: 630px
+
 
 .s-block_photo_bottom
 	position: absolute
@@ -260,7 +260,11 @@ a
 	background: rgba(215, 40, 40, 0.7)
 	transform: rotate(-4deg) translate(0px, 141px)
 
-.s-second
+.s-block-content-wrap
+	position: relative
+	display: inline-block
+	width: 50%
+	padding: 47px 80px
 	&.contact
 		padding: 61px 0 57px 61px
 	&.odd
@@ -281,7 +285,6 @@ a
 .s-block_content
 	float: left
 	text-align: left
-	padding: 49px 78px
 
 .s-block_content_title
 	font-size: 1.8em
