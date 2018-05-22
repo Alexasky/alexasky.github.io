@@ -1,0 +1,671 @@
+$red: #ed1c24
+$white_txt: #fefefe
+$content_txt: #333
+$grey-light: #f2f2f2
+$grey-dark: #e9e9e9
+$regular: "Casper", Helvetica, Arial, sans-serif
+$bold: "CasperBold", Helvetica, Arial, sans-serif
+$italic: "CasperItalic", Helvetica, Arial, sans-serif
+$italic_bold: "CasperBoldItalic", Helvetica, Arial, sans-serif
+
+body
+	position: relative
+	font-family: "Casper", Helvetica, Arial, sans-serif
+	font-size: 16px
+	color: $content_txt
+	min-height: 100%
+	min-width: 320px
+	margin: 0
+	padding: 0
+	padding-bottom: 180px
+	box-sizing: border-box
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-rendering: geometricPrecision
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight: normal
+	margin: 0
+
+h4
+	font-size: 1.4em
+
+p
+	margin-top: 1.5em
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+a
+	display: inline-block
+	text-decoration: none
+	color: $red
+	cursor: pointer
+	outline: none
+	&:hover
+		text-decoration: none
+.container
+	position: relative
+	width: 100%
+	max-width: 1160px
+	margin: 0 auto
+.row
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-wrap: wrap
+.header-bg
+	position: relative
+	width: 100%
+	height: 100%
+	background: url("../img/header_bg.jpg") 0 0 no-repeat #2e5652
+	padding: 0 0 270px 0
+	background-size: cover
+
+.header-bg_overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,.5)
+.menu-wrap_list
+	text-align: left
+.menu-wrap_list_item
+	display: inline-block
+	margin: 0 18px
+	border-top: 5px solid transparent
+	&:hover,
+	&.active
+		border-top: 5px solid $red
+	a
+		display: block
+		padding: 30px 0
+		color: $white_txt
+		letter-spacing: 0.4px
+.phone-wrap
+	padding-top: 36px
+	font-family: $bold
+	color: $white_txt
+.description-block
+	position: relative
+	text-align: center
+	flex: auto
+	&::before
+		content: ""
+		position: absolute
+		bottom: -230px
+		left: calc(50% - 4px)
+		width: 8px
+		height: 8px
+		border-left: 2px solid $red
+		border-bottom: 2px solid $red
+		transform: rotate(-45deg)
+		z-index: 1
+	&::after
+		content: ""
+		position: absolute
+		bottom: -230px
+		left: 50%
+		width: 8px
+		height: 17px
+		border-left: 2px solid $red
+.description-block_big-txt
+	color: $white_txt
+	position: relative
+	margin: 65px 0 0 13px
+	font-size: 4.3em
+	font-family: $bold
+	letter-spacing: 0.6px
+	line-height: 2.5
+	&::after
+		content: ""
+		display: block
+		width: 122px
+		height: 5px
+		position: absolute
+		bottom: 0
+		left: calc(50% - 61px)
+		background: $red
+
+.description-block_small-txt
+	color: $white_txt
+	font-size: 1.4em
+	line-height: 1.75
+	margin: 40px 0 0 11px
+	letter-spacing: -0.2px
+	&::after
+		content: ""
+		position: absolute
+		bottom: -243px
+		left: calc(50% - 20px)
+		width: 42px
+		height: 42px
+		border-radius: 50%
+		background: $white_txt
+
+.btn-red
+	font-family: $regular
+	color: $white_txt
+	font-size: 1em
+	background: $red
+	border: none
+	border-radius: 5px
+	padding: 15px 46px
+	outline: none
+	margin: 82px 0 0 0
+	&.desc
+		font-size: 1.1em
+	&.second
+		padding: 14px 45px
+		margin: 30px 0
+	&.form
+		margin: 0 0 0 25px
+		vertical-align: top
+	&.block-dev
+		margin: 49px 59px 0 0
+		padding: 14px 45px
+
+.bg-light
+		background: $grey-light
+.red-line
+	&::after
+		content: ""
+		display: block
+		width: 209px
+		height: 10px
+		position: absolute
+		top: 17%
+		left: calc(50% - 159px)
+		background: $red
+
+.s-title
+	position: relative
+	color: #333
+	text-transform: uppercase
+	text-align: center
+	letter-spacing: 3.2px
+	font-family: $bold
+	font-size: 1em
+	padding: 35px 0
+	margin: 0
+	box-shadow:  0 2px 5px 0px rgba(0, 0, 0, 0.2)
+	z-index: 1
+.s-first,
+.s-second
+	position: relative
+	flex: 50%
+	height: 600px
+.s-first
+	background: url("../img/photo1.jpg") 0 0 no-repeat
+	background-size: cover
+
+.s-block_photo_bottom
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 34%
+	overflow: hidden
+
+.s-block_photo_bottom_figure-left
+	position: absolute
+	top: 0
+	left: -10px
+	width: 100%
+	height: 100%
+	background: rgba(164, 20, 24, 1)
+	transform: rotate(9deg) translate(0px, 210px)
+
+.s-block_photo_bottom_figure-right
+	position: absolute
+	top: 0
+	right: -191px
+	width: 100%
+	height: 100%
+	background: rgba(237, 20, 24, 0.4)
+	transform: rotate(-13deg) translate(0px, 180px)
+
+.s-block_photo_bottom_figure-top
+	position: absolute
+	top: 0
+	right: 0px
+	width: 112%
+	height: 100%
+	background: rgba(215, 40, 40, 0.9)
+	transform: rotate(-4deg) translate(0px, 141px)
+
+.s-block_photo_bottom_figure-top-overlay
+	position: absolute
+	top: 0
+	right: 0px
+	width: 112%
+	height: 100%
+	background: rgba(255, 255, 255, 0.9)
+	transform: rotate(-4deg) translate(0px, 141px)
+
+.s-block_photo_bottom_figure-top-overlay-top
+	position: absolute
+	top: 0
+	right: 0px
+	width: 112%
+	height: 100%
+	background: rgba(215, 40, 40, 0.7)
+	transform: rotate(-4deg) translate(0px, 141px)
+
+.s-second
+	&.contact
+		padding: 61px 0 57px 61px
+	&.odd
+		float: left
+		padding: 47px 0 47px 80px
+	&.block-dev
+		padding: 85px 0 47px 80px
+.s-block_content
+	&.odd
+		width: 580px
+		text-align: left
+		float: right
+	&.block-dev
+		text-align: right
+		padding: 0 60px 0 0
+
+
+.s-block_content
+	float: left
+	text-align: left
+	padding: 49px 78px
+
+.s-block_content_title
+	font-size: 1.8em
+	line-height: 1.7
+	letter-spacing: 0.6px
+	font-weight: normal
+	padding: 0
+	margin: 1em 0
+	&.form
+		margin: 0
+	&.odd
+		font-size: 1.5em
+		line-height: 1.5
+	&.block-dev
+		margin: 0
+		line-height: 1.6
+
+
+.s-block_content_text
+	line-height: 2.3
+	padding: 15px 280px 0 0
+	&.contact
+		line-height: 1.9
+		margin: 0
+		padding: 0 0 28px 0
+	&.block-dev
+		position: relative
+		padding: 0 50px 0 0
+		margin: 10px 0 0 0
+		line-height: 1.9
+		&::after
+			content: ""
+			position: absolute
+			top: calc(50% - 35px)
+			right: 0
+			width: 10px
+			height: 71px
+			background: $red
+
+.s-block_content_link
+	line-height: 3.9
+
+.s-block_content_list_left,
+.s-block_content_list_right
+	list-style: none
+	counter-reset: count_left
+	width: 43%
+	float: left
+	padding: 0 0 0 65px
+	margin: 0
+
+.s-block_content_list_right
+	counter-reset: count_right 4
+	margin-left: 50px
+
+.s-block_content_list_left_item,
+.s-block_content_list_right_item
+	line-height: 1.7
+	text-indent: -64px
+	padding: 16px 0
+
+.s-block_content_list_left_item
+	&::before
+		content: counter(count_left) ". "
+		counter-increment: count_left
+		color: $red
+		font-size: 1.2em
+		font-family: $bold
+		padding: 8px 6px 8px 14px
+		background: #f2f2f2
+		border-radius: 50%
+		margin-right: 23px
+
+.s-block_content_list_right_item
+	&::before
+		content: counter(count_right) ". "
+		counter-increment: count_right
+		color: $red
+		font-size: 1.2em
+		font-family: $bold
+		padding: 8px 6px 8px 14px
+		background: #f2f2f2
+		border-radius: 50%
+		margin-right: 23px
+
+.video-wrap
+	padding-right: 0
+
+.video
+	height: 410px
+.video-desc
+	background: #fff
+	padding: 8px 31px 20px
+
+.video-desc_text
+	font-size: 0.88em
+	line-height: 2
+	margin-top: -14px
+
+.icon-wrap
+	padding: 60px 0
+
+.icon-wrap_item
+	padding-left: 0
+	display: block
+	width: 30%
+	float: left
+	margin: 0 0 0 19px
+	height: 225px
+	&:nth-child(1)
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 20px)
+				left: calc(50% - 25px)
+				width: 50px
+				height: 40px
+				background: url("../img/icon_house.png") 0 0 no-repeat
+	&:nth-child(2)
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 21px)
+				left: calc(50% - 20px)
+				width: 40px
+				height: 43px
+				background: url("../img/icon_celsius.png") 0 0 no-repeat
+	&:nth-child(3)
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 24px)
+				left: calc(50% - 20px)
+				width: 41px
+				height: 49px
+				background: url("../img/icon_lightbulb.png") 0 0 no-repeat
+	&:nth-child(4)
+		padding-top: 30px
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 17px)
+				left: calc(50% - 17px)
+				width: 34px
+				height: 34px
+				background: url("../img/icon_brickwall.png") 0 0 no-repeat
+	&:nth-child(5)
+		padding-top: 30px
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 20px)
+				left: calc(50% - 15px)
+				width: 30px
+				height: 39px
+				background: url("../img/icon_fire.png") 0 0 no-repeat
+	&:nth-child(6)
+		padding-top: 30px
+		.icon-wrap_item_block-icon
+			&::before
+				content: ""
+				position: absolute
+				top: calc(50% - 17px)
+				left: calc(50% - 17px)
+				width: 35px
+				height: 35px
+				background: url("../img/icon_fan.png") 0 0 no-repeat
+
+.icon-wrap_item_block-icon
+	position: relative
+	width: 100px
+	height: 100px
+	background: #fff
+	border-radius: 50%
+	margin: 0 auto
+
+.icon-wrap_item_desc
+	text-align: center
+	font-size: 0.87em
+	p
+		margin-top: 0.9em
+		line-height: 1.5
+.bg-dark
+	background: $grey-dark
+
+.form-wrap
+	padding: 44px 15px 47px
+.form-part-contact
+	padding: 36px 0
+
+.form-part-options
+	padding: 17px 0
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]
+	background: #fff
+	border: none
+	border-radius: 5px
+	width: 249px
+	padding: 14px 23px
+	margin: 0 34px 0 28px
+	color: &$content_txt
+	&:focus
+		outline: none
+
+input[type="tel"],
+input[type="email"]
+	width: 213px
+
+input[type="tel"]
+	&.phone-input
+		width: 249px
+
+input[type="email"]
+	margin-right: 0
+
+input
+	&::-webkit-input-placeholder
+		color: #ccc
+	&::-moz-placeholder
+		color: #ccc
+	&:-moz-placeholder
+		color: #ccc
+	&:-ms-input-placeholder
+		color: #ccc
+	&::-webkit-input-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+	&::-moz-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+	&:-moz-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+	&:-ms-input-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+	&:focus::-webkit-input-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+	&:focus::-moz-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+	&:focus:-moz-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+	&:focus:-ms-input-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+
+.radio
+	display: none
+	&:checked
+		& +.radio-custom
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				top: 10px
+				bottom: 10px
+				left: 10px
+				right: 10px
+				border-radius: 50%
+				background: $red
+
+.radio-custom
+	display: inline-block
+	position: relative
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	background: #fff
+	margin: 0 0 0 35px
+
+.label
+	display: inline-block
+	margin: 0px 7px 0 22px
+
+.form-info
+	display: inline-block
+	font-family: $italic
+	vertical-align: middle
+	margin: -6px 0 0 15px
+	font-size: 0.8em
+	color: #666
+	line-height: 1.6
+.form-part-options_title,
+.label,
+.radio-custom
+	vertical-align: text-bottom
+.s-block-slider-left
+	float: left
+.s-block-slider-left,
+.s-block-slider-right
+	position: relative
+	display: inline-block
+	width: 50%
+.s-block-slider_item
+	height: 100%
+.overlay-desc
+	position: absolute
+	text-align: right
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 23%
+	background: rgba(0,0,0,.6)
+	z-index: 1
+.overlay-desc_text
+	width: 50%
+	float: right
+	color: #fff
+	word-wrap: break-word
+	padding: 40px 60px 40px 20px
+	p
+		margin-top: 0
+		line-height: 2
+.overlay-desc_title
+	font-family: $bold
+	font-size: 1.4em
+	margin: 0
+.owl-dots
+	width: 50%
+	position: absolute
+	bottom: 0
+	left: 0
+	padding: 0 0 33px 60px
+	z-index: 2
+.owl-carousel
+	button
+		&:focus
+			outline: none
+		&.owl-dot
+			width: 14px
+			height: 14px
+			border: 2px solid #fff
+			border-radius: 50%
+			margin-right: 13px
+			&.active
+				background: #fff
+.owl-carousel
+	.owl-drag
+	 .owl-item
+		 margin-right: 0
+.form-wrapper
+	float: left
+	text-align: right
+.form-phone-wrap
+	margin: 30px 0 0 0
+.contact-title
+	font-family: $regular
+.social-wrap
+	margin-top: 20px
+.social-item
+	display: inline-block
+	margin-right: 16px
+.social-item_link
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	color: #fff
+	background: #d5d5d5
+	font-size: 1.1em
+	border-radius: 50%
+	transition: .4s ease-in-out
+	&.instagram
+		padding: 2px 6px 2px 7px
+	&.vk
+		padding: 2px 5px 1px 5px
+	&.fb
+		padding: 2px 9px 1px 9px
+	&:hover
+		color: #fff
+		background: #336ac5
+.main-footer
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 180px
+	background: #efefef
