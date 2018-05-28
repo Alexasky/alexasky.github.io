@@ -8,8 +8,12 @@ $bold: "CasperBold", Helvetica, Arial, sans-serif
 $italic: "CasperItalic", Helvetica, Arial, sans-serif
 $italic_bold: "CasperBoldItalic", Helvetica, Arial, sans-serif
 
+html
+	height: 100%
+
 body
-	position: relative
+	display: flex
+	flex-direction: column
 	font-family: "Casper", Helvetica, Arial, sans-serif
 	font-size: 16px
 	color: $content_txt
@@ -17,11 +21,16 @@ body
 	min-width: 320px
 	margin: 0
 	padding: 0
-	padding-bottom: 180px
 	box-sizing: border-box
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	text-rendering: geometricPrecision
+header
+	flex: 0 0 auto
+main
+	flex: 1 0 auto
+footer
+	flex: 0 0 auto
 
 h1,
 h2,
@@ -31,6 +40,7 @@ h5,
 h6
 	font-weight: normal
 	margin: 0
+	letter-spacing: 0.5px
 h1
 	font-family: $bold
 	font-size: 3.1em
@@ -45,6 +55,7 @@ ul
 	list-style-type: none
 	padding: 0
 	margin: 0
+
 button
 	cursor: pointer
 	transition: all 0.4s ease-in-out
@@ -61,6 +72,8 @@ a
 	transition: all 0.4s ease-in-out
 	&:hover
 		text-decoration: none
+.clearfix
+	clear: both
 .container
 	position: relative
 	width: 100%
@@ -74,6 +87,8 @@ a
 	flex-wrap: wrap
 	&.reverse
 		flex-direction: row-reverse
+	&.contacts
+		background: #efefef
 .header-bg
 	position: relative
 	width: 100%
@@ -207,6 +222,9 @@ a
 	&.block-dev
 		margin: 52px 55px 0 0
 		padding: 14px 45px
+	&.contacts
+		margin: 22px 115px 0 0
+		padding: 14px 42px
 
 .bg-light
 		background: $grey-light
@@ -217,9 +235,10 @@ a
 		width: 209px
 		height: 10px
 		position: absolute
-		top: 17%
+		top: 100px
 		left: calc(50% - 159px)
 		background: $red
+		z-index: 2
 
 .s-title
 	position: relative
@@ -249,7 +268,6 @@ a
 	&.block-dev
 		background: $grey-dark
 		height: 100%
-		margin-top: -4px
 	&.map
 		background: url("../img/map.jpg") 0 0 no-repeat
 		height: 460px
@@ -314,6 +332,8 @@ a
 		height: 100%
 	&.contact
 		height: 100%
+	&.contacts
+		min-height: 412px
 
 .s-block_content
 	width: 580px
@@ -329,10 +349,13 @@ a
 		width: 540px
 		float: right
 		text-align: right
-		padding: 89px 61px 49px 0px
+		padding: 89px 61px 49px 0
 	&.contact
 		width: 380px
 		padding: 65px 0 45px 60px
+	&.contacts
+		padding: 100px 61px 90px 0
+
 
 .s-block_content_title
 	font-size: 1.8em
@@ -351,6 +374,10 @@ a
 	&.block-dev
 		margin: 0
 		line-height: 1.6
+	&.contacts
+		line-height: 1.5
+		margin-bottom: 47px
+
 
 
 .s-block_content_text
@@ -425,10 +452,71 @@ a
 .icon-wrap
 	flex: 50%
 .video-wrap
+	position: relative
 	padding-right: 0
-
+.video-overlay
+	position: absolute
+	background: $red
+	top: calc(50% - 20px)
+	left: calc(50% - 30px)
+	width: 60px
+	height: 40px
+	border-radius: 9px
+	opacity: 1
+	transition: all 1s
+	&::before
+		content: ""
+		position: absolute
+		top: calc(50% - 9px)
+		left: calc(50% - 9px)
+		width: 0
+		height: 0
+		border-top: 9px solid transparent
+		border-left: 18px solid #fff
+		border-bottom: 9px solid transparent
+.video-overlay-pause
+	position: absolute
+	background: rgba(0,0,0,.5)
+	top: calc(50% - 30px)
+	left: calc(50% - 30px)
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	opacity: 0
+	transition: all 1s
+	&::before
+		content: ""
+		position: absolute
+		top: calc(50% - 11px)
+		left: calc(50% - 6px)
+		width: 8px
+		height: 22px
+		border-right: 2px solid rgba(255,255,255,.5)
+		border-left: 2px solid rgba(255,255,255,.5)
+.video-overlay-play
+	position: absolute
+	background: rgba(0,0,0,.5)
+	top: calc(50% - 30px)
+	left: calc(50% - 30px)
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	opacity: 0
+	transition: all 1s
+	&::before
+		content: ""
+		position: absolute
+		top: calc(50% - 9px)
+		left: calc(50% - 6px)
+		width: 0
+		height: 0
+		border-top: 9px solid transparent
+		border-left: 18px solid rgba(255,255,255,.5)
+		border-bottom: 9px solid transparent
 .video
 	height: 410px
+.video-wrapper
+	position: relative
 .video-desc
 	background: #fff
 	padding: 8px 31px 20px
@@ -539,7 +627,8 @@ a
 
 input[type="text"],
 input[type="tel"],
-input[type="email"]
+input[type="email"],
+textarea
 	background: #fff
 	border: none
 	border-radius: 5px
@@ -551,7 +640,8 @@ input[type="email"]
 	font-size: 1em
 	&:focus
 		outline: none
-
+textarea
+	resize: vertical
 input[type="tel"],
 input[type="email"]
 	width: 166px
@@ -635,7 +725,7 @@ input
 	display: inline-block
 	font-family: $italic
 	vertical-align: middle
-	margin: -6px 0 0 15px
+	margin: -6px 0 0 12px
 	font-size: 0.8em
 	color: #666
 	line-height: 1.6
@@ -648,7 +738,8 @@ input
 .s-block-slider-left,
 .s-block-slider-right
 	position: relative
-	display: inline-block
+	display: block
+	float: left
 	width: 50%
 .s-block-slider_item
 	position: relative
@@ -696,6 +787,14 @@ input
 			margin-right: 13px
 			&.active
 				background: #fff
+.main-dot
+	width: 14px
+	height: 14px
+	border: 2px solid #fff
+	border-radius: 50%
+	margin-right: 13px
+	&.active
+		background: #fff
 .owl-carousel
 	.owl-drag
 	 .owl-item
@@ -751,12 +850,9 @@ input
 		color: #fff
 		background: #336ac5
 .main-footer
-	position: absolute
-	bottom: 0
-	left: 0
 	width: 100%
-	height: 180px
 	background: #efefef
+	padding-bottom: 40px
 .col-first,
 .col-second
 	padding: 18px 0
@@ -801,8 +897,11 @@ input
 // Projects and Prices
 //
 .header-inner
+	position: fixed
+	width: 100%
 	background: #fff
 	box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.2)
+	z-index: 3
 .logo-inner
 	display: block
 	padding: 9px 38px 4px
@@ -819,11 +918,15 @@ input
 .navigation
 	flex-flow: column
 	padding: 57px 0 34px 0
+	margin-top: 100px
 .breadcrumbs
 	margin-bottom: 33px
 .breadcrumbs_item
 	position: relative
 	display: inline-block
+	&:last-child
+		a
+			color: $content_txt
 	&:first-child
 		a
 			padding: 0 15px 0 0
@@ -833,8 +936,8 @@ input
 				content: none
 	a
 		display: block
-		padding: 0 15px 0 27px
-		color: $content_txt
+		padding: 0 15px 0 33px
+		color: $red
 		letter-spacing: 0.4px
 		&::before
 			content: ""
@@ -855,7 +958,414 @@ input
 			width: 11px
 			height: 0
 			border-top: 1px solid $content_txt
-
 		&:hover,
 		&.active
 			color: $red
+//
+// Projects catalogue
+//
+.catalogue
+	display: flex
+	justify-content: space-around
+	flex-flow: wrap
+.catalogue_item
+	position: relative
+	flex: 1 0 400px
+	overflow: hidden
+	&:hover
+		.catalogue_item-desc
+			transform: translateY(50px)
+			opacity: 0
+
+	img
+		width: 100%
+		height: 100%
+.catalogue_item-desc
+	text-align: left
+	color: #fff
+	min-height: 53px
+	z-index: 0
+	transform: translateY(0)
+	opacity: 1
+	transition: all .5s
+.catalogue_item-desc_text
+	padding: 10px 30px 20px
+.catalogue_item-desc_title
+	padding: 20px 30px 0
+	margin: 0
+.catalogue_item-desc_square
+	display: inline-block
+	margin-right: 25px
+.catalogue_item-desc_price
+	display: inline-block
+	float: right
+	font-size: 1.1em
+	font-family: $bold
+
+//
+// Projects item
+//
+
+.slider
+	position: relative
+	height: 440px
+	width: 100%
+	overflow: hidden
+	transition: 1s
+.slide
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	z-index: 1
+	transition: opacity 1s
+	&.showing
+		opacity: 1
+		z-index: 2
+.slide-img-wrap
+	display: flex
+	img
+		width: 100%
+		object-fit: cover
+		object-position: center
+.slide_item-desc
+	min-height: 0
+	text-align: right
+.slide-text
+	padding: 33px 50px 17px
+.slider_navigation
+	display: inline-block
+	position: absolute
+	bottom: 0
+	left: 0
+	padding: 35px 28px
+	z-index: 2
+.slide-text_price
+	font-size: 1.9em
+	margin-left: 50px
+.slide-align
+	display: inline-block
+	line-height: 2.5
+.slider-btn
+	position: absolute
+	top: 32px
+	right: 41px
+	padding: 13px 49px
+	margin: 0
+	font-size: 1.1em
+	z-index: 2
+	&:hover
+		opacity: .9
+		background: $red
+		color: $white_txt
+		border-color: $red
+.dot
+	display: inline-block
+	width: 10px
+	height: 10px
+	border: 2px solid #fff
+	border-radius: 50%
+	margin-right: 13px
+	&.active
+		background: #fff
+.download_file
+	position: relative
+	font-size: 1.1em
+	text-align: right
+	margin: -94px 0 14px 0
+	a
+		display: inline-block
+		position: relative
+		letter-spacing: 0.4px
+		padding: 30px 0 30px 22px
+		&::before
+			content: ""
+			position: absolute
+			bottom: 36px
+			left: 0
+			width: 5px
+			height: 5px
+			border-left: 2px solid $red
+			border-bottom: 2px solid $red
+			transform: rotate(-45deg)
+			z-index: 1
+		&::after
+			content: ""
+			position: absolute
+			bottom: 36px
+			left: 2px
+			width: 8px
+			height: 12px
+			border-left: 2px solid $red
+.left,
+.right
+	flex: 50%
+	min-height: 840px
+.right
+	background: $grey-light
+.content_overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+.table_list
+	padding: 25px 0 0 0
+	border-spacing: 0 27px
+	letter-spacing: 0.5px
+	counter-reset: count
+.thead_list,
+.tfoot_list
+	font-size: 1.5em
+	line-height: 1.7
+.tfoot_list
+	padding: 0
+.tr_list
+	&::before
+		display: inline-block
+		content: counter(count) ". "
+		counter-increment: count
+		color: $red
+		font-size: 1.2em
+		font-family: $bold
+		padding: 10px 13px 10px 15px
+		background: #f2f2f2
+		border-radius: 50%
+		margin-right: 15px
+
+	td
+		padding-right: 15px
+		text-align: right
+		vertical-align: text-top
+		&:first-child
+			text-align: left
+			max-width: 264px
+			letter-spacing: 0
+			line-height: 1.7
+			padding-right: 30px
+.schema
+	padding: 62px 0 0 0
+.img_full
+	h4
+		letter-spacing: 1.3px
+		margin-bottom: 36px
+	a
+		position: relative
+		padding: 15px 0 15px 18px
+		margin-bottom: 30px
+		&::before
+			content: ""
+			position: absolute
+			bottom: 23px
+			left: 0
+			width: 8px
+			border-bottom: 2px solid $red
+			z-index: 1
+		&::after
+			content: ""
+			position: absolute
+			bottom: 20px
+			left: 3px
+			height: 8px
+			border-left: 2px solid $red
+
+
+.schema,
+.img_full
+	display: flex
+	flex-direction: column
+.img_full,
+.img_list
+	flex: auto
+.img_list
+	display: flex
+	justify-content: space-between
+	flex-flow: row wrap
+	width: 520px
+.img_list_item
+	display: block
+	flex: 0 0 30%
+	box-sizing: border-box
+	height: 124px
+	line-height: 0
+	img
+		display: block
+		width: 100%
+	&:first-child
+		border: 10px solid $grey-dark
+.additinal
+	flex: 30%
+	height: 250px
+.catalogue_item-desc_title_additinal_wrap,
+.catalogue_item-desc_price_additinal_wrap
+	flex: 50%
+	align-self: flex-end
+.catalogue_item-desc_price_additinal
+	font-family: $regular
+	font-size: 1em
+	text-align: right
+	padding: 9px 0
+.catalogue_item-desc_title_additinal
+	font-size: 1.4em
+	line-height: 1.5
+	padding: 0
+.catalogue_item-desc_additinal
+	display: flex
+	padding: 13px 21px
+.btn-red_catalogue
+	padding: 13px 21px
+
+//
+// About company
+//
+.s-grey
+	position: relative
+	width: 100%
+	background: $grey-light
+	padding-bottom: 55px
+
+.text-big,
+.text-small
+	flex: 1 0 50%
+.text-big
+	font-size: 1.8em
+	line-height: 1.8
+	padding: 33px 0
+	letter-spacing: 0.5px
+.text-small
+	padding: 67px 0
+	line-height: 2.2
+	p
+		padding: 0 0 0 78px
+.text-small_link
+	padding: 0 0 0 78px
+.s-block_photo_bottom_about
+	height: 38%
+.s-about-first
+	height: 436px
+	background: url("../img/about_img1.jpg")
+.s-block_content_title_about
+	margin: 1em 0 0 0
+.s-block_content_text_about
+	margin-top: 1em
+	padding-top: 0
+.s-second_about
+	height: auto
+.s-block_content_right
+	float: right
+	padding: 46px 81px 30px 0
+.s-about-second
+	height: 455px
+	background: url("../img/about_img2.jpg")
+.s-block_content_about
+	padding: 49px 0 40px 0
+.s-about-transparent
+	background: none
+	height: auto
+.slider_about
+	height: 475px
+.slide-text
+	padding: 15px 50px 17px 250px
+	p
+		margin-top: 0
+		line-height: 1.9
+	h4
+		line-height: 1.8
+		margin-top: 20px
+		letter-spacing: 0.2px
+.slider_navigation_about
+	padding: 30px 60px
+.s-block_photo_bottom_figure-top-overlay-top_about
+	top: -46px
+	transform: rotate(-3deg) translate(0px, 145px)
+.s-block_photo_bottom_figure-right_about
+	transform: rotate(-10deg) translate(0px, 202px)
+//
+// How to order
+//
+.step-wrapper
+	display: flex
+	flex-flow: column
+	padding-bottom: 70px
+	padding-right: 235px
+	counter-reset: count_step
+.step-item
+	padding: 25px 0 0 0
+	&:last-child
+		.step-item_description
+			border-left: 2px solid transparent
+			&::before
+				content: none
+	h3
+		font-size: 1.5em
+		display: inline-block
+		vertical-align: sub
+		letter-spacing: 0.5px
+	&::before
+		display: inline-block
+		content: counter(count_step) ". "
+		counter-increment: count_step
+		color: $red
+		font-size: 1.2em
+		font-family: $bold
+		padding: 10px 13px 10px 15px
+		background: #f2f2f2
+		border-radius: 50%
+		margin-right: 15px
+.step-deadline
+	font-size: 1.1em
+	color: #999
+.step-item_description
+	position: relative
+	padding: 0 40px 23px
+	margin: 16px 20px 0
+	border-left: 2px solid #c1c1c1
+	&::before
+		content: ""
+		width: 5px
+		height: 5px
+		border-left: 3px solid #c1c1c1
+		border-bottom: 3px solid #c1c1c1
+		transform: rotate(-45deg)
+		position: absolute
+		bottom: 0
+		left: -5px
+.step-text
+	p
+		line-height: 1.6
+//
+// Articles
+//
+.article-wrapper
+	display: flex
+	flex-flow: column nowrap
+.article-item
+	margin-bottom: 55px
+.article-photo
+	flex: 300px
+	img
+		width: 300px
+		display: block
+	& + .article-description
+		padding: 0 0 0 37px
+.article-description
+	flex: 1 1 auto
+	width: 780px
+	padding: 0
+	p
+		line-height: 1.9
+	a
+		color: $content_txt
+
+//
+// Contacts
+//
+
+.form-wrapper-contacts
+	padding: 46px 0 50px 34px
+.form-desire-label
+	display: inline-block
+	line-height: 1.9
+	vertical-align: top
