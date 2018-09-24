@@ -1,7 +1,16 @@
 html {
   min-height: 100%;
   font-size: 12px; }
-
+.ie9 body{
+	font-family: Arial, sans-serif;
+  line-height: 1.5rem;
+  color: #151515;
+	min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+	background:#005c8f url('../img/bg.jpg') 0 0 repeat-x
+}
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -30,6 +39,7 @@ body {
   text-rendering: geometricPrecision; }
 
 header {
+	.ie9 display: block;
   position: relative;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
