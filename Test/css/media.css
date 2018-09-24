@@ -1,0 +1,123 @@
+
+@media only screen and (max-width : 890px) {
+	.slide-desc-wrapper, .slide-photo{
+		flex: 1 1 50%;
+	}
+	.slide-desc-wrapper .slide-desc{
+		padding: 95px 43px 20px 30px;
+	}
+	.slider-navigation{
+		padding: 7px 0 13px;
+	}
+	.dot:last-child{
+		margin-right: 0;
+	}
+	.content-page_bottom .content-box{
+		min-width: 0;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 0%;
+		-ms-flex: 1 1 0%;
+	}
+	.content-page_bottom .content-box_desc{
+		padding-bottom: 10px;
+	}
+
+}
+
+
+@media only screen and (max-width :767px) {
+	.logo{
+		flex: 100%
+	}
+	.row-header{
+		padding-left: 0;
+	}
+	.logo{
+		padding: 25px 7px;
+	}
+	.top-menu_item{
+		padding-top: 8px;
+	}
+	.top-menu-dropdown-btn{
+		display: block;
+	}
+	.top-menu_item:nth-child(3), .top-menu_item.top-menu_item_cart .txt-cart, .top-menu_item.top-menu_item_cart span, .breadcrumbs-block, .row-main-navigation, .sidebar-left{
+		display: none;
+	}
+	.slider-wrapper{
+		padding: 0;
+	}
+	.slide-desc-wrapper{
+		position: absolute;
+		width: 100%;
+		top: calc(50% - 70px);
+		left: 0;
+		background: rgba(0, 66, 96, 0.6);
+	}
+	.slide-photo{
+		max-width: 100%
+	}
+	.slide-desc-wrapper .slide-desc{
+		padding: 25px 5px 13px 18px;
+	}
+	#previous{
+		margin-left: 2px;
+	}
+	#next{
+		margin-right: 2px;
+	}
+	.content-page_columns, .content-page_bottom{
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.content-column{
+		margin-bottom: 15px;
+		padding: 30px 10px 12px 10px;
+	}
+	.main-content{
+		padding-top: 25px;
+	}
+	.sidebar-right, .content-page_bottom .content-box{
+		margin-left: 0;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+	}
+	.contact-form-wrapper{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.content-page_bottom .content-box{
+		margin-right: 0;
+	}
+	footer{
+		text-align: left;
+	}
+	footer .menu-footer{
+		padding: 15px 12px;
+	}
+	footer .menu-footer li{
+		padding: 0 12px;
+	}
+	.content-box{
+		border-right: none;
+		border-left: none;
+	}
+	.content-box .content-box_desc{
+		padding: 15px 10px 25px 10px;
+	}
+	.header{
+		padding-bottom: 10px;
+	}
+
+
+
+}
+/* Extra Small Devices, Phones  */
+@media only screen and (max-width :400px) {
+
+}
