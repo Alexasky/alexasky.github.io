@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
 
-	let topMenuDropdownLink = $('.top-menu-dropdown .main-navigation > ul > li > a');
-	let topSubmenu = $('.top-menu-dropdown .main-navigation > ul > li > a + ul');
-	let topSubmenuLink = $('.top-menu-dropdown_submenu > li > a');
-	let topSubmenuInnerSubmenu = $('.top-menu-dropdown_submenu > li > a + ul');
-	let sidebarMenuLink = $('.sidebar-left ul > li > a');
-	let sidebarMenu = $('.sidebar-left ul > li > a + ul');
+	var topMenuDropdownLink = $('.top-menu-dropdown .main-navigation > ul > li > a');
+	var topSubmenu = $('.top-menu-dropdown .main-navigation > ul > li > a + ul');
+	var topSubmenuLink = $('.top-menu-dropdown_submenu > li > a');
+	var topSubmenuInnerSubmenu = $('.top-menu-dropdown_submenu > li > a + ul');
+	var sidebarMenuLink = $('.sidebar-left ul > li > a');
+	var sidebarMenu = $('.sidebar-left ul > li > a + ul');
 
 	// Dropdown Button (open mobile menu)
 
@@ -73,21 +73,21 @@ $(document).ready(function(){
 
 	//Slider functionality
 
-	let slide = $('.slide');
-	let previous = $('#previous');
-	let next = $('#next');
-	let currentSlide = 0;
+	var slide = $('.slide');
+	var previous = $('#previous');
+	var next = $('#next');
+	var currentSlide = 0;
 
 	slide.each(function() {
-		 if ($(this).index()==0) {
-			 $(".slider-navigation_dot").append("<div class='dot active'></div>");
+		if ($(this).index()==0) {
+			$(".slider-navigation_dot").append("<div class='dot active'></div>");
 		 }
 		 else {
 			 $(".slider-navigation_dot").append("<div class='dot'></div>");
 		 }
 	 });
 
-	 let dots = $(".slider-navigation_dot").children(".dot");
+	 var dots = $(".slider-navigation_dot").children(".dot");
 
 
 	function nextSlide() {
@@ -120,8 +120,5 @@ $(document).ready(function(){
 		previous.click(function(){
 			previousSlide();
 		});
-
-
-
 
 });

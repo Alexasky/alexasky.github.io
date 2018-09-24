@@ -37,9 +37,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision; }
-
+.ie9 header{
+	position: relative;
+}
 header {
-	.ie9 display: block;
   position: relative;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
