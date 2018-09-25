@@ -110,7 +110,8 @@ a {
   -webkit-appearance: none; }
 
 a[href^=tel] {
-  color: #5089ac; }
+  color: #5089ac;
+  display: inline-block; }
 
 .ie9 button {
   color: #fff;
