@@ -1,4 +1,16 @@
 
+@media only screen and (max-width : 1024px) {
+	.ie9 .sidebar-left, .ie9 .sidebar-right {
+    width: 33.33%;
+    max-width: 180px;
+	}
+	.ie9 .content-column {
+    width: 52.99%;
+    max-width: 575px;
+    min-width: 300px;
+	}
+}
+
 @media only screen and (max-width : 890px) {
 	.slide-desc-wrapper, .slide-photo{
 		flex: 1 1 50%;
@@ -21,9 +33,7 @@
 	.content-page_bottom .content-box_desc{
 		padding-bottom: 10px;
 	}
-
 }
-
 
 @media only screen and (max-width :767px) {
 	.logo{
@@ -113,11 +123,3 @@
 	.header{
 		padding-bottom: 10px;
 	}
-
-
-
-}
-/* Extra Small Devices, Phones  */
-@media only screen and (max-width :400px) {
-
-}
