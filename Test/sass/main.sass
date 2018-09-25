@@ -96,6 +96,15 @@ ul
 	padding-left: 20px
 	padding-bottom: 1rem
 	overflow: hidden
+
+button,
+input,
+a
+	-webkit-appearance: none
+a
+	&[href^=tel]
+		color: #5089ac
+
 .ie9 button
 	color: $white-txt-color
 	font-size: 0.917rem
@@ -105,6 +114,7 @@ ul
 	cursor: pointer
 	border: 1px solid transparent
 	outline: none
+
 button
 	color: $white-txt-color
 	font-size: 0.917rem
@@ -133,6 +143,7 @@ a
 	transition: all 0.4s ease-in-out
 	&:hover
 		text-decoration: underline
+
 .clearfix
 	&::after
 		content: none
@@ -229,6 +240,7 @@ a
 		text-decoration: none
 		padding: 0 5px
 		line-height: 2.083rem
+
 	.service-menu-drop-down
 		position: absolute
 		top: 120%
@@ -245,7 +257,7 @@ a
 		opacity: 0
 		visibility: hidden
 		z-index: -1
-		transition: .5s ease-out
+		transition: .3s ease-out
 		a
 			display: block
 			padding: 1px 5px 0
@@ -255,6 +267,7 @@ a
 			line-height: 1.333rem
 			border-bottom: 1px solid transparent
 			transition: all 0.3s ease-in-out
+
 .top-menu_item-wrapper
 	position: relative
 
@@ -306,6 +319,7 @@ a
 			border-left: 1px solid transparent
 			border-bottom: 1px solid transparent
 			transform: rotate(136deg)
+
 .top-menu_item_cart
 	a
 		padding-right: 36px
@@ -339,14 +353,7 @@ a
 .ie9 .row-main-navigation
 	position: relative
 	text-align: right
-
-.row-main-navigation
-	position: relative
-	display: flex
-	justify-content: flex-end
-	flex-wrap: nowrap
-
-	.ie9 a
+	a
 		position: relative
 		color: $tabs-txt-color
 		font-size: 1.083rem
@@ -364,6 +371,12 @@ a
 			color: #fff
 			border: 1px solid #1a313f
 			background: $dark-blue-bg url('../img/btn_sprite.png') 0px -111px repeat-x
+
+.row-main-navigation
+	position: relative
+	display: flex
+	justify-content: flex-end
+	flex-wrap: nowrap
 	a
 		color: $tabs-txt-color
 		font-size: 1.083rem
@@ -403,7 +416,8 @@ a
 	line-height: 2.5rem
 	padding-left: 18px
 	padding-right: 15px
-.top-menu-dropdown
+
+.ie9 .top-menu-dropdown
 	position: absolute
 	width: 100%
 	border-top: 1px solid #d6d6d6
@@ -411,26 +425,6 @@ a
 	box-shadow: 0 2px 5px rgba(140,140,140,.28)
 	background: #fff
 	z-index: 3
-
-	.ie9 .main-navigation
-		ul
-			li
-				&.active
-					ul
-						li
-							a
-								&::before
-									content: ''
-									position: absolute
-									top: 7px
-									left: 9px
-									width: 13px
-									height: 13px
-									border-radius: 50%
-									border: 1px solid #1c58a1
-									box-sizing: border-box
-									background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
-									box-shadow: 0 2px 2px rgba(0,0,0,.36)
 	.main-navigation
 		ul
 			list-style-type: none
@@ -498,7 +492,7 @@ a
 									border-radius: 50%
 									border: 1px solid #1c58a1
 									box-sizing: border-box
-									background: radial-gradient(farthest-side ellipse at bottom right, #15437b, #0094e6)
+									background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
 									box-shadow: 0 2px 2px rgba(0,0,0,.36)
 								&::after
 									content: ''
@@ -512,8 +506,7 @@ a
 									border-left: 1px solid transparent
 									border-bottom: 1px solid transparent
 									transform: rotate(45deg)
-
-		.ie9 a
+		a
 			display: block
 			color: #425156
 			font-weight: bold
@@ -529,6 +522,94 @@ a
 				background: url('../img/gradient_sprite.png') 0 -5px repeat-x
 				color: #fff
 
+.top-menu-dropdown
+	position: absolute
+	width: 100%
+	border-top: 1px solid #d6d6d6
+	border-bottom: 1px solid #d6d6d6
+	box-shadow: 0 2px 5px rgba(140,140,140,.28)
+	background: #fff
+	z-index: 3
+	.main-navigation
+		ul
+			list-style-type: none
+			padding-left: 0
+			padding-bottom: 0
+			li
+				.top-menu-dropdown_submenu
+					display: none
+				&.active
+					ul
+						list-style-type: none
+						padding-left: 0
+						padding-bottom: 0
+						li
+							.top-menu-dropdown_submenu-submenu
+								display: none
+								li
+									a
+										padding: 5px 10px 5px 41px
+										background: #0072b1
+										border-bottom: 1px solid transparent
+										&::before
+											content: none
+										&::after
+											content: ''
+											position: absolute
+											top: 11px
+											left: 29px
+											width: 3px
+											height: 3px
+											border-top: 1px solid #dee1e4
+											border-right: 1px solid #dee1e4
+											border-left: 1px solid transparent
+											border-bottom: 1px solid transparent
+											transform: rotate(45deg)
+							&.active
+								background: #0072b1
+								border-bottom: none
+								a
+									background: #0072b1
+									&::after
+										top: 11px
+										left: 13px
+										transform: rotate(136deg)
+							a
+								display: block
+								position: relative
+								color: #e3f5ff
+								font-size: 1rem
+								line-height: 1.5rem
+								text-decoration: none
+								padding: 5px 13px 5px 27px
+								border-bottom: 1px solid #265e7f
+								background: #003d5f
+								&:hover
+									background: #0072b1
+								&::before
+									content: ''
+									position: absolute
+									top: 7px
+									left: 9px
+									width: 13px
+									height: 13px
+									border-radius: 50%
+									border: 1px solid #1c58a1
+									box-sizing: border-box
+									background: radial-gradient(farthest-side ellipse at bottom right, #15437b, #0094e6)
+									box-shadow: 0 2px 2px rgba(0,0,0,.36)
+								&::after
+									content: ''
+									position: absolute
+									top: 11px
+									left: 12px
+									width: 3px
+									height: 3px
+									border-top: 1px solid #dee1e4
+									border-right: 1px solid #dee1e4
+									border-left: 1px solid transparent
+									border-bottom: 1px solid transparent
+									transform: rotate(45deg)
 		a
 			display: block
 			color: #425156
@@ -545,15 +626,42 @@ a
 				background: linear-gradient(to top, #000d14, #008ad8)150%
 				color: #fff
 
-
-
 .main-page
 	background: #fff
 
 .ie9 .breadcrumbs-wrapper
+	position: relative
 	background:  #002032 url('../img/gradient_sprite.png') 0 -58px repeat-x
 	box-shadow: 0 1px 3px #cacaca
 	padding: 0
+	height: 38px
+.ie9 .breadcrumbs-block
+	padding: 0 2px 2px
+	margin-bottom: 20px
+
+.ie9 .breadcrumbs
+	float: left
+	font-size: 0.917rem
+	line-height: 1rem
+	color: #fff
+	padding-left: 25px
+	> span
+		font-weight: bold
+		line-height: 1rem
+	> span,
+	a
+		padding: 14px 0 12px 6px
+		color: #fff
+		text-decoration: none
+	a
+		&:last-child
+			span
+				border-right: 1px solid transparent
+		span
+			border-right: 1px solid #a2b2c0
+			line-height: 0.917rem
+			padding-right: 7px
+
 .breadcrumbs-wrapper
 	background: linear-gradient(to top, #0071b0, #002032)
 	box-shadow: 0 1px 3px #cacaca
@@ -562,12 +670,6 @@ a
 .breadcrumbs-block
 	padding: 0 2px 2px
 	margin-bottom: 20px
-.ie9 .breadcrumbs
-	float: left
-	font-size: 0.917rem
-	line-height: 1rem
-	color: #fff
-	padding-left: 25px
 .breadcrumbs
 	font-size: 0.917rem
 	line-height: 1rem
@@ -589,9 +691,11 @@ a
 			border-right: 1px solid #a2b2c0
 			line-height: 0.917rem
 			padding-right: 7px
+
 .ie9 .print
 	float: right
 	margin-right: 128px
+
 .print
 	flex: 0 1 180px
 	.print_link
@@ -611,14 +715,15 @@ a
 			width: 21px
 			height: 17px
 			background: url('../img/sprite.png') 0 -17px no-repeat
-.slider-wrapper
+
+.ie9 .slider-wrapper
 	padding: 0 18px
 	.slider
 		height: 279px
 		.slides
 			position: relative
 			height: 100%
-			.ie9 .slide
+			.slide
 				display: flex
 				flex-wrap: nowrap
 				position: absolute
@@ -634,6 +739,17 @@ a
 				transition: opacity 1s
 				box-shadow: 0 0 8px #515151
 				background: #009ee0 url('../img/bg_slider.png') 0 -18px no-repeat
+				&.showing
+					opacity: 1
+					z-index: 2
+
+.slider-wrapper
+	padding: 0 18px
+	.slider
+		height: 279px
+		.slides
+			position: relative
+			height: 100%
 			.slide
 				display: flex
 				flex-wrap: nowrap
@@ -653,6 +769,7 @@ a
 				&.showing
 					opacity: 1
 					z-index: 2
+
 .slider_navigation
 	position: relative
 	width: 100%
@@ -661,16 +778,21 @@ a
 	.dot
 		display: inline-block
 		cursor: pointer
+
 .ie9 .slide-desc-wrapper
+	position: relative
 	color: #fff
 	font-weight: bold
-	min-width: 387px
+	max-width: 387px
+	width: 50%
+	float: left
 	.slide-desc
 		padding: 98px 40px 30px 50px
 	p
 		margin-bottom: 1rem
 		margin-top: 1rem
 		overflow: hidden
+
 .slide-desc-wrapper
 	color: #fff
 	font-weight: bold
@@ -680,12 +802,23 @@ a
 	p
 		margin-bottom: 1rem
 		margin-top: 1rem
+
 .slide-title
 	font-size: 3rem
+
 .slide-desc-txt
 	font-size: 1.083rem
 	margin-bottom: 4px
+
 .ie9 .slide-desc-link
+	position: relative
+	line-height: 2.25rem
+	font-size: 1.083rem
+	color: #fff
+	text-decoration: none
+	padding-left: 19px
+	&:hover
+		text-decoration: none
 	&::before
 		content: ''
 		box-sizing: border-box
@@ -697,6 +830,19 @@ a
 		border-radius: 50%
 		border: 1px solid #0b6eb1
 		background: #009ee0 url('../img/btn_sprite.png') 0 0 repeat-x
+	&::after
+		content: ''
+		position: absolute
+		top: 10px
+		left: 3px
+		width: 3px
+		height: 3px
+		border-top: 1px solid #dee1e4
+		border-right: 1px solid #dee1e4
+		border-left: 1px solid transparent
+		border-bottom: 1px solid transparent
+		transform: rotate(45deg)
+
 .slide-desc-link
 	position: relative
 	line-height: 2.25rem
@@ -730,15 +876,20 @@ a
 		border-left: 1px solid transparent
 		border-bottom: 1px solid transparent
 		transform: rotate(45deg)
-.ie9
-	.slide-photo
+
+.ie9 .slide-photo
+		position: relative
 		border-top-right-radius: 5px
 		overflow: hidden
-		height: 100%
-		width: 100%
+		height: 279px
+		width: 576px
 		background: url('../img/photo_slider.jpg')
 		background-size: cover
 		background-position: right
+		float: right
+		img
+		width: 100%
+
 .slide-photo
 	border-top-right-radius: 5px
 	overflow: hidden
@@ -750,26 +901,65 @@ a
 	background-position: right
 	img
 		width: 100%
+
 .slider-navigation
 	padding: 7px 200px 13px
+
+.ie9 .slider-navigation
+	position: relative
+	display: block
+	padding: 7px 200px 13px
+
 .ie9 .slider-navigation_dot
+	display: inline-block
 	text-align: center
-	float: left
 	width: 90%
+
 .ie9 #previous,
 .ie9 #next
-	float: left
 	position: relative
+	display: inline-block
 	width: 22px
 	height: 22px
 	border: 1px solid #0b6eb1
 	border-radius: 50%
 	box-shadow: inset 0 0 5px rgba(255,254,201,.2), 0 2px 2px rgba(158,158,158,.36)
 	background: #009cdd url('../img/btn_sprite.png') 0 -4px repeat-x
-	//
 	&:hover
 		border: 1px solid #009ee1
 		background: #5bcdfe url('../img/btn_sprite.png') 0 21px repeat-x
+	&::after
+		content: ''
+		position: absolute
+		top: 6px
+		left: 7px
+		width: 4px
+		height: 4px
+		border-top: 2px solid #dee1e4
+		border-right: 2px solid #dee1e4
+		border-left: 2px solid transparent
+		border-bottom: 2px solid transparent
+		transform: rotate(-127deg) skewX(20deg)
+
+.ie9 #next
+	&::after
+		top: 6px
+		left: 5px
+		transform: rotate(53deg) skewX(20deg)
+
+.ie9 .dot
+	display: inline-block
+	width: 13px
+	height: 13px
+	border: 1px solid #0b6eb1
+	border-radius: 50%
+	box-shadow: 0 2px 2px rgba(158,158,158,.36)
+	margin-right: 15px
+	margin-top: 6px
+	cursor: pointer
+	&.active
+		background: #009cdd url('../img/btn_sprite.png') 0 -4px repeat-x
+
 #previous,
 #next
 	position: relative
@@ -794,14 +984,13 @@ a
 		border-left: 2px solid transparent
 		border-bottom: 2px solid transparent
 		transform: rotate(-127deg) skewX(20deg)
+
 #next
 	&::after
 		top: 6px
 		left: 5px
 		transform: rotate(53deg) skewX(20deg)
-.ie9 .dot
-	&.active
-		background: #009cdd url('../img/btn_sprite.png') 0 -4px repeat-x
+
 .dot
 	display: inline-block
 	width: 13px
@@ -814,33 +1003,101 @@ a
 	cursor: pointer
 	&.active
 		background: radial-gradient(farthest-side ellipse at right bottom, #00111d, #009cdd)
+
 .ie9 .content-page_columns
 	padding-bottom: 25px
+
 .content-page_columns
 	flex-wrap: nowrap
 	padding-bottom: 25px
+
 .ie9 .sidebar-left,
 .ie9 .sidebar-right
 	display: inline-block
 	width: 20%
 	max-width: 180px
 	vertical-align: top
+
 .sidebar-left,
 .sidebar-right
 	flex: 0 0 183px
+
 .sidebar-right
 	margin-left: 15px
+
 .ie9 .content-column
 	display: inline-block
 	width: 53%
 	// min-width: 338px
 	max-width: 575px
+
 .content-column
 	flex: 1 1 575px
+
 .ie9 .sidebar-left
+	margin-right: 15px
+	border: 1px solid #1a516f
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	box-shadow: 0 0 8px #515151,inset 0 43px 60px -20px rgba(0,118,184,.8)
+	background: #003d5f
+	padding-bottom: 35px
 	ul
+		list-style-type: none
+		padding-left: 0
 		> li
+			.sidebar-submenu
+				li
+					&:first-child
+						a
+							padding-top: 0
+					a
+						padding: 0 10px 0 41px
+						&::before
+							content: none
+						&::after
+							content: ''
+							position: absolute
+							top: 6px
+							left: 29px
+							width: 3px
+							height: 3px
+							border-top: 1px solid #dee1e4
+							border-right: 1px solid #dee1e4
+							border-left: 1px solid transparent
+							border-bottom: 1px solid transparent
+							transform: rotate(45deg)
+			&.active
+				background: #0072b1
+				border-bottom: 1px solid #265e7f
+				padding-bottom: 10px
+				a
+					background: #0072b1
+					border-bottom: 1px solid transparent
+					&::after
+						top: 11px
+						left: 13px
+						transform: rotate(135deg)
+			&:first-child
+				a
+					padding-top: 11px
+					&::before
+						top: 12px
+						left: 9px
+					&::after
+						top: 16px
+						left: 12px
 			a
+				display: block
+				position: relative
+				color: #e3f5ff
+				font-size: 1rem
+				line-height: 1.5rem
+				text-decoration: none
+				padding: 6px 13px 7px 27px
+				border-bottom: 1px solid #265e7f
+				&:hover
+					background: #0072b1
 				&::before
 					content: ''
 					position: absolute
@@ -853,6 +1110,19 @@ a
 					box-sizing: border-box
 					background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
 					box-shadow: 0 2px 2px rgba(0,0,0,.36)
+				&::after
+					content: ''
+					position: absolute
+					top: 12px
+					left: 12px
+					width: 3px
+					height: 3px
+					border-top: 1px solid #dee1e4
+					border-right: 1px solid #dee1e4
+					border-left: 1px solid transparent
+					border-bottom: 1px solid transparent
+					transform: rotate(45deg)
+
 .sidebar-left
 	margin-right: 15px
 	border: 1px solid #1a516f
@@ -897,7 +1167,6 @@ a
 						top: 11px
 						left: 13px
 						transform: rotate(135deg)
-
 			&:first-child
 				a
 					padding-top: 11px
@@ -918,7 +1187,6 @@ a
 				border-bottom: 1px solid #265e7f
 				&:hover
 					background: #0072b1
-
 				&::before
 					content: ''
 					position: absolute
@@ -943,24 +1211,29 @@ a
 					border-left: 1px solid transparent
 					border-bottom: 1px solid transparent
 					transform: rotate(45deg)
+
 .sidebar-submenu,
 .top-menu-dropdown_submenu-submenu
 	display: none
 	padding: 0
+
 .content-column
 	border: 1px solid #fff
 	border-top-left-radius: 5px
 	border-top-right-radius: 5px
 	box-shadow: inset 0 43px 43px -27px rgb(236,237,237), 0 0 7px rgba(140,140,140,0.62)
 	padding: 30px 30px 12px 30px
+
 .teaser
 	font-size: 1.167rem
 	padding-bottom: 18px
 	box-shadow: 0 6px 5px -5px rgba(140,140,140,0.62)
 	p
 		margin-bottom: 0
+
 .main-content
 	padding-top: 18px
+
 .content-column
 	h1
 		margin-bottom: 25px
@@ -976,6 +1249,7 @@ a
 	.align-left
 		float: left
 		margin-right: 1rem
+
 .ie9 .content-box
 	border: 1px solid #fff
 	border-top-left-radius: 5px
@@ -983,7 +1257,18 @@ a
 	box-shadow: inset 0 43px 43px -27px rgb(236,237,237), 0px 0px 6px 0px rgba(158, 158, 158, 0.85), inset 0 -115px 95px -69px rgb(236,237,237)
 	overflow: hidden
 	margin-bottom: 15px
+	.img-wrapper
+		img
+			width: 100%
+			height: 100px
+			object-fit: cover
+			object-position: bottom
 	.content-box_desc
+		padding: 0 10px 25px 10px
+		h2
+			padding: 3px 0
+		p
+			margin-bottom: 3px
 		.content-box_link
 			position: relative
 			display: block
@@ -1004,6 +1289,21 @@ a
 				box-sizing: border-box
 				background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
 				box-shadow: 0 2px 2px rgba(140,140,140,.36)
+			&::after
+				content: ''
+				position: absolute
+				top: 6px
+				left: 3px
+				width: 3px
+				height: 3px
+				border-top: 1px solid #dee1e4
+				border-right: 1px solid #dee1e4
+				border-left: 1px solid transparent
+				border-bottom: 1px solid transparent
+				transform: rotate(45deg)
+			&:hover
+				text-decoration: none
+
 .content-box
 	border: 1px solid #fff
 	border-top-left-radius: 5px
@@ -1015,7 +1315,7 @@ a
 	.img-wrapper
 		img
 			width: 100%
-			height: 100%
+			height: 100px
 			object-fit: cover
 			object-position: bottom
 	.content-box_desc
@@ -1079,7 +1379,7 @@ a
 		padding: 8px 0
 		text-indent: 12px
 		box-sizing: content-box
-
+		-webkit-appearance: none
 	textarea
 		resize: vertical
 		min-height: 70px
@@ -1089,6 +1389,7 @@ a
 	button
 		padding: 7px 25px
 		float: right
+
 .ie9 .content-page_bottom-row
 	display: table
 	border-collapse: separate
@@ -1105,17 +1406,33 @@ a
 			vertical-align: top
 			&:last-child
 				margin-right: 0
-.ie9 .content-page_bottom
-	.content-box
-		> a
-			width: 100%
-			img
+
+.ie9 .content-page_bottom-row
+	display: table
+	border-collapse: separate
+	border-spacing: 15px 0
+	padding-bottom: 15px
+	.content-page_bottom
+		display: table-row
+		.content-box
+			display: table-cell
+			margin-right: 15px
+			width: 30%
+			height: 100%
+			min-width: 150px
+			vertical-align: top
+			> a
 				width: 100%
-				height: 100%
-				object-fit: cover
-				object-position: bottom
+				img
+					width: 100%
+					height: 100px
+					object-fit: cover
+					object-position: bottom
+			&:last-child
+				margin-right: 0
 	.content-box_desc
 		padding-top: 10px
+
 .content-page_bottom
 	flex-wrap: nowrap
 	align-items: stretch
@@ -1128,17 +1445,19 @@ a
 		min-width: 180px
 		&:last-child
 			margin-right: 0
+
 .content-page_bottom
 	.content-box
 		> a
 			width: 100%
 			img
 				width: 100%
-				height: 100%
+				height: 100px
 				object-fit: cover
 				object-position: bottom
 	.content-box_desc
 		padding-top: 10px
+
 footer
 	text-align: center
 	.menu-footer
@@ -1172,6 +1491,7 @@ footer
 				position: absolute
 				right: -1px
 				top: calc(50% - 1px)
+
 	.contact-list
 		li
 			font-weight: normal
