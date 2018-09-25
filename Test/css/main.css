@@ -110,8 +110,12 @@ a {
   -webkit-appearance: none; }
 
 a[href^=tel] {
-  color: #5089ac;
+  position: relative;
   display: inline-block;
+  padding: 12px;
+  color: #5089ac;
+  line-height: 1.25rem;
+  font-size: 0.917rem;
   font-weight: normal; }
 
 .ie9 button {
