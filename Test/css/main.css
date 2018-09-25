@@ -111,7 +111,8 @@ a {
 
 a[href^=tel] {
   color: #5089ac;
-  display: inline-block; }
+  display: inline-block;
+  font-weight: normal; }
 
 .ie9 button {
   color: #fff;
