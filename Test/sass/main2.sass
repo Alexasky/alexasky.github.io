@@ -18,15 +18,7 @@ $logo-font: 'Copperplate Gothic Bold', Helvetica, Arial, sans-serif
 html
 	min-height: 100%
 	font-size: 12px
-.ie9 body
-	font-family: $regular-font
-	line-height: 1.5rem
-	color: $content-txt-color
-	background: $light-blue-bg url('../img/bg.jpg') 0 0 repeat-x
-	min-height: 100%
-	min-width: 320px
-	margin: 0
-	padding: 0
+
 body
 	display: flex
 	flex-direction: column
@@ -42,12 +34,6 @@ body
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	text-rendering: geometricPrecision
-
-.ie9 header,
-.ie9 #main-page,
-.ie9 footer
-	position: relative
-
 header
 	position: relative
 	flex: 0 0 auto
@@ -96,15 +82,7 @@ ul
 	padding-left: 20px
 	padding-bottom: 1rem
 	overflow: hidden
-.ie9 button
-	color: $white-txt-color
-	font-size: 0.917rem
-	background: rgb(0,13,20) url('../img/btn_sprite.png') 9px -5px repeat-x
-	box-shadow: 0px 0px 6px 0px rgba(140, 140, 140, 0.85)
-	border-radius: 3px
-	cursor: pointer
-	border: 1px solid transparent
-	outline: none
+
 button
 	color: $white-txt-color
 	font-size: 0.917rem
@@ -114,15 +92,6 @@ button
 	cursor: pointer
 	border: 1px solid transparent
 	outline: none
-
-.ie9 a
-	display: inline-block
-	text-decoration: none
-	color: $link-txt-color
-	cursor: pointer
-	outline: none
-	&:hover
-		text-decoration: underline
 
 a
 	display: inline-block
@@ -145,10 +114,6 @@ a
 	max-width: 1024px
 	margin: 0 auto
 
-.ie9 .row
-	position: relative
-	padding: 0 18px
-
 .row
 	position: relative
 	display: flex
@@ -156,10 +121,6 @@ a
 	align-items: flex-start
 	flex-wrap: wrap
 	padding: 0 18px
-
-.ie9 .row-header
-	position: relative
-	padding-bottom: 8px
 
 .row-header
 	position: relative
@@ -181,22 +142,11 @@ a
 	&:hover
 		text-decoration: none
 
-.ie9 .top-menu
-	display: block
-	position: relative
-	float: right
-
 .top-menu
 	flex: 1 1 auto
 	display: flex
 	justify-content: flex-start
 	flex-direction: row-reverse
-
-.ie9 .top-menu_item
-	position: relative
-	padding-top: 20px
-	margin-right: 10px
-	float: right
 
 .top-menu_item
 	position: relative
@@ -257,21 +207,6 @@ a
 			transition: all 0.3s ease-in-out
 .top-menu_item-wrapper
 	position: relative
-
-.ie9 .drop-down-btn
-	.top-menu_item-wrapper
-		&::before
-			content: ''
-			position: absolute
-			top: 6px
-			right: 0
-			width: 13px
-			height: 13px
-			border-radius: 50%
-			border: 1px solid #1d59a1
-			box-sizing: border-box
-			background: #14313e url('../img/btn_sprite.png') 0 -11px no-repeat
-			box-shadow: 0 2px 4px rgba(227,227,227,0.9)
 
 .drop-down-btn
 	.top-menu_item-wrapper
@@ -335,35 +270,11 @@ a
 		font-size: 0.917rem
 		line-height: 1.2rem
 		width: 72px
-
-.ie9 .row-main-navigation
-	position: relative
-	text-align: right
-
 .row-main-navigation
 	position: relative
 	display: flex
 	justify-content: flex-end
 	flex-wrap: nowrap
-
-	.ie9 a
-		position: relative
-		color: $tabs-txt-color
-		font-size: 1.083rem
-		line-height: 1.5rem
-		font-weight: bold
-		text-decoration: none
-		padding: 7px 15px 8px
-		box-shadow: 0 -2px 5px rgba(140,140,140,.28), inset 0 -25px 39px -27px rgba(128,128,128, 0.3)
-		border: 1px solid #d6d6d6
-		border-top-left-radius: 5px
-		border-top-right-radius: 5px
-		transition: color 0.3s ease-in-out
-		&:hover,
-		&.open
-			color: #fff
-			border: 1px solid #1a313f
-			background: $dark-blue-bg url('../img/btn_sprite.png') 0px -111px repeat-x
 	a
 		color: $tabs-txt-color
 		font-size: 1.083rem
@@ -411,26 +322,6 @@ a
 	box-shadow: 0 2px 5px rgba(140,140,140,.28)
 	background: #fff
 	z-index: 3
-
-	.ie9 .main-navigation
-		ul
-			li
-				&.active
-					ul
-						li
-							a
-								&::before
-									content: ''
-									position: absolute
-									top: 7px
-									left: 9px
-									width: 13px
-									height: 13px
-									border-radius: 50%
-									border: 1px solid #1c58a1
-									box-sizing: border-box
-									background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
-									box-shadow: 0 2px 2px rgba(0,0,0,.36)
 	.main-navigation
 		ul
 			list-style-type: none
@@ -513,22 +404,6 @@ a
 									border-bottom: 1px solid transparent
 									transform: rotate(45deg)
 
-		.ie9 a
-			display: block
-			color: #425156
-			font-weight: bold
-			font-size: 1.083rem
-			line-height: 2.5rem
-			padding: 5px 18px
-			background: #fff
-			&:hover
-				text-decoration: none
-				background: url('../img/gradient_sprite.png') 0 -5px repeat-x
-				color: #fff
-			&.open
-				background: url('../img/gradient_sprite.png') 0 -5px repeat-x
-				color: #fff
-
 		a
 			display: block
 			color: #425156
@@ -549,11 +424,6 @@ a
 
 .main-page
 	background: #fff
-
-.ie9 .breadcrumbs-wrapper
-	background:  #002032 url('../img/gradient_sprite.png') 0 -58px repeat-x
-	box-shadow: 0 1px 3px #cacaca
-	padding: 0
 .breadcrumbs-wrapper
 	background: linear-gradient(to top, #0071b0, #002032)
 	box-shadow: 0 1px 3px #cacaca
@@ -562,12 +432,6 @@ a
 .breadcrumbs-block
 	padding: 0 2px 2px
 	margin-bottom: 20px
-.ie9 .breadcrumbs
-	float: left
-	font-size: 0.917rem
-	line-height: 1rem
-	color: #fff
-	padding-left: 25px
 .breadcrumbs
 	font-size: 0.917rem
 	line-height: 1rem
@@ -589,9 +453,6 @@ a
 			border-right: 1px solid #a2b2c0
 			line-height: 0.917rem
 			padding-right: 7px
-.ie9 .print
-	float: right
-	margin-right: 128px
 .print
 	flex: 0 1 180px
 	.print_link
@@ -618,22 +479,6 @@ a
 		.slides
 			position: relative
 			height: 100%
-			.ie9 .slide
-				display: flex
-				flex-wrap: nowrap
-				position: absolute
-				top: 0
-				left: 0
-				width: calc(100% - 4px)
-				height: 100%
-				border-top-left-radius: 5px
-				border-top-right-radius: 5px
-				padding: 2px
-				opacity: 0
-				z-index: 1
-				transition: opacity 1s
-				box-shadow: 0 0 8px #515151
-				background: #009ee0 url('../img/bg_slider.png') 0 -18px no-repeat
 			.slide
 				display: flex
 				flex-wrap: nowrap
@@ -661,16 +506,6 @@ a
 	.dot
 		display: inline-block
 		cursor: pointer
-.ie9 .slide-desc-wrapper
-	color: #fff
-	font-weight: bold
-	min-width: 387px
-	.slide-desc
-		padding: 98px 40px 30px 50px
-	p
-		margin-bottom: 1rem
-		margin-top: 1rem
-		overflow: hidden
 .slide-desc-wrapper
 	color: #fff
 	font-weight: bold
@@ -685,18 +520,6 @@ a
 .slide-desc-txt
 	font-size: 1.083rem
 	margin-bottom: 4px
-.ie9 .slide-desc-link
-	&::before
-		content: ''
-		box-sizing: border-box
-		position: absolute
-		top: 6px
-		left: 0
-		width: 13px
-		height: 13px
-		border-radius: 50%
-		border: 1px solid #0b6eb1
-		background: #009ee0 url('../img/btn_sprite.png') 0 0 repeat-x
 .slide-desc-link
 	position: relative
 	line-height: 2.25rem
@@ -730,15 +553,6 @@ a
 		border-left: 1px solid transparent
 		border-bottom: 1px solid transparent
 		transform: rotate(45deg)
-.ie9
-	.slide-photo
-		border-top-right-radius: 5px
-		overflow: hidden
-		height: 100%
-		width: 100%
-		background: url('../img/photo_slider.jpg')
-		background-size: cover
-		background-position: right
 .slide-photo
 	border-top-right-radius: 5px
 	overflow: hidden
@@ -752,24 +566,6 @@ a
 		width: 100%
 .slider-navigation
 	padding: 7px 200px 13px
-.ie9 .slider-navigation_dot
-	text-align: center
-	float: left
-	width: 90%
-.ie9 #previous,
-.ie9 #next
-	float: left
-	position: relative
-	width: 22px
-	height: 22px
-	border: 1px solid #0b6eb1
-	border-radius: 50%
-	box-shadow: inset 0 0 5px rgba(255,254,201,.2), 0 2px 2px rgba(158,158,158,.36)
-	background: #009cdd url('../img/btn_sprite.png') 0 -4px repeat-x
-	//
-	&:hover
-		border: 1px solid #009ee1
-		background: #5bcdfe url('../img/btn_sprite.png') 0 21px repeat-x
 #previous,
 #next
 	position: relative
@@ -799,9 +595,6 @@ a
 		top: 6px
 		left: 5px
 		transform: rotate(53deg) skewX(20deg)
-.ie9 .dot
-	&.active
-		background: #009cdd url('../img/btn_sprite.png') 0 -4px repeat-x
 .dot
 	display: inline-block
 	width: 13px
@@ -814,45 +607,16 @@ a
 	cursor: pointer
 	&.active
 		background: radial-gradient(farthest-side ellipse at right bottom, #00111d, #009cdd)
-.ie9 .content-page_columns
-	padding-bottom: 25px
 .content-page_columns
 	flex-wrap: nowrap
 	padding-bottom: 25px
-.ie9 .sidebar-left,
-.ie9 .sidebar-right
-	display: inline-block
-	width: 20%
-	max-width: 180px
-	vertical-align: top
 .sidebar-left,
 .sidebar-right
 	flex: 0 0 183px
 .sidebar-right
 	margin-left: 15px
-.ie9 .content-column
-	display: inline-block
-	width: 53%
-	// min-width: 338px
-	max-width: 575px
 .content-column
 	flex: 1 1 575px
-.ie9 .sidebar-left
-	ul
-		> li
-			a
-				&::before
-					content: ''
-					position: absolute
-					top: 8px
-					left: 9px
-					width: 13px
-					height: 13px
-					border-radius: 50%
-					border: 1px solid #1c58a1
-					box-sizing: border-box
-					background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
-					box-shadow: 0 2px 2px rgba(0,0,0,.36)
 .sidebar-left
 	margin-right: 15px
 	border: 1px solid #1a516f
@@ -976,34 +740,6 @@ a
 	.align-left
 		float: left
 		margin-right: 1rem
-.ie9 .content-box
-	border: 1px solid #fff
-	border-top-left-radius: 5px
-	border-top-right-radius: 5px
-	box-shadow: inset 0 43px 43px -27px rgb(236,237,237), 0px 0px 6px 0px rgba(158, 158, 158, 0.85), inset 0 -115px 95px -69px rgb(236,237,237)
-	overflow: hidden
-	margin-bottom: 15px
-	.content-box_desc
-		.content-box_link
-			position: relative
-			display: block
-			font-size: 0.833rem
-			font-weight: bold
-			color: #0057a8
-			line-height: 1.667rem
-			padding-left: 21px
-			&::before
-				content: ''
-				position: absolute
-				top: 2px
-				left: 0
-				width: 13px
-				height: 13px
-				border-radius: 50%
-				border: 1px solid #1c58a1
-				box-sizing: border-box
-				background: #15437b url('../img/gradient_sprite.png') 0 -7px repeat-x
-				box-shadow: 0 2px 2px rgba(140,140,140,.36)
 .content-box
 	border: 1px solid #fff
 	border-top-left-radius: 5px
@@ -1089,20 +825,6 @@ a
 	button
 		padding: 7px 25px
 		float: right
-.ie9 .content-page_bottom
-	display: table
-	border-collapse: separate
-	border-spacing: 15px 0
-	padding-bottom: 15px
-	.content-page_bottom-row
-		display: table-row
-		.content-box
-			display: table-cell
-			margin-right: 15px
-			width: 30%
-			height: 100%
-			min-width: 150px
-			vertical-align: top
 .content-page_bottom
 	flex-wrap: nowrap
 	align-items: stretch
@@ -1115,6 +837,8 @@ a
 		min-width: 180px
 		&:last-child
 			margin-right: 0
+.content-page_bottom
+	.content-box
 		> a
 			width: 100%
 			img
