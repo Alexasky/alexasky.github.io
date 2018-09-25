@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="libs/normalize/normalize.css">
+  <link rel="stylesheet" href="/libs/normalize/normalize.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="svg-bundle.css" />
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
   <title>FFW Front-end Test</title>
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/FFW_test_desktop.jpg" );
+  }
+
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="libs/pixel-glass/styles.css">
+<script src="libs/pixel-glass/script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<header class="header">
       <div class="row row-header">
 				<a class="logo" href=""><span>FFW Front-end Test</span></a>
-        <nav class="top-menu">
-          <div class="top-menu_item top-menu_item_cart">
+        <nav class="top-menu clearfix">
+          <div class="top-menu_item top-menu_item_cart clearfix">
             <div class="top-menu_item-wrapper">
               <a href="">
                 <span>Indkøbskurv</span>
@@ -51,7 +68,7 @@
         </nav>
       </div>
       <div class="row row-main-navigation">
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <a href="">Forside</a>
           <a href="">Produkter </a>
           <a href="">Brugssituationer</a>
@@ -103,13 +120,13 @@
 		</header>
     <div class="main-page">
       <div class="breadcrumbs-block">
-				<div class="breadcrumbs-wrapper row">
-					<div class="breadcrumbs">
+				<div class="breadcrumbs-wrapper row clearfix">
+					<div class="breadcrumbs clearfix">
 	          <span>Du er her:</span>
 	          <a href="#"><span>Forside</span></a>
 	          <a href="#"><span>Om Thiss Technology</span></a>
 	        </div>
-					<div class="print">
+					<div class="print clearfix">
 						<a class="print_link" href="#">Print</a>
 					</div>
 				</div>
@@ -153,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="slider-navigation row">
+          <div class="slider-navigation row clearfix">
 						<button class="controls" id="previous"></button>
 						<div class="slider-navigation_dot"></div>
 						<button class="controls" id="next"></button>
@@ -162,7 +179,7 @@
       </section>
 			<main class="content-page">
 				<div class="content-page_columns row">
-					<aside class="sidebar-left accordion">
+					<aside class="sidebar-left">
 						<ul>
 							<li class="sidebar-left_item"><a href="">Lorem ipsum dolor sit amet, consectetuer adipi</a></li>
 							<li class="sidebar-left_item"><a href="">Aliquam tincidunt mauris eu risus.</a>
@@ -252,35 +269,37 @@
 						</div>
 					</aside>
 				</div>
-				<div class="content-page_bottom row">
-					<div class="content-box">
-						<a href="#"><img src="img/content-box-bottom-small-photo.png" alt=""></a>
-						<div class="content-box_desc">
-							<h2 class="content-box_title">Camper belt</h2>
-							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra</p>
-						</div>
-					</div>
-					<div class="content-box">
-						<a href="#"><img src="img/content-box-bottom-big-photo.png" alt=""></a>
-						<div class="content-box_desc">
-							<h2 class="content-box_title">Camper Trolley ct 2500</h2>
-							<a class="content-box_link" href="#">Find ud af mere</a>
-						</div>
-					</div>
-					<div class="content-box">
-						<div class="content-box_desc">
-							<h2 class="content-box_title">Vores visoner</h2>
-							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra. Aliquam sed ante nec mauris tristique dictum ut id dui. orbi interdum posuere ipsum ullamcorper vestibulum. Etiam vestibulum, nunc vel pharetra fringilla, neque lacus vehicula turpis, quis placerat libero sapien sit amet velit.</p>
-							<a class="content-box_link" href="#">Find ud af mere</a>
-						</div>
-					</div>
-					<div class="content-box">
-						<div class="content-box_desc">
-							<h2 class="content-box_title">Shoppen</h2>
-							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,</p>
-							<a class="content-box_link" href="#">Find ud af mere</a>
-						</div>
-					</div>
+				<div class="content-page_bottom-row">
+					<section class="content-page_bottom row">
+							<div class="content-box">
+								<a href="#"><img src="img/content-box-bottom-small-photo.png" alt=""></a>
+								<div class="content-box_desc">
+									<h2 class="content-box_title">Camper belt</h2>
+									<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra</p>
+								</div>
+							</div>
+							<div class="content-box">
+								<a href="#"><img src="img/content-box-bottom-big-photo.png" alt=""></a>
+								<div class="content-box_desc">
+									<h2 class="content-box_title">Camper Trolley ct 2500</h2>
+									<a class="content-box_link" href="#">Find ud af mere</a>
+								</div>
+							</div>
+							<div class="content-box">
+								<div class="content-box_desc">
+									<h2 class="content-box_title">Vores visoner</h2>
+									<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra. Aliquam sed ante nec mauris tristique dictum ut id dui. orbi interdum posuere ipsum ullamcorper vestibulum. Etiam vestibulum, nunc vel pharetra fringilla, neque lacus vehicula turpis, quis placerat libero sapien sit amet velit.</p>
+									<a class="content-box_link" href="#">Find ud af mere</a>
+								</div>
+							</div>
+							<div class="content-box">
+								<div class="content-box_desc">
+									<h2 class="content-box_title">Shoppen</h2>
+									<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,</p>
+									<a class="content-box_link" href="#">Find ud af mere</a>
+								</div>
+							</div>
+					</section>
 				</div>
 			</main>
     </div> <!-- Page End -->
@@ -295,8 +314,9 @@
 			</ul>
 		</footer>
 	</div> <!-- Container End -->
-  <script src="libs/jquery/dist/jquery.min.js"></script>
-  <script src="libs/smoothscroll/smoothscroll.min.js"></script>
+  <script src="/libs/jquery/dist/jquery.min.js"></script>
+  <script src="/libs/smoothscroll/smoothscroll.min.js"></script>
+	<script src="/libs/flexibility-master/flexibility.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
