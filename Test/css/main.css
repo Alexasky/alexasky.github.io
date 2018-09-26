@@ -876,6 +876,23 @@ a {
 .ie9 .print {
   float: right;
   margin-right: 128px; }
+  .ie9 .print .print_link {
+    display: inline-block;
+    position: relative;
+    padding-top: 13px;
+    padding-left: 30px;
+    color: #fefefe;
+    font-size: 0.917rem;
+    text-decoration: none; }
+    .ie9 .print .print_link::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 21px;
+      height: 17px;
+      background: url("../img/sprite.png") 0 -17px no-repeat; }
 
 .print {
   -webkit-box-flex: 0;
