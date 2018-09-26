@@ -187,6 +187,17 @@ a
 	box-shadow: inset 0 43px 43px -27px rgb(236,237,237)
 	background: #fefefe
 
+.ie9 .logo
+	font-family: $logo-font
+	font-size: 1.5rem
+	line-height: 1.25rem
+	color: $dark-blue-bg
+	padding: 29px 20px
+	letter-spacing: 0.2px
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
 .logo
 	font-family: $logo-font
 	font-size: 1.5rem
@@ -215,6 +226,59 @@ a
 	padding-top: 20px
 	margin-right: 10px
 	float: right
+	&:first-child
+		margin-right: 0
+	.top-menu_item-wrapper
+		&:hover
+			cursor: pointer
+			a
+				color: #0085d0
+			.service-menu-drop-down
+				top: 100%
+				opacity: 1
+				visibility: visible
+				z-index: 4
+				a
+					color: $tabs-txt-color
+					&:hover
+						color: #008ad8
+						span
+							border-bottom: 1px solid #008ad8
+
+	a
+		font-size: 1rem
+		font-weight: bold
+		color: $tabs-txt-color
+		text-decoration: none
+		padding: 0 5px
+		line-height: 2.083rem
+
+	.service-menu-drop-down
+		position: absolute
+		top: 120%
+		left: 5px
+		min-width: 112px
+		padding-left: 0
+		padding-bottom: 0
+		border: 1px solid #d6d6d6
+		border-bottom-left-radius: 4px
+		border-bottom-right-radius: 4px
+		box-shadow: inset 0 -25px 39px -27px rgba(128,128,128, 0.3)
+		background: #fefefe
+		list-style-type: none
+		opacity: 0
+		visibility: hidden
+		z-index: -1
+		transition: .3s ease-out
+		a
+			display: block
+			padding: 1px 5px 0
+			color: $tabs-txt-color
+			font-size: 0.917rem
+			font-weight: normal
+			line-height: 1.333rem
+			border-bottom: 1px solid transparent
+			transition: all 0.3s ease-in-out
 
 .top-menu_item
 	position: relative
@@ -1384,7 +1448,10 @@ a
 		border: none
 		outline: none
 		padding: 8px 0
-		text-indent: 12px
+		// text-indent: 12px
+		padding-left: 12px
+		padding-right: 12px
+		width: calc(100% - 24px)
 		box-sizing: content-box
 		-webkit-appearance: none
 	textarea
