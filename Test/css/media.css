@@ -54,6 +54,8 @@
 	}
 	.slide-photo{
 		max-width: 100%
+		-webkit-border-top-left-radius: 5px;
+		border-top-left-radius: 5px;
 	}
 	.slide-desc-wrapper .slide-desc{
 		padding: 25px 5px 13px 18px;
