@@ -1881,7 +1881,7 @@ footer {
       footer .menu-footer li:last-child::after {
         content: none; }
       footer .menu-footer li a {
-        display: block;
+        display: inline-block;
         color: #5089ac;
         font-weight: bold; }
         footer .menu-footer li a:hover {
